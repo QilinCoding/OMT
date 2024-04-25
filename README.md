@@ -1,2 +1,1 @@
-# OMT
-OMT: Ontology of Measurement Terminology
+# OMT: Ontology of Measurement Terminology

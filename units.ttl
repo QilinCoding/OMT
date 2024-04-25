@@ -1,0 +1,1662 @@
+@prefix : <http://si-digital-framework.org/SI/units/> .
+@prefix si: <http://si-digital-framework.org/SI#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cgpm: <http://si-digital-framework.org/bodies/CGPM#> .
+@prefix cipm: <http://si-digital-framework.org/bodies/CIPM#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prefixes: <http://si-digital-framework.org/SI/prefixes/> .
+@prefix constants: <http://si-digital-framework.org/constants/> .
+@prefix quantities: <http://si-digital-framework.org/quantities/> .
+
+<http://si-digital-framework.org/SI/units/> a owl:Ontology ;
+	dcterms:created "2024-02-13"^^xsd:date ;
+	rdfs:comment "Ontology, part of the SI Reference Point, covering measurement units (SI base units and SI units with special names) and prefixes." ;
+	skos:prefLabel "SI Reference Point - Units and Prefixes"^^xsd:string .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+
+dcterms:created a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasAltSymbol
+
+si:hasAltSymbol a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasDefiningConstant
+
+si:hasDefiningConstant a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasDefiningEquation
+
+si:hasDefiningEquation a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasDefiningResolution
+
+si:hasDefiningResolution a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasDefiningText
+
+si:hasDefiningText a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasDefinition
+
+si:hasDefinition a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasDefinitionNote
+
+si:hasDefinitionNote a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasEndValidity
+
+si:hasEndValidity a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasLeftUnitTerm
+
+si:hasLeftUnitTerm a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasNextDefinition
+
+si:hasNextDefinition a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasNonPrefixedUnit
+
+si:hasNonPrefixedUnit a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasNoteIndex
+
+si:hasNoteIndex a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasNoteText
+
+si:hasNoteText a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasNumericExponent
+
+si:hasNumericExponent a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasNumericFactor
+
+si:hasNumericFactor a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasNumericFactorAsString
+
+si:hasNumericFactorAsString a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasPrefix
+
+si:hasPrefix a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasPreviousDefinition
+
+si:hasPreviousDefinition a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasRightUnitTerm
+
+si:hasRightUnitTerm a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasStartValidity
+
+si:hasStartValidity a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasStatus
+
+si:hasStatus a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasSymbol
+
+si:hasSymbol a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasUnitBase
+
+si:hasUnitBase a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasUnitTerm
+
+si:hasUnitTerm a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#hasUnitTypeAsString
+
+si:hasUnitTypeAsString a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#inBaseSIUnits
+
+si:inBaseSIUnits a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#inOtherSIUnits
+
+si:inOtherSIUnits a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#isUnitOfQtyKind
+
+si:isUnitOfQtyKind a owl:AnnotationProperty .
+# 
+# http://si-digital-framework.org/SI#prefixRestriction
+
+si:prefixRestriction a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+
+xsd:date a rdfs:Datatype .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://si-digital-framework.org/SI#Definition
+
+si:Definition a owl:Class .
+# 
+# http://si-digital-framework.org/SI#DefinitionNote
+
+si:DefinitionNote a owl:Class .
+# 
+# http://si-digital-framework.org/SI#MeasurementUnit
+
+si:MeasurementUnit a owl:Class .
+# 
+# http://si-digital-framework.org/SI#PrefixedUnit
+
+si:PrefixedUnit a owl:Class .
+# 
+# http://si-digital-framework.org/SI#SIBaseUnit
+
+si:SIBaseUnit a owl:Class .
+# 
+# http://si-digital-framework.org/SI#SISpecialNamedUnit
+
+si:SISpecialNamedUnit a owl:Class .
+# 
+# http://si-digital-framework.org/SI#UnitMultiple
+
+si:UnitMultiple a owl:Class .
+# 
+# http://si-digital-framework.org/SI#nonSIUnit
+
+si:nonSIUnit a owl:Class .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://si-digital-framework.org/SI#ampere1948
+
+si:ampere1948 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningResolution cgpm:CGPM9-Res2 ;
+	si:hasDefiningText "L’ampère est l’intensité d’un courant constant qui, maintenu dans deux conducteurs parallèles, rectilignes, de longueur infinie, de section circulaire négligeable et placés à une distance de 1 mètre l’un de l’autre dans le vide, produirait entre ces conducteurs une force égale à ${2 \\times 10^{-7}}$ newton par mètre de longueur."@fr , "The ampere is that constant current which, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed 1 metre apart in vacuum, would produce between these conductors a force equal to ${2 \\times 10^{-7}}$ newton per metre of length."@en ;
+	si:hasDefinitionNote si:ampere1948note1 ;
+	si:hasEndValidity "2019-05-19"^^xsd:date ;
+	si:hasNextDefinition si:ampere2018 ;
+	si:hasStartValidity "1948-01-01"^^xsd:date ;
+	si:hasStatus "superseded"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "ampere1948"@en , "ampère1948"@fr .
+# 
+# http://si-digital-framework.org/SI#ampere1948note1
+
+si:ampere1948note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "L’expression « unité MKS de force » qui figure dans le texte original de 1946 a été remplacée ici par « newton », nom adopté pour cette unité par la 9ᵉ CGPM (1948, Résolution 7)."@fr , "The expression « MKS unit of force » which occurs in the original text has been replaced here by «newton», a name adopted for this unit by the 9th CGPM (1948, Resolution 7)."@en .
+# 
+# http://si-digital-framework.org/SI#ampere2018
+
+si:ampere2018 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningConstant constants:ElementaryCharge ;
+	si:hasDefiningEquation "1\\;{\\rm{A}} = \\left(\\frac{{e}}{{1.602\\:176\\:634 \\times 10^{-19}}}\\right) {\\rm{s}}^{-1}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM26-Res1 ;
+	si:hasDefiningText "L’ampère, symbole $\\rm{A}$, est l’unité de courant électrique du SI. Il est défini en prenant la valeur numérique fixée de la charge élémentaire, ${e}$, égale à ${1.602\\:176\\:634 \\times 10^{-19}}$ lorsqu’elle est exprimée en $\\rm{C}$, unité égale à ${\\rm{A}}\\ {\\rm{s}}$, la seconde étant définie en fonction de $\\Delta\\nu_{\\rm{Cs}}$."@fr , "The ampere, symbol $\\rm{A}$, is the SI unit of electric current. It is defined by taking the fixed numerical value of the elementary charge, ${e}$, to be ${1.602\\:176\\:634 \\times 10^{-19}}$ when expressed in the unit $\\rm{C}$, which is equal to ${\\rm{A}}\\ {\\rm{s}}$, where the second is defined in terms of $\\Delta\\nu_{\\rm{Cs}}$."@en ;
+	si:hasDefinitionNote si:ampere2018note1 , si:ampere2018note2 , si:ampere2018note3 , si:ampere2018note4 ;
+	si:hasPreviousDefinition si:ampere1948 ;
+	si:hasStartValidity "2019-05-20"^^xsd:date ;
+	si:hasStatus "current"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "ampere2018"@en , "ampère2018"@fr .
+# 
+# http://si-digital-framework.org/SI#ampere2018note1
+
+si:ampere2018note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "Cette définition implique la relation exacte ${{e}} = {{1.602\\:176\\:634 \\times 10^{-19}}}\\ {{\\rm{A}}\\ {\\rm{s}}}$. En inversant cette relation, l’ampère est exprimé en fonction des constante ${e}$ et $\\Delta\\nu_{\\rm{Cs}}$ : $$1\\;{\\rm{A}} = \\left(\\frac{{e}}{{1.602\\:176\\:634 \\times 10^{-19}}}\\right)\\ {{\\rm{s}}^{-1}}$$ relation identique à  $$1\\;{\\rm{A}} = \\frac{1}{({9\\:192\\:631\\:770})({1.602\\:176\\:634 \\times 10^{-19}})}\\,{\\Delta\\nu_{\\rm{Cs}}}\\;{{e}} \\approx {{6.789\\:6868 \\times 10^{8}}} {\\Delta\\nu_{\\rm{Cs}}}\\;{{e}}$$."@fr , "This definition implies the exact relation ${{e}} = {{1.602\\:176\\:634 \\times 10^{-19}}}\\ {{\\rm{A}}\\ {\\rm{s}}}$. Inverting this relation gives an exact expression for the unit ampere in terms of the defining constants ${e}$ and $\\Delta\\nu_{\\rm{Cs}}$: $$1\\;{\\rm{A}} = \\left(\\frac{{e}}{{1.602\\:176\\:634 \\times 10^{-19}}}\\right)\\ {{\\rm{s}}^{-1}}$$ which is equal to $$1\\;{\\rm{A}} = \\frac{1}{({9\\:192\\:631\\:770})({1.602\\:176\\:634 \\times 10^{-19}})}\\,{\\Delta\\nu_{\\rm{Cs}}}\\;{{e}} \\approx {{6.789\\:6868 \\times 10^{8}}} {\\Delta\\nu_{\\rm{Cs}}}\\;{{e}}$$."@en .
+# 
+# http://si-digital-framework.org/SI#ampere2018note2
+
+si:ampere2018note2 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "2"^^xsd:integer ;
+	si:hasNoteText "Il résulte de cette définition qu’un ampère est le courant électrique correspondant au flux de $1/({1.602\\:176\\:634 \\times 10^{-19}})$ charges élémentaires par seconde."@fr , "The effect of this definition is that one ampere is the electric current corresponding to the flow of $1/({1.602\\:176\\:634 \\times 10^{-19}})$ elementary charges per second."@en .
+# 
+# http://si-digital-framework.org/SI#ampere2018note3
+
+si:ampere2018note3 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "3"^^xsd:integer ;
+	si:hasNoteText "La précédente définition de l’ampère, fondée sur la force produite entre deux conducteurs traversés par du courant, fixait la valeur de la perméabilité magnétique du vide $\\mu_{0}$ (également connue sous le nom de constante magnétique) à exactement ${{4\\pi \\times 10^{-7}}}\\ {\\rm{H}\\ \\rm{m}}^{-1} = {4\\pi \\times 10^{-7}}\\ \\rm{N}\\ \\rm{A}^{-2}$, $\\rm{H}$ et $\\rm{N}$ représentant les unités dérivées cohérentes « henry » et « newton », respectivement. La nouvelle définition de l’ampère fixe la valeur numérique de ${e}$ et non plus celle de $\\mu_{0}$. Par conséquent, $\\mu_{0}$ doit désormais être déterminée de façon expérimentale."@fr , "The previous definition of the ampere was based on the force between two current carrying conductors and had the effect of fixing the value of the vacuum magnetic permeability $\\mu_{0}$ (also known as the magnetic constant) to be exactly ${{4\\pi \\times 10^{-7}}}\\ {\\rm{H}\\ \\rm{m}}^{-1} = {4\\pi \\times 10^{-7}}\\ \\rm{N}\\ \\rm{A}^{-2}$, where $\\rm{H}$ and $\\rm{N}$ denote the coherent derived units henry and newton, respectively. The new definition of the ampere fixes the value of ${e}$ instead of $\\mu_{0}$. As a result, $\\mu_{0}$ must be determined experimentally."@en .
+# 
+# http://si-digital-framework.org/SI#ampere2018note4
+
+si:ampere2018note4 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "4"^^xsd:integer ;
+	si:hasNoteText "Ainsi, comme la permittivité diélectrique du vide $\\varepsilon_{0}$ (également connue sous le nom de constante électrique), l’impédance du vide caractéristique ${Z_{0}}$ et l’admittance du vide ${Y_{0}}$ sont égales à $1/{\\mu_{0}}{c}^{2}$, ${\\mu_{0}}{c}$, et $1/{\\mu_{0}}{c}$ respectivement, les valeurs de $\\varepsilon_{0}$, ${Z_{0}}$ et ${Y_{0}}$ doivent désormais être déterminées de façon expérimentale et ont la même incertitude-type relative que $\\mu_{0}$ puisque la valeur de $c$ est connue avec exactitude. Le produit ${\\varepsilon_{0}} {\\mu_{0}} = 1/{c}^{2}$ et le quotient ${{Z_{0}}}/{\\mu_{0}} = {c}$ restent exacts. Au moment de l’adoption de l’actuelle définition de l’ampère, $\\mu_{0}$ était égale à ${4\\pi \\times 10^{-7}\\ \\rm{H}/\\rm{m}}$ avec une incertitude-type relative de ${2.3 \\times 10^{-10}}$."@fr , "It also follows that since the vacuum electric permittivity $\\varepsilon_{0}$ (also known as the electric constant), the characteristic impedance of vacuum ${Z_{0}}$, and the admittance of vacuum ${Y_{0}}$ are equal to $1/{\\mu_{0}}{c}^{2}$, ${\\mu_{0}}{c}$, and $1/{\\mu_{0}}{c}$, respectively the values of $\\varepsilon_{0}$, ${Z_{0}}$ and ${Y_{0}}$ must now also be determined experimentally, and are affected by the same relative standard uncertainty as $\\mu_{0}$ since $c$ is exactly known. The product ${\\varepsilon_{0}} {\\mu_{0}} = 1/{c}^{2}$ and quotient ${{Z_{0}}}/{\\mu_{0}} = {c}$ remain exact.  At the time of adopting the present definition of the ampere, $\\mu_{0}$ was equal to ${4\\pi \\times 10^{-7}\\ \\rm{H}/\\rm{m}}$ with a relative standard uncertainty of ${2.3 \\times 10^{-10}}$."@en .
+# 
+# http://si-digital-framework.org/SI#candela1948
+
+si:candela1948 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningConstant constants:LuminousEfficacy ;
+	si:hasDefiningResolution cipm:CIPM41-Res1 ;
+	si:hasDefiningText "La grandeur de la bougie nouvelle est telle que la brillance du radiateur intégral à la température de solidification du platine soit de 60 bougies nouvelles par centimètre carré."@fr , "The value of the new candle is such that the brightness of the full radiator at the temperature of solidification of platinum is 60 new candles per square centimetre."@en ;
+	si:hasEndValidity "1967-10-12"^^xsd:date ;
+	si:hasNextDefinition si:candela1967 ;
+	si:hasStartValidity "1948-01-01"^^xsd:date ;
+	si:hasStatus "superseded"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "candela1948"@en , "candela1948"@fr .
+# 
+# http://si-digital-framework.org/SI#candela1967
+
+si:candela1967 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningConstant constants:LuminousEfficacy ;
+	si:hasDefiningResolution cgpm:CGPM13-Res5 ;
+	si:hasDefiningText "La candela est l'intensité lumineuse, dans la direction perpendiculaire, d'une surface de $1/600\\,000$ mètre carré d'un corps noir à la température de congélation du platine sous la pression de $101\\,325$ newtons par mètre carré."@fr , "The candela is the luminous intensity, in the perpendicular direction, of a surface of $1/600\\,000$ square metre of a black body at the temperature of freezing platinum under a pressure of $101\\,325$ newtons per square metre."@en ;
+	si:hasEndValidity "1979-10-10"^^xsd:date ;
+	si:hasNextDefinition si:candela1979 ;
+	si:hasPreviousDefinition si:candela1948 ;
+	si:hasStartValidity "1967-10-13"^^xsd:date ;
+	si:hasStatus "superseded"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "candela1967"@en , "candela1967"@fr .
+# 
+# http://si-digital-framework.org/SI#candela1979
+
+si:candela1979 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningConstant constants:LuminousEfficacy ;
+	si:hasDefiningResolution cgpm:CGPM16-Res3 ;
+	si:hasDefiningText "La candela est l’intensité lumineuse, dans une direction donnée, d’une source qui émet un rayonnement monochromatique de fréquence $540 \\times 10^{12}$ hertz et dont l’intensité énergétique dans cette direction est $1/{{683}}$ watt par stéradian."@fr , "The candela is the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency $540 \\times 10^{12}$ hertz and that has a radiant intensity in that direction of $1/{{683}}$ watt per steradian."@en ;
+	si:hasDefinitionNote si:candela1979note1 ;
+	si:hasEndValidity "2019-05-19"^^xsd:date ;
+	si:hasNextDefinition si:candela2018 ;
+	si:hasPreviousDefinition si:candela1967 ;
+	si:hasStartValidity "1979-10-11"^^xsd:date ;
+	si:hasStatus "superseded"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "candela1979"@en , "candela1979"@fr .
+# 
+# http://si-digital-framework.org/SI#candela1979note1
+
+si:candela1979note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "No notes"@en , "No notes"@fr .
+# 
+# http://si-digital-framework.org/SI#candela2018
+
+si:candela2018 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningConstant constants:LuminousEfficacy ;
+	si:hasDefiningEquation "1\\;{\\rm{cd}} = \\left(\\frac{{K_{\\rm{cd}}}}{683}\\right) {\\rm{kg}}\\;{\\rm{m}}^2\\;{\\rm{s}}^{-3}\\;{\\rm{sr}}^{-1}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM26-Res1 ;
+	si:hasDefiningText "La candela, symbole $\\rm{cd}$, est l’unité du SI d’intensité lumineuse dans une direction donnée. Elle est définie en prenant la valeur numérique fixée de l’efficacité lumineuse d’un rayonnement monochromatique de fréquence ${540 \\times 10^{12}}\\ {{\\rm{Hz}}}$, ${K_{\\rm{cd}}}$, égale à ${683}$ lorsqu’elle est exprimée en ${\\rm{lm}}\\ {\\rm{W}}^{-1} $, unité égale à ${\\rm{cd}}\\ {\\rm{sr}}\\ {\\rm{W}}^{-1}$, ou ${\\rm{cd}}\\ {\\rm{sr}}\\ {\\rm{kg}}^{-1}\\ {\\rm{m}}^{-2}\\ {\\rm{s}}^{3}$, le kilogramme, le mètre et la seconde étant définis en fonction de ${h}$, $c$ et $\\Delta\\nu_{\\rm{Cs}}$."@fr , "The candela, symbol $\\rm{cd}$, is the SI unit of luminous intensity in a given direction. It is defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency ${540 \\times 10^{12}}\\ {{\\rm{Hz}}}$, ${K_{\\rm{cd}}}$, to be ${683}$ when expressed in the unit ${\\rm{lm}}\\ {\\rm{W}}^{-1} $, which is equal to ${\\rm{cd}}\\ {\\rm{sr}}\\ {\\rm{W}}^{-1}$, or ${\\rm{cd}}\\ {\\rm{sr}}\\ {\\rm{kg}}^{-1}\\ {\\rm{m}}^{-2}\\ {\\rm{s}}^{3}$, where the kilogram, metre and second are defined in terms of ${h}$, $c$ and $\\Delta\\nu_{\\rm{Cs}}$."@en ;
+	si:hasDefinitionNote si:candela2018note1 , si:candela2018note2 ;
+	si:hasPreviousDefinition si:candela1979 ;
+	si:hasStartValidity "2019-05-20"^^xsd:date ;
+	si:hasStatus "current"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "candela2018"@en , "candela2018"@fr .
+# 
+# http://si-digital-framework.org/SI#candela2018note1
+
+si:candela2018note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "Cette définition implique la relation exacte ${{K_{\\rm{cd}}}} = {{683}}\\ {{\\rm{cd}}\\:{\\rm{sr}}\\:{\\rm{kg}}^{-1}\\:{\\rm{m}}^{-2}\\:{\\rm{s}}^{3}}$ pour le rayonnement monochromatique de fréquence ${\\nu} = {540 \\times 10^{12}}\\ {{\\rm{Hz}}}$. En inversant cette relation, la candela est exprimée en fonction des constantes ${K_{\\rm{cd}}}$, ${h}$ et $\\Delta\\nu_{\\rm{Cs}}$ : $$1\\;{\\rm{cd}} = \\left(\\frac{{K_{\\rm{cd}}}}{{683}}\\right)\\ {\\rm{kg}}\\ {\\rm{m}}^2\\ {\\rm{s}}^{-3}\\ {\\rm{sr}}^{-1}$$ relation identique à  $$1\\;{\\rm{cd}} = \\frac{1}{(6.626\\:070\\:15 \\times 10^{-34})\\:({9\\:192\\:631\\:770})^{2}\\:{683}} (\\Delta\\nu_{\\rm{Cs}})^{2}\\:{h}\\:{K_{\\rm{cd}}} \\approx 2.614\\:8305 \\times 10^{10} (\\Delta\\nu_{\\rm{Cs}})^{2}\\:{h}\\:{K_{\\rm{cd}}}$$."@fr , "This definition implies the exact relation ${{K_{\\rm{cd}}}} = {{683}}\\ {{\\rm{cd}}\\:{\\rm{sr}}\\:{\\rm{kg}}^{-1}\\:{\\rm{m}}^{-2}\\:{\\rm{s}}^{3}}$ for monochromatic radiation of frequency ${\\nu} = {540 \\times 10^{12}}\\ {{\\rm{Hz}}}$. Inverting this relation gives an exact expression for the candela in terms of the defining constants ${K_{\\rm{cd}}}$, ${h}$ and $\\Delta\\nu_{\\rm{Cs}}$: $$1\\;{\\rm{cd}} = \\left(\\frac{{K_{\\rm{cd}}}}{{683}}\\right)\\ {\\rm{kg}}\\ {\\rm{m}}^2\\ {\\rm{s}}^{-3}\\ {\\rm{sr}}^{-1}$$ which is equal to $$1\\;{\\rm{cd}} = \\frac{1}{(6.626\\:070\\:15 \\times 10^{-34})\\:({9\\:192\\:631\\:770})^{2}\\:{683}} (\\Delta\\nu_{\\rm{Cs}})^{2}\\:{h}\\:{K_{\\rm{cd}}} \\approx 2.614\\:8305 \\times 10^{10} (\\Delta\\nu_{\\rm{Cs}})^{2}\\:{h}\\:{K_{\\rm{cd}}}$$."@en .
+# 
+# http://si-digital-framework.org/SI#candela2018note2
+
+si:candela2018note2 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "2"^^xsd:integer ;
+	si:hasNoteText "Il résulte de cette définition que la candela est l’intensité lumineuse, dans une direction donnée, d’une source qui émet un rayonnement monochromatique de fréquence ${540 \\times 10^{12}}\\ {{\\rm{Hz}}}$ et dont l’intensité énergétique dans cette direction est ${1/{{683}}}\\ {\\rm{W}\\ \\rm{sr}^{-1}}$. "@fr , "The effect of this definition is that one candela is the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency ${540 \\times 10^{12}}\\ {{\\rm{Hz}}}$ and has a radiant intensity in that direction of ${1/{{683}}}\\ {\\rm{W}\\ \\rm{sr}^{-1}}$ The definition of the steradian is given below Table 4."@en .
+# 
+# http://si-digital-framework.org/SI#kelvin1967
+
+si:kelvin1967 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningResolution cgpm:CGPM13-Res4 ;
+	si:hasDefiningText "Le kelvin, unité de température thermodynamique, est la fraction $1/273.16$ de la température thermodynamique du point triple de l'eau."@fr , "The kelvin, unit of thermodynamic temperature, is the fraction $1/273.16$ of the thermodynamic temperature of the triple point of water."@en ;
+	si:hasDefinitionNote si:kelvin1967note1 , si:kelvin1967note2 ;
+	si:hasEndValidity "2019-05-19"^^xsd:date ;
+	si:hasNextDefinition si:kelvin2018 ;
+	si:hasStartValidity "1967-10-13"^^xsd:date ;
+	si:hasStatus "superseded"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "kelvin1967"@en , "kelvin1967"@fr .
+# 
+# http://si-digital-framework.org/SI#kelvin1967note1
+
+si:kelvin1967note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "La 13ᵉ CGPM (1967 Résolution 3) décida aussi que l'unité kelvin et son symbole K sont utilisés pour exprimer un intervalle ou une différence de température."@fr , "The 13th CGPM (1967, Resolution 3) also decided that the unit kelvin and its symbol $K$ should be used to express an interval or a difference of temperature."@en .
+# 
+# http://si-digital-framework.org/SI#kelvin1967note2
+
+si:kelvin1967note2 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "2"^^xsd:integer ;
+	si:hasNoteText "En dehors de la température thermodynamique (symbole $T$), exprimée en kelvins, on utilise aussi la température Célsius (symbole $t$) définie par l'équation où ${T_{0}}$ = 273,15 K par définition. Pour exprimer la température, on utilise l'unité « degré Célsius » qui est égale à l'unitié « kelvin » ; « degré Célsius » est un nom spécial employé dans ce cas au lieu de « kelvin ». Un intervalle ou une différence de température Célsius peuvent toutefois s'exprimer aussi bien en kelvins qu'en degrés Célsius."@fr , "In addition to the thermodynamic temperature (symbol $T$), expressed in kelvins, use is also made of Celsius temperature (symbol $t$) defined by the equation where ${T_{0}}$ = 273,15 K by definition. To express celsius temperature, the unit \"degree Celsius\" which is equal to the unit \"kelvin\" is used; in this case, \"degree Celsius\" is a special name used in place of \"kelvin\". An interval or difference of Celsius temperature can however, be expressed in kelvin as well as in degrees Celsius."@en .
+# 
+# http://si-digital-framework.org/SI#kelvin2018
+
+si:kelvin2018 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningConstant constants:BoltzmannConstant ;
+	si:hasDefiningEquation "1\\;{\\rm{K}} = \\left(\\frac{1.380\\:649 \\times 10^{-23}}{{k}}\\right) {\\rm{kg}}\\;{\\rm{m}}^2\\;{\\rm{s}}^{-2}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM26-Res1 ;
+	si:hasDefiningText "Le kelvin, symbole $\\rm{K}$, est l’unité de température thermodynamique du SI. Il est défini en prenant la valeur numérique fixée de la constante de Boltzmann, ${k}$, égale à $1.380\\:649 \\times 10^{-23}$ lorsqu’elle est exprimée en ${\\rm{J}}\\ {\\rm{K}}^{-1}$, unité égale à ${\\rm{kg}}\\ {\\rm{m}}^{2}\\ {\\rm{s}}^{-2}\\ {\\rm{K}}^{-1}$, le kilogramme, le mètre et la seconde étant définis en fonction de ${h}$, $c$ et $\\Delta\\nu_{\\rm{Cs}}$."@fr , "The kelvin, symbol $\\rm{K}$, is the SI unit of thermodynamic temperature. It is defined by taking the fixed numerical value of the Boltzmann constant, ${k}$, to be $1.380\\:649 \\times 10^{-23}$ when expressed in the unit ${\\rm{J}}\\ {\\rm{K}}^{-1}$, which is equal to ${\\rm{kg}}\\ {\\rm{m}}^{2}\\ {\\rm{s}}^{-2}\\ {\\rm{K}}^{-1}$, where the kilogram, metre and second are defined in terms of ${h}$, $c$ and $\\Delta\\nu_{\\rm{Cs}}$."@en ;
+	si:hasDefinitionNote si:kelvin2018note1 , si:kelvin2018note2 , si:kelvin2018note3 , si:kelvin2018note4 , si:kelvin2018note5 , si:kelvin2018note6 , si:kelvin2018note7 ;
+	si:hasPreviousDefinition si:kelvin1967 ;
+	si:hasStartValidity "2019-05-20"^^xsd:date ;
+	si:hasStatus "current"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "kelvin2018"@en , "kelvin2018"@fr .
+# 
+# http://si-digital-framework.org/SI#kelvin2018note1
+
+si:kelvin2018note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "Cette définition implique la relation exacte ${{k}} = {1.380\\:649 \\times 10^{-23}}\\ {{\\rm{kg}}\\ {\\rm{m}}^{2}\\ {\\rm{s}}^{-2}\\ {\\rm{K}}^{-1}}$. En inversant cette relation, le kelvin est exprimé en fonction des constantes ${k}$, ${h}$ et $\\Delta\\nu_{\\rm{Cs}}$ : $$1\\;{\\rm{K}} = \\left(\\frac{1.380\\:649 \\times 10^{-23}}{{k}}\\right)\\ {{\\rm{kg}} \\: {\\rm{m}}^{2}\\:{\\rm{s}}^{-2}}$$ relation identique à $$1\\;{\\rm{K}} = \\frac{1.380\\:649 \\times 10^{-23}}{(6.626\\:070\\:15 \\times 10^{-34})({9\\:192\\:631\\:770})}\\frac{\\Delta\\nu_{\\rm{Cs}}\\;{h}}{{k}} \\approx 2.266\\:6653 \\frac{\\Delta\\nu_{\\rm{Cs}}\\;{h}}{{k}}$$."@fr , "This definition implies the exact relation ${{k}} = {1.380\\:649 \\times 10^{-23}}\\ {{\\rm{kg}}\\ {\\rm{m}}^{2}\\ {\\rm{s}}^{-2}\\ {\\rm{K}}^{-1}}$. Inverting this relation gives an exact expression for the kelvin in terms of the defining constants ${k}$, ${h}$ and $\\Delta\\nu_{\\rm{Cs}}$: $$1\\;{\\rm{K}} = \\left(\\frac{1.380\\:649 \\times 10^{-23}}{{k}}\\right)\\ {{\\rm{kg}} \\: {\\rm{m}}^{2}\\:{\\rm{s}}^{-2}}$$ which is equal to $$1\\;{\\rm{K}} = \\frac{1.380\\:649 \\times 10^{-23}}{(6.626\\:070\\:15 \\times 10^{-34})({9\\:192\\:631\\:770})}\\frac{\\Delta\\nu_{\\rm{Cs}}\\;{h}}{{k}} \\approx 2.266\\:6653 \\frac{\\Delta\\nu_{\\rm{Cs}}\\;{h}}{{k}}$$."@en .
+# 
+# http://si-digital-framework.org/SI#kelvin2018note2
+
+si:kelvin2018note2 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "2"^^xsd:integer ;
+	si:hasNoteText "Il résulte de cette définition qu’un kelvin est égal au changement de la température thermodynamique résultant d’un changement de l’énergie thermique ${{k}}{{T}}$ de ${1.380\\:649 \\times 10^{-23}}\\ {\\rm{J}}$."@fr , "The effect of this definition is that one kelvin is equal to the change of thermodynamic temperature that results in a change of thermal energy ${{k}}{{T}}$ by ${1.380\\:649 \\times 10^{-23}}\\ {\\rm{J}}$."@en .
+# 
+# http://si-digital-framework.org/SI#kelvin2018note3
+
+si:kelvin2018note3 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "3"^^xsd:integer ;
+	si:hasNoteText "La précédente définition du kelvin établissait la température du point triple de l’eau ${T_{\\rm{TPW}}}$ comme étant exactement égale à $273.16$  $\\rm{K}$. Étant donné que l’actuelle définition du kelvin fixe la valeur numérique de ${k}$ et non plus celle de ${T_{\\rm{TPW}}}$, cette dernière doit désormais être déterminée de façon expérimentale. Au moment de l’adoption de l’actuelle définition du kelvin, ${T_{\\rm{TPW}}}$ était égale à $273.16$ $\\rm{K}$ avec une incertitude-type relative de $3.7 \\times 10^{-7}$ déterminée à partir des mesures de ${k}$ réalisées avant la redéfinition.."@fr , "The previous definition of the kelvin set the temperature of the triple point of water, ${T_{\\rm{TPW}}}$, to be exactly $273.16$ $\\rm{K}$. Due to the fact that the present definition of the kelvin fixes the numerical value of ${k}$ instead of ${T_{\\rm{TPW}}}$, the latter must now be determined experimentally. At the time of adopting the present definition ${T_{\\rm{TPW}}}$ was equal to $273.16$ $\\rm{K}$ with a relative standard uncertainty of $3.7 \\times 10^{-7}$ based on measurements of ${k}$ made prior to the redefinition."@en .
+# 
+# http://si-digital-framework.org/SI#kelvin2018note4
+
+si:kelvin2018note4 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "4"^^xsd:integer ;
+	si:hasNoteText "As a result of the way temperature scales used to be defined, it remains common practice to express a thermodynamic temperature, symbol ${T}$, in terms of its difference from the reference temperature ${{T_{0}}} = {273.15}\\ {\\rm{K}}$, close to the ice point. This difference is called the Celsius temperature, symbol ${t}$, which is defined by the quantity equation $${{t}} = {{T}} - {{T_{0}}}$$."@en , "En raison de la manière dont les échelles de température étaient habituellement définies, il est resté d’usage courant d’exprimer la température thermodynamique, symbole ${T}$, en fonction de sa différence par rapport à la température de référence ${{T_{0}}} = {273.15}\\ {\\rm{K}}$ proche du point de congélation de l’eau. Cette différence de température est appelée température Celsius, symbole ${t}$ ; elle est définie par l’équation aux grandeurs : $${{t}} = {{T}} - {{T_{0}}}$$."@fr .
+# 
+# http://si-digital-framework.org/SI#kelvin2018note5
+
+si:kelvin2018note5 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "5"^^xsd:integer ;
+	si:hasNoteText "L’unité de température Celsius est le degré Celsius, symbole $\\rm{{^\\circ}{C}}$, qui par définition est égal en amplitude à l’unité « kelvin ». Une différence ou un intervalle de température peut s’exprimer aussi bien en kelvins qu’en degrés Celsius, la valeur numérique de la différence de température étant la même dans les deux cas. La valeur numérique de la température Celsius exprimée en degrés Celsius est liée à la valeur numérique de la température thermodynamique exprimée en kelvins par la relation : $${{t}}/{\\rm{{^\\circ}{C}}} = {{T}}/{\\rm{K}} - {273.15}$$."@fr , "The unit of Celsius temperature is the degree Celsius, symbol $\\rm{{^\\circ}{C}}$, which is by definition equal in magnitude to the unit kelvin. A difference or interval of temperature may be expressed in kelvins or in degrees Celsius, the numerical value of the temperature difference being the same in either case. However, the numerical value of a Celsius temperature expressed in degrees Celsius is related to the numerical value of the thermodynamic temperature expressed in kelvin by the relation $${{t}}/{\\rm{{^\\circ}{C}}} = {{T}}/{\\rm{K}} - {273.15}$$."@en .
+# 
+# http://si-digital-framework.org/SI#kelvin2018note6
+
+si:kelvin2018note6 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "6"^^xsd:integer ;
+	si:hasNoteText "Le kelvin et le degré Celsius sont aussi les unités de l’Échelle internationale de température de 1990 (EIT-90) adoptée par le CIPM en 1989 dans sa Recommandation 5 (CI-1989, PV, 57, 26). Il est à noter que l’EIT-90 définit les deux grandeurs ${T_{90}}$ et ${t_{90}}$ qui sont de très bonnes approximations des températures thermodynamiques correspondantes ${T}$ et ${t}$."@fr , "The kelvin and the degree Celsius are also units of the International Temperature Scale of 1990 (ITS-90) adopted by the CIPM in 1989 in Recommendation 5 (CI-1989, PV, 57, 115). Note that the ITS-90 defines two quantities ${T_{90}}$ and ${t_{90}}$ which are close approximations to the corresponding thermodynamic temperatures ${T}$ and ${t}$."@en .
+# 
+# http://si-digital-framework.org/SI#kelvin2018note7
+
+si:kelvin2018note7 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "7"^^xsd:integer ;
+	si:hasNoteText "Il est également à noter que l’actuelle définition de l’unité de température thermodynamique permet d’établir, en principe, des réalisations primaires du kelvin à tout point de l’échelle de température."@fr , "Note that with the present definition, primary realizations of the kelvin can, in principle, be established at any point of the temperature scale."@en .
+# 
+# http://si-digital-framework.org/SI#kilogram1901
+
+si:kilogram1901 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningResolution cgpm:CGPM3-Res2 ;
+	si:hasDefiningText "Le kilogramme est l’unité de masse ; il est égal à la masse du prototype international du kilogramme."@fr , "The kilogram is the unit of mass; it is equal to the mass of the international prototype of the kilogram."@en ;
+	si:hasDefinitionNote si:kilogram1901note1 ;
+	si:hasEndValidity "2019-05-19"^^xsd:date ;
+	si:hasNextDefinition si:kilogram2018 ;
+	si:hasStartValidity "1901-05-20"^^xsd:date ;
+	si:hasStatus "superseded"^^xsd:string ;
+	si:prefixRestriction "true"^^xsd:boolean ;
+	skos:prefLabel "kilogram1901"@en , "kilogramme1901"@fr .
+# 
+# http://si-digital-framework.org/SI#kilogram1901note1
+
+si:kilogram1901note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "Ce prototype international en platine iridié est conservé au Bureau International dans des conditions qui ont été fixées par la CGPM en 1889."@fr , "This international prototype, made of platinum-iridium, is kept at the BIPM under conditions specified by the 1st CGPM in 1889."@en .
+# 
+# http://si-digital-framework.org/SI#kilogram2018
+
+si:kilogram2018 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningConstant constants:PlanckConstant ;
+	si:hasDefiningEquation "1\\;{\\rm{kg}} = \\left(\\frac{{h}}{6.626\\:070\\:15 \\times 10^{-34}}\\right) {\\rm{m}}^{-2}\\;{\\rm{s}}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM26-Res1 ;
+	si:hasDefiningText "Le kilogramme, symbole $\\rm{kg}$, est l’unité de masse du SI. Il est défini en prenant la valeur numérique fixée de la constante de Planck, ${h}$, égale à $6.626\\:070\\:15 \\times 10^{-34}$ lorsqu’elle est exprimée en ${\\rm{J}}\\ {\\rm{s}}$, unité égale à ${\\rm{kg}}\\ {\\rm{m}}^{2}\\ {\\rm{s}}^{-1}$, le mètre et la seconde étant définis en fonction de $c$ et $\\Delta\\nu_{\\rm{Cs}}$."@fr , "The kilogram, symbol $\\rm{kg}$, is the SI unit of mass. It is defined by taking the fixed numerical value of the Planck constant, ${h}$, to be $6.626\\:070\\:15 \\times 10^{-34}$ when expressed in the unit ${\\rm{J}}\\ {\\rm{s}}$, which is equal to ${\\rm{kg}}\\ {\\rm{m}}^{2}\\ {\\rm{s}}^{-1}$, where the metre and the second are defined in terms of $c$ and $\\Delta\\nu_{\\rm{Cs}}$."@en ;
+	si:hasDefinitionNote si:kilogram2018note1 , si:kilogram2018note2 , si:kilogram2018note3 , si:kilogram2018note4 , si:kilogram2018note5 ;
+	si:hasPreviousDefinition si:kilogram1901 ;
+	si:hasStartValidity "2019-05-20"^^xsd:date ;
+	si:hasStatus "current"^^xsd:string ;
+	si:prefixRestriction "true"^^xsd:boolean ;
+	skos:prefLabel "kilogram2018"@en , "kilogramme2018"@fr .
+# 
+# http://si-digital-framework.org/SI#kilogram2018note1
+
+si:kilogram2018note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "Cette définition implique la relation exacte ${{h}} = {6.626\\:070\\:15 \\times 10^{-34}}\\ {{\\rm{kg}}\\ {\\rm{m}}^{2}\\ {\\rm{s}}^{-1}}$. En inversant cette relation, le kilogramme est exprimé en fonction des trois constantes ${h}$, $\\Delta\\nu_{\\rm{Cs}}$ et $c$ : $$1\\;{\\rm{kg}} = \\left(\\frac{{h}}{6.626\\:070\\:15 \\times 10^{-34}}\\right)\\ {{\\rm{m}}^{-2}\\ {\\rm{s}}}$$ relation identique à $$1\\;{\\rm{kg}} = \\frac{(299\\:792\\:458)^{2}}{(6.626\\:070\\:15 \\times 10^{-34})({9\\:192\\:631\\:770})} \\frac{{h}\\,\\Delta\\nu_{\\rm{Cs}}}{c^{2}} \\approx 1.475\\:5214 \\times 10^{40} \\frac{{h}\\,\\Delta\\nu_{\\rm{Cs}}}{c^{2}}$$. "@fr , "This definition implies the exact relation ${{h}} = {6.626\\:070\\:15 \\times 10^{-34}}\\ {{\\rm{kg}}\\ {\\rm{m}}^{2}\\ {\\rm{s}}^{-1}}$. Inverting this relation gives an exact expression for the kilogram in terms of the three defining constants ${h}$, $\\Delta\\nu_{\\rm{Cs}}$ and $c$: $$1\\;{\\rm{kg}} = \\left(\\frac{{h}}{6.626\\:070\\:15 \\times 10^{-34}}\\right)\\ {{\\rm{m}}^{-2}\\ {\\rm{s}}}$$ which is equal to $$1\\;{\\rm{kg}} = \\frac{(299\\:792\\:458)^{2}}{(6.626\\:070\\:15 \\times 10^{-34})({9\\:192\\:631\\:770})} \\frac{{h}\\,\\Delta\\nu_{\\rm{Cs}}}{c^{2}} \\approx 1.475\\:5214 \\times 10^{40} \\frac{{h}\\,\\Delta\\nu_{\\rm{Cs}}}{c^{2}}$$."@en .
+# 
+# http://si-digital-framework.org/SI#kilogram2018note2
+
+si:kilogram2018note2 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "2"^^xsd:integer ;
+	si:hasNoteText "Cette définition permet de définir l’unité ${\\rm{kg}}\\ {\\rm{m}}^{2}\\ {{\\rm{s}}^{-1}}$ (l’unité des grandeurs physiques « action » et « moment cinétique »). Ainsi associée aux définitions de la seconde et du mètre, l’unité de masse est exprimée en fonction de la constante de Planck ${h}$."@fr , "The effect of this definition is to define the unit ${\\rm{kg}}\\ {\\rm{m}}^{2}\\ {{\\rm{s}}^{-1}}$ (the unit of both the physical quantities action and angular momentum). Together with the definitions of the second and the metre this leads to a definition of the unit of mass expressed in terms of the Planck constant ${h}$."@en .
+# 
+# http://si-digital-framework.org/SI#kilogram2018note3
+
+si:kilogram2018note3 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "3"^^xsd:integer ;
+	si:hasNoteText "La précédente définition du kilogramme fixait la valeur de la masse du prototype international du kilogramme, ${m(\\mathcal{K})}$, à exactement un kilogramme ; la valeur de la constante de Planck ${h}$ devait donc être déterminée de façon expérimentale. L’actuelle définition du kilogrammme fixe la valeur numérique de ${h}$ de façon exacte et la masse du prototype doit désormais être déterminée de façon expérimentale."@fr , "The previous definition of the kilogram fixed the value of the mass of the international prototype of the kilogram, ${m(\\mathcal{K})}$, to be equal to one kilogram exactly and the value of the Planck constant ${h}$ had to be determined by experiment. The present definition fixes the numerical value of ${h}$ exactly and the mass of the prototype has now to be determined by experiment."@en .
+# 
+# http://si-digital-framework.org/SI#kilogram2018note4
+
+si:kilogram2018note4 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "4"^^xsd:integer ;
+	si:hasNoteText "Le nombre choisi pour fixer la valeur numérique de la constante de Planck est tel qu’au moment de l’adoption de cette définition de l’unité de masse, le kilogramme était égal à la masse du prototype international ${{m(\\mathcal{K})}} = 1\\ {\\rm{kg}}$ avec une incertitude-type relative égale à $1 \\times 10^{-8}$, soit l’incertitude-type de la combinaison des meilleures estimations de la valeur de la constante de Planck à ce moment-là."@fr , "The number chosen for the numerical value of the Planck constant in this definition is such that at the time of its adoption, the kilogram was equal to the mass of the international prototype, ${{m(\\mathcal{K})}} = 1\\ {\\rm{kg}}$, with a relative standard uncertainty of $1 \\times 10^{-8}$, which was the standard uncertainty of the combined best estimates of the value of the Planck constant at that time."@en .
+# 
+# http://si-digital-framework.org/SI#kilogram2018note5
+
+si:kilogram2018note5 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "5"^^xsd:integer ;
+	si:hasNoteText "Il est à noter que cette définition de l’unité de masse permet d’établir, en principe, des réalisations primaires à tout point de l’échelle de masse."@fr , "Note that with the present definition, primary realizations can be established, in principle, at any point in the mass scale."@en .
+# 
+# http://si-digital-framework.org/SI#metre1889
+
+si:metre1889 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningResolution cgpm:CGPM1-Res1 ;
+	si:hasDefiningText "La CGPM sanctionne le Prototype du mètre choisi par le Comité international. Ce prototype représentera désormais, à la température de la glace fondante, l'unité métrique de longueur."@fr , "The CGPM sanctions the Prototype of the metre chosen by the CIPM. This prototype, at the temperature of melting ice, shall henceforth represent the metric unit of length."@en ;
+	si:hasEndValidity "1927-09-29"^^xsd:date ;
+	si:hasNextDefinition si:metre1927 ;
+	si:hasStartValidity "1889-05-20"^^xsd:date ;
+	si:hasStatus "superseded"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "metre1889"@en , "mètre1889"@fr .
+# 
+# http://si-digital-framework.org/SI#metre1927
+
+si:metre1927 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningResolution cgpm:CGPM7-Res1 ;
+	si:hasDefiningText "L'unité de longueur est le mètre, défini par la distance, à ${0{^\\circ}}$, des axes des deux traits médians tracés sur la barre de platine iridié déposée au Bureau international des poids et mesures, et déclarée Prototype du mètre par la Première Conférence générale des poids et mesures, cette règle étant soumise à la pression atmosphérique normale et supportée par deux rouleaux d'au moins un centimètre de diamètre, situés symétriquement dans un même plan horizontal et à la distance de $571\\ \\rm{mm}$ l'un de l'autre."@fr , "The unit of length is the metre, defined by the distance, at 0°, between the axes of the two central lines marked on the bar of platinum-iridium kept at the Bureau International des Poids et Mesures and declared Prototype of the metre by the 1st Conférence Générale des Poids et Mesures, this bar being subject to standard atmospheric pressure and supported on two cylinders of at least one centimetre diameter, symmetrically placed in the same horizontal plane at a distance of $571\\ \\rm{mm}$ from each other."@en ;
+	si:hasEndValidity "1960-10-13"^^xsd:date ;
+	si:hasNextDefinition si:metre1960 ;
+	si:hasPreviousDefinition si:metre1889 ;
+	si:hasStartValidity "1927-09-30"^^xsd:date ;
+	si:hasStatus "superseded"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "metre1927"@en , "mètre1927"@fr .
+# 
+# http://si-digital-framework.org/SI#metre1960
+
+si:metre1960 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningResolution cgpm:CGPM11-Res6 ;
+	si:hasDefiningText "Le mètre est la longueur égale à $1\\,650\\,763.73$ longueurs d'onde dans le vide de la radiation correspondant à la transition entre les niveaux $2\\rm{p}^{10}$ et $5\\rm{d}^{5}$ de l'atome de krypton 86."@fr , "The metre is the length equal to $1\\,650\\,763.73$ wavelengths in vacuum of the radiation corresponding to the transition between the levels $2\\rm{p}^{10}$ and $5\\rm{d}^{5}$ of the krypton 86 atom."@en ;
+	si:hasDefinitionNote si:metre1960note1 ;
+	si:hasEndValidity "1983-10-16"^^xsd:date ;
+	si:hasNextDefinition si:metre1983 ;
+	si:hasPreviousDefinition si:metre1927 ;
+	si:hasStartValidity "1960-10-14"^^xsd:date ;
+	si:hasStatus "superseded"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "metre1960"@en , "mètre1960"@fr .
+# 
+# http://si-digital-framework.org/SI#metre1960note1
+
+si:metre1960note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "L'ancien prototype international du metre, qui fut sanctionné par la 1ʳᵉ CGPM en 1889, est toujours conservé au Bureau International des Poids et Mesures dans les conditions fixées en 1889. "@fr , "The old international prototype of the metre which was sanctioned by the 1st CGPM in 1889 is still kept at the BIPM under the conditions specified in 1889."@en .
+# 
+# http://si-digital-framework.org/SI#metre1983
+
+si:metre1983 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningConstant constants:SpeedOfLight ;
+	si:hasDefiningResolution cgpm:CGPM17-Res1 ;
+	si:hasDefiningText "Le mètre est la longueur du trajet parcouru dans le vide par la lumière pendant une durée de ${1/299\\:792\\:458}$ de seconde."@fr , "The metre is the length of the path travelled by light in vacuum during a time interval of ${1/299\\:792\\:458}$ of a second."@en ;
+	si:hasDefinitionNote si:metre1983note1 ;
+	si:hasEndValidity "2019-05-19"^^xsd:date ;
+	si:hasNextDefinition si:metre2018 ;
+	si:hasPreviousDefinition si:metre1960 ;
+	si:hasStartValidity "1983-10-17"^^xsd:date ;
+	si:hasStatus "superseded"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "metre1983"@en , "mètre1983"@fr .
+# 
+# http://si-digital-framework.org/SI#metre1983note1
+
+si:metre1983note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "L'ancien prototype international du metre, qui fut sanctionné par la 1ʳᵉ CGPM en 1889, est toujours conservé au Bureau International des Poids et Mesures dans les conditions fixées en 1889. "@fr , "The old international prototype of the metre which was sanctioned by the 1st CGPM in 1889 is still kept at the BIPM under the conditions specified in 1889."@en .
+# 
+# http://si-digital-framework.org/SI#metre2018
+
+si:metre2018 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningConstant constants:SpeedOfLight ;
+	si:hasDefiningEquation "1\\;{\\rm{m}} = \\left(\\frac{c}{299\\:792\\:458}\\right) {\\rm{s}} = \\frac{{9\\:192\\:631\\:770}}{299\\:792\\:458} \\frac{c}{\\Delta\\nu_{\\rm{Cs}}} \\approx {30.663\\:319} \\frac{c}{\\Delta\\nu_{\\rm{Cs}}}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM26-Res1 ;
+	si:hasDefiningText "Le mètre, symbole $\\rm{m}$, est l’unité de longueur du SI. Il est défini en prenant la valeur numérique fixée de la vitesse de la lumière dans le vide, $c$, égale à $299\\:792\\:458$ lorsqu’elle est exprimée en ${\\rm{m}}\\ {{\\rm{s}}^{-1}}$, la seconde étant définie en fonction de $\\Delta\\nu_{\\rm{Cs}}$."@fr , "The metre, symbol $\\rm{m}$, is the SI unit of length. It is defined by taking the fixed numerical value of the speed of light in vacuum, $c$, to be $299\\:792\\:458$ when expressed in the unit ${\\rm{m}}\\ {{\\rm{s}}^{-1}}$, where the second is defined in terms of the caesium frequency $\\Delta\\nu_{\\rm{Cs}}$."@en ;
+	si:hasDefinitionNote si:metre2018note1 , si:metre2018note2 ;
+	si:hasPreviousDefinition si:metre1983 ;
+	si:hasStartValidity "2019-05-20"^^xsd:date ;
+	si:hasStatus "current"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "metre2018"@en , "mètre2018"@fr .
+# 
+# http://si-digital-framework.org/SI#metre2018note1
+
+si:metre2018note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "Cette définition implique la relation exacte ${c} = {299\\:792\\:458}\\ {{\\rm{m}}\\ {{\\rm{s}}^{-1}}}$. En inversant cette relation, le mètre est exprimé en fonction des constantes $c$ et $\\Delta\\nu_{\\rm{Cs}}$ : \\[$$1\\;{\\rm{m}} = (\\frac{c}{299\\:792\\:458})\\ {\\rm{s}} = \\frac{{9\\:192\\:631\\:770}}{299\\:792\\:458} \\frac{c}{\\Delta\\nu_{\\rm{Cs}}} ≈ {{30.663\\:319}} \\frac{c}{\\Delta\\nu_{\\rm{Cs}}}$$\\]"@fr , "This definition implies the exact relation ${c} = {299\\:792\\:458}\\ {{\\rm{m}}\\ {{\\rm{s}}^{-1}}}$. Inverting this relation gives an exact expression for the metre in terms of the defining constants $c$ and $\\Delta\\nu_{\\rm{Cs}}$: \\[$$1\\;{\\rm{m}} = (\\frac{c}{299\\:792\\:458})\\ {\\rm{s}} = \\frac{{9\\:192\\:631\\:770}}{299\\:792\\:458} \\frac{c}{\\Delta\\nu_{\\rm{Cs}}} ≈ {{30.663\\:319}} \\frac{c}{\\Delta\\nu_{\\rm{Cs}}}$$\\]"@en .
+# 
+# http://si-digital-framework.org/SI#metre2018note2
+
+si:metre2018note2 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "2"^^xsd:integer ;
+	si:hasNoteText "Il résulte de cette définition que le mètre est la longueur du trajet parcouru dans le vide par la lumière pendant une durée de ${1/299\\:792\\:458}$ de seconde."@fr , "The effect of this definition is that one metre is the length of the path travelled by light in vacuum during a time interval with duration of ${1/299\\:792\\:458}$ of a second."@en .
+# 
+# http://si-digital-framework.org/SI#mole1971
+
+si:mole1971 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningResolution cgpm:CGPM14-Res3 ;
+	si:hasDefiningText "1. La mole est la quantité de matière d’un système contenant autant d’entités élémentaires qu’il y a d’atomes dans 0,012 kilogramme de carbone 12 ; son symbole est « mol ». 2. Lorsqu’on emploie la mole, les entités élémentaires doivent être spécifiées et peuvent être des atomes, des molécules, des ions, des électrons, d’autres particules ou des groupements spécifiés de telles particules."@fr , "1. The mole is the amount of substance of a system which contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12; its symbol is “mol”. 2. When the mole is used, the elementary entities must be specified and may be atoms, molecules, ions, electrons, other particles, or specified groups of such particles."@en ;
+	si:hasDefinitionNote si:mole1971note1 , si:mole1971note2 ;
+	si:hasEndValidity "2019-05-19"^^xsd:date ;
+	si:hasNextDefinition si:mole2018 ;
+	si:hasStartValidity "1971-10-04"^^xsd:date ;
+	si:hasStatus "superseded"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "mole1971"@en , "mole1971"@fr .
+# 
+# http://si-digital-framework.org/SI#mole1971note1
+
+si:mole1971note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "Dans la définition de la mole, il est entendu que l'on se réfère à des atomes de carbone 12 non liés, au repos et dans leur état fondamental. "@fr , "In the definition of the mole, it is understood that unbound atoms of carbon 12, at rest and in their ground state, are referred to."@en .
+# 
+# http://si-digital-framework.org/SI#mole1971note2
+
+si:mole1971note2 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "2"^^xsd:integer ;
+	si:hasNoteText "Cette définition précise en même temps la nature de la grandeur dont la mole est l'unité."@fr , "Note that this definition specifies at the same time the nature of the quantity whose unit is the mole."@en .
+# 
+# http://si-digital-framework.org/SI#mole2018
+
+si:mole2018 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningConstant constants:AvogadroConstant ;
+	si:hasDefiningEquation "1\\;{\\rm{mol}} = \\left(\\frac{6.022\\:140\\:76 \\times 10^{23}}{{N_{\\rm{A}}}}\\right)"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM26-Res1 ;
+	si:hasDefiningText "La mole, symbole $\\rm{mol}$, est l’unité de quantité de matière du SI. Une mole contient exactement $6.022\\:140\\:76 \\times 10^{23}$ entités élémentaires. Ce nombre, appelé « nombre d’Avogadro », correspond à la valeur numérique fixée de la constante d’Avogadro, ${N_{\\rm{A}}}$, lorsqu’elle est exprimée en ${\\rm{mol}}^{-1}$. La quantité de matière, symbole ${n}$, d’un système est une représentation du nombre d’entités élémentaires spécifiées. Une entité élémentaire peut être un atome, une molécule, un ion, un électron, ou toute autre particule ou groupement spécifié de particules."@fr , "The mole, symbol $\\rm{mol}$, is the SI unit of amount of substance. One mole contains exactly $6.022\\:140\\:76 \\times 10^{23}$ elementary entities. This number is the fixed numerical value of the Avogadro constant, ${N_{\\rm{A}}}$, when expressed in the unit ${\\rm{mol}}^{-1}$ and is called the Avogadro number. The amount of substance, symbol ${n}$, of a system is a measure of the number of specified elementary entities. An elementary entity may be an atom, a molecule, an ion, an electron, any other particle or specified group of particles."@en ;
+	si:hasDefinitionNote si:mole2018note1 , si:mole2018note2 , si:mole2018note3 , si:mole2018note4 , si:mole2018note5 , si:mole2018note6 ;
+	si:hasPreviousDefinition si:mole1971 ;
+	si:hasStartValidity "2019-05-20"^^xsd:date ;
+	si:hasStatus "current"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "mole2018"@en , "mole2018"@fr .
+# 
+# http://si-digital-framework.org/SI#mole2018note1
+
+si:mole2018note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "Cette définition implique la relation exacte  ${{N_{\\rm{A}}}} = {6.022\\:140\\:76 \\times 10^{23}}\\ {{\\rm{mol}}^{-1}}$. En inversant cette relation, on obtient l’expression exacte de la mole en fonction de la constante ${N_{\\rm{A}}}$ : $$1\\;{\\rm{mol}} = (\\frac{6.022\\:140\\:76 \\times 10^{23}}{{N_{\\rm{A}}}})$$."@fr , "This definition implies the exact relation ${{N_{\\rm{A}}}} = {6.022\\:140\\:76 \\times 10^{23}}\\ {{\\rm{mol}}^{-1}}$. Inverting this relation gives an exact expression for the mole in terms of the defining constant ${N_{\\rm{A}}}$: $$1\\;{\\rm{mol}} = (\\frac{6.022\\:140\\:76 \\times 10^{23}}{{N_{\\rm{A}}}})$$."@en .
+# 
+# http://si-digital-framework.org/SI#mole2018note2
+
+si:mole2018note2 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "2"^^xsd:integer ;
+	si:hasNoteText "Il résulte de cette définition que la mole est la quantité de matière d’un système qui contient $6.022\\:140\\:76 \\times 10^{23}$ entités élémentaires spécifiées."@fr , "The effect of this definition is that the mole is the amount of substance of a system that contains $6.022\\:140\\:76 \\times 10^{23}$ specified elementary entities."@en .
+# 
+# http://si-digital-framework.org/SI#mole2018note3
+
+si:mole2018note3 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "3"^^xsd:integer ;
+	si:hasNoteText "La précédente définition de la mole fixait la valeur de la masse molaire du carbone 12, ${M(^{12}\\rm{C})}$), comme étant exactement égale à $0.012\\ {\\rm{kg/mol}}$. Selon l’actuelle définition de la mole, ${M(^{12}\\rm{C})}$ n’est plus connue avec exactitude et doit être déterminée de façon expérimentale. La valeur choisie pour ${N_{\\rm{A}}}$ est telle qu’au moment de l’adoption de la présente définition de la mole, ${M(^{12}\\rm{C})}$ était égale à $0.012\\ {\\rm{kg/mol}}$ avec une incertitude-type relative de $4.5 \\times 10^{-10}$."@fr , "The previous definition of the mole fixed the value of the molar mass of carbon 12, ${M(^{12}\\rm{C})}$, to be exactly $0.012\\ {\\rm{kg/mol}}$. According to the present definition ${M(^{12}\\rm{C})}$ is no longer known exactly and must be determined experimentally. The value chosen for ${N_{\\rm{A}}}$ is such that at the time of adopting the present definition of the mole, ${M(^{12}\\rm{C})}$ was equal to $0.012\\ {\\rm{kg/mol}}$ with a relative standard uncertainty of $4.5 \\times 10^{-10}$."@en .
+# 
+# http://si-digital-framework.org/SI#mole2018note4
+
+si:mole2018note4 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "4"^^xsd:integer ;
+	si:hasNoteText "La masse molaire d’un atome ou d’une molécule X peut toujours être obtenue à partir de sa masse atomique relative à l’aide de l’équation : $${{M(\\rm{X})}} = {{A_{\\rm{r}}(\\rm{X})}}[{{M(^{12}\\rm{C})}}/12] = {{A_{\\rm{r}}(\\rm{X})}}\\,{{M_{\\rm{u}}}}$$  et la masse molaire d’un atome ou d’une molécule X est également reliée à la masse d’une entité élémentaire m(X) par la relation : ${m(\\rm{X})}$ by the relation $${{M(\\rm{X})}} = {{N_{\\rm{A}}}}\\,{{m(\\rm{X})}} = {{N_{\\rm{A}}}}\\,{{A_{\\rm{r}}(\\rm{X})}}\\,{{m_{\\rm{u}}}}$$."@fr , "The molar mass of any atom or molecule X may still be obtained from its relative atomic mass from the equation $${{M(\\rm{X})}} = {{A_{\\rm{r}}(\\rm{X})}}[{{M(^{12}\\rm{C})}}/12] = {{A_{\\rm{r}}(\\rm{X})}}\\,{{M_{\\rm{u}}}}$$ and the molar mass of any atom or molecule X is also related to the mass of the elementary entity ${m(\\rm{X})}$ by the relation $${{M(\\rm{X})}} = {{N_{\\rm{A}}}}\\,{{m(\\rm{X})}} = {{N_{\\rm{A}}}}\\,{{A_{\\rm{r}}(\\rm{X})}}\\,{{m_{\\rm{u}}}}$$."@en .
+# 
+# http://si-digital-framework.org/SI#mole2018note5
+
+si:mole2018note5 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "5"^^xsd:integer ;
+	si:hasNoteText "Dans ces équations, ${M_{\\rm{u}}}$ est la constante de masse molaire, égale à ${{M(^{12}\\rm{C})}}/12$ et ${m_{\\rm{u}}}$ est la constante de masse atomique unifiée, égale à ${m(^{12}{\\rm{C}})/12}$. Elles sont liées à la constante d’Avogadro par la relation : $${{M_{\\rm{u}}}} = {{N_{\\rm{A}}}}\\,{{m_{\\rm{u}}}}$$."@fr , "In these equations ${M_{\\rm{u}}}$ is the molar mass constant, equal to ${{M(^{12}\\rm{C})}}/12$ and ${m_{\\rm{u}}}$ is the unified atomic mass constant, equal to ${m(^{12}{\\rm{C}})/12}$. They are related to the Avogadro constant through the relation $${{M_{\\rm{u}}}} = {{N_{\\rm{A}}}}\\,{{m_{\\rm{u}}}}$$."@en .
+# 
+# http://si-digital-framework.org/SI#mole2018note6
+
+si:mole2018note6 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "6"^^xsd:integer ;
+	si:hasNoteText "Dans le terme « quantité de matière », le mot « matière » sera généralement remplacé par d’autres mots précisant la matière en question pour chaque application particulière ; on pourrait par exemple parler de « quantité de chlorure d’hydrogène » ou de « quantité de benzène ». Il est important de définir précisément l’entité en question (comme le souligne la définition de la mole), de préférence en précisant la formule chimique moléculaire du matériau concerné. Bien que le mot « quantité » ait une définition plus générale dans le dictionnaire, cette abréviation du nom complet « quantité de matière » est parfois utilisée par souci de concision. Ceci s’applique aussi aux grandeurs dérivées telles que la concentration de quantité de matière, qui peut simplement être appelée « concentration de quantité ». Dans le domaine de la chimie clinique, le nom « concentration de quantité de matière » est généralement abrégé en « concentration de matière »."@fr , "In the name \"amount of substance\", the word \"substance\" will typically be replaced by words to specify the substance concerned in any particular application, for example \"amount of hydrogen chloride\", or \"amount of benzene\". It is important to give a precise definition of the entity involved (as emphasized in the definition of the mole); this should preferably be done by specifying the molecular chemical formula of the material involved. Although the word \"amount\" has a more general dictionary definition, the abbreviation of the full name \"amount of substance\" to \"amount\" may be used for brevity. This also applies to derived quantities such as \"amount-of-substance concentration\", which may simply be called \"amount concentration\". In the field of clinical chemistry, the name \"amount-of-substance concentration\" is generally abbreviated to \"substance concentration\"."@en .
+# 
+# http://si-digital-framework.org/SI#second1960
+
+si:second1960 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningResolution cgpm:CGPM11-Res9 ;
+	si:hasDefiningText "La seconde est la fraction $1/31556925.9747$ de l'année tropique pour 1900 janvier 0 à 12 heures de temps des éphémérides."@fr , "The second is the fraction $1/31556925.9747$ of the tropical year for 1900 January 0 at 12 hours ephemeris time."@en ;
+	si:hasEndValidity "1967-10-12"^^xsd:date ;
+	si:hasNextDefinition si:second1967 ;
+	si:hasStartValidity "1960-10-18"^^xsd:date ;
+	si:hasStatus "superseded"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "second1960"@en , "seconde1960"@fr .
+# 
+# http://si-digital-framework.org/SI#second1967
+
+si:second1967 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningConstant constants:HyperfineTransitionFrequencyOfCs-133 ;
+	si:hasDefiningResolution cgpm:CGPM13-Res1 ;
+	si:hasDefiningText "La seconde est la durée de ${9\\:192\\:631\\:770}$ périodes de la radiation correspondant à la transition entre les deux niveaux hyperfins de l’état fondamental de l’atome de césium 133."@fr , "The second is the duration of ${9\\:192\\:631\\:770}$ periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom."@en ;
+	si:hasDefinitionNote si:second1967note1 ;
+	si:hasEndValidity "2019-05-19"^^xsd:date ;
+	si:hasNextDefinition si:second2018 ;
+	si:hasPreviousDefinition si:second1960 ;
+	si:hasStartValidity "1967-10-13"^^xsd:date ;
+	si:hasStatus "superseded"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "second1967"@en , "seconde1967"@fr .
+# 
+# http://si-digital-framework.org/SI#second1967note1
+
+si:second1967note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "No notes"@en , "No notes"@fr .
+# 
+# http://si-digital-framework.org/SI#second2018
+
+si:second2018 a owl:NamedIndividual , si:Definition ;
+	si:hasDefiningConstant constants:HyperfineTransitionFrequencyOfCs-133 ;
+	si:hasDefiningEquation "1\\;{\\rm{Hz}} = \\frac{\\Delta\\nu_{\\rm{Cs}}}{{9\\:192\\:631\\:770}} \\quad {\\rm{or}} \\quad 1\\;{\\rm{s}} = \\frac{{9\\:192\\:631\\:770}}{\\Delta\\nu_{\\rm{Cs}}}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM26-Res1 ;
+	si:hasDefiningText "La seconde, symbole $\\rm{s}$, est l’unité de temps du SI. Elle est définie en prenant la valeur numérique fixée de la fréquence du césium, $\\Delta\\nu_{\\rm{Cs}}$, la fréquence de la transition hyperfine de l’état fondamental de l’atome de césium 133 non perturbé, égale à ${9\\:192\\:631\\:770}$ lorsqu’elle est exprimée en ${\\rm{Hz}}$, unité égale à ${\\rm{s}}^{-1}$."@fr , "The second, symbol $\\rm{s}$, is the SI unit of time. It is defined by taking the fixed numerical value of the caesium frequency, $\\Delta\\nu_{\\rm{Cs}}$, the unperturbed ground-state hyperfine transition frequency of the caesium 133 atom, to be ${9\\:192\\:631\\:770}$ when expressed in the unit ${\\rm{Hz}}$, which is equal to ${\\rm{s}}^{-1}$."@en ;
+	si:hasDefinitionNote si:second2018note1 , si:second2018note2 , si:second2018note3 , si:second2018note4 , si:second2018note5 ;
+	si:hasPreviousDefinition si:second1967 ;
+	si:hasStartValidity "2019-05-20"^^xsd:date ;
+	si:hasStatus "current"^^xsd:string ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "second2018"@en , "seconde2018"@fr .
+# 
+# http://si-digital-framework.org/SI#second2018note1
+
+si:second2018note1 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "1"^^xsd:integer ;
+	si:hasNoteText "Cette définition implique la relation exacte ${\\Delta\\nu_{\\rm{Cs}}} = {{9\\:192\\:631\\:770}}\\ {{\\rm{Hz}}}$. En inversant cette relation, la seconde est exprimée en fonction de la constante $\\Delta\\nu_{\\rm{Cs}}$ : $$1\\;{{\\rm{Hz}}} = \\frac{\\Delta\\nu_{\\rm{Cs}}}{{9\\:192\\:631\\:770}}\\ \\rm{or}\\ 1\\ \\rm{s} = \\frac{{9\\:192\\:631\\:770}}{\\Delta\\nu_{\\rm{Cs}}}$$"@fr , "This definition implies the exact relation ${\\Delta\\nu_{\\rm{Cs}}} = {{9\\:192\\:631\\:770}}\\ {{\\rm{Hz}}}$. Inverting this relation gives an expression for the unit second in terms of the defining constant $\\Delta\\nu_{\\rm{Cs}}$: $$1\\;{{\\rm{Hz}}} = \\frac{\\Delta\\nu_{\\rm{Cs}}}{{9\\:192\\:631\\:770}}\\ \\rm{or}\\ 1\\ \\rm{s} = \\frac{{9\\:192\\:631\\:770}}{\\Delta\\nu_{\\rm{Cs}}}$$"@en .
+# 
+# http://si-digital-framework.org/SI#second2018note2
+
+si:second2018note2 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "2"^^xsd:integer ;
+	si:hasNoteText "Il résulte de cette définition que la seconde est égale à la durée de ${9\\:192\\:631\\:770}$ périodes de la radiation correspondant à la transition entre les deux niveaux hyperfins de l’état fondamental de l’atome de césium 133 non perturbé."@fr , "The effect of this definition is that the second is equal to the duration of ${9\\:192\\:631\\:770}$ periods of the radiation corresponding to the transition between the two hyperfine levels of the unperturbed ground state of the ${^{133}\\rm{Cs}}$ atom."@en .
+# 
+# http://si-digital-framework.org/SI#second2018note3
+
+si:second2018note3 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "3"^^xsd:integer ;
+	si:hasNoteText "Il est fait référence à un atome non perturbé afin d’indiquer clairement que la définition de la seconde du SI se fonde sur un atome de césium isolé qui n’est pas perturbé par un champ externe quel qu’il soit, tel que la radiation d’un corps noir à température ambiante."@fr , "The reference to an unperturbed atom is intended to make it clear that the definition of the SI second is based on an isolated caesium atom that is unperturbed by any external field, such as ambient black-body radiation."@en .
+# 
+# http://si-digital-framework.org/SI#second2018note4
+
+si:second2018note4 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "4"^^xsd:integer ;
+	si:hasNoteText "La seconde ainsi définie est l’unité de temps propre, au sens de la théorie générale de la relativité. Pour établir une échelle de temps coordonné, les signaux de différentes horloges primaires dans le monde sont combinés, puis des corrections sont appliquées pour tenir compte du décalage relativiste de fréquence entre les étalons à césium."@fr , "The second, so defined, is the unit of proper time in the sense of the general theory of relativity. To allow the provision of a coordinated time scale, the signals of different primary clocks in different locations are combined, which have to be corrected for relativistic caesium frequency shifts."@en .
+# 
+# http://si-digital-framework.org/SI#second2018note5
+
+si:second2018note5 a owl:NamedIndividual , si:DefinitionNote ;
+	si:hasNoteIndex "5"^^xsd:integer ;
+	si:hasNoteText "Le CIPM a adopté différentes représentations secondaires de la seconde fondées sur un nombre choisi de raies spectrales d’atomes, ions ou molécules. Les fréquences non perturbées de ces raies peuvent être déterminées avec une incertitude relative qui n’est pas inférieure à celle de la réalisation de la seconde fondée sur la transition hyperfine de l’atome de ${^{133}\\rm{Cs}}$ mais certaines peuvent être reproduites avec une meilleure stabilité."@fr , "The CIPM has adopted various secondary representations of the second, based on a selected number of spectral lines of atoms, ions or molecules. The unperturbed frequencies of these lines can be determined with a relative uncertainty not lower than that of the realization of the second based on the ${^{133}\\rm{Cs}}$ hyperfine transition frequency, but some can be reproduced with superior stability."@en .
+# 
+# http://si-digital-framework.org/SI/units/ampere
+
+:ampere a owl:NamedIndividual , si:SIBaseUnit ;
+	si:hasDefinition si:ampere1948 , si:ampere2018 ;
+	si:hasSymbol "A"^^xsd:string ;
+	si:hasUnitTypeAsString "SI base unit"@en , "Unité SI de base"@fr ;
+	si:isUnitOfQtyKind quantities:ELCU ;
+	skos:prefLabel "ampere"@en , "ampère"@fr .
+# 
+# http://si-digital-framework.org/SI/units/arcminute
+
+:arcminute a owl:NamedIndividual , si:nonSIUnit ;
+	si:hasSymbol "′"^^xsd:string ;
+	si:hasUnitTypeAsString "Non-SI unit accepted for use with the SI"@en , "Unité en dehors du SI dont l'usage est accepté avec le SI"@fr ;
+	si:inOtherSIUnits _:genid1 .
+
+_:genid1 a si:UnitMultiple ;
+	si:hasNumericFactor "2.9088822E-4"^^xsd:float ;
+	si:hasNumericFactorAsString "(π \\; / \\; 10800)"^^xsd:string ;
+	si:hasUnitTerm :radian .
+
+:arcminute si:isUnitOfQtyKind quantities:ANGP ;
+	si:prefixRestriction "true"^^xsd:boolean ;
+	skos:prefLabel "arcminute"@en , "arcminute"@fr .
+# 
+# http://si-digital-framework.org/SI/units/arcsecond
+
+:arcsecond a owl:NamedIndividual , si:nonSIUnit ;
+	si:hasSymbol "″"^^xsd:string ;
+	si:hasUnitTypeAsString "Non-SI unit accepted for use with the SI"@en , "Unité en dehors du SI dont l'usage est accepté avec le SI"@fr ;
+	si:inOtherSIUnits _:genid2 .
+
+_:genid2 a si:UnitMultiple ;
+	si:hasNumericFactor "4.848137E-6"^^xsd:float ;
+	si:hasNumericFactorAsString "(π \\; / \\; 648000)"^^xsd:string ;
+	si:hasUnitTerm :radian .
+
+:arcsecond si:isUnitOfQtyKind quantities:ANGP ;
+	si:prefixRestriction "true"^^xsd:boolean ;
+	skos:prefLabel "arcsecond"@en , "arcseconde"@fr .
+# 
+# http://si-digital-framework.org/SI/units/astronomicalunit
+
+:astronomicalunit a owl:NamedIndividual , si:nonSIUnit ;
+	si:hasSymbol "au"^^xsd:string ;
+	si:hasUnitTypeAsString "Non-SI unit accepted for use with the SI"@en , "Unité en dehors du SI dont l'usage est accepté avec le SI"@fr ;
+	si:inOtherSIUnits _:genid3 .
+
+_:genid3 a si:UnitMultiple ;
+	si:hasNumericFactor "149597870700"^^xsd:int ;
+	si:hasNumericFactorAsString "149\\:597\\:870\\:700"^^xsd:string ;
+	si:hasUnitTerm :metre .
+
+:astronomicalunit si:isUnitOfQtyKind quantities:LENG ;
+	si:prefixRestriction "true"^^xsd:boolean ;
+	skos:prefLabel "astronomical unit"@en , "unité astronomique"@fr .
+# 
+# http://si-digital-framework.org/SI/units/becquerel
+
+:becquerel a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{Bq}} = \\frac{{9\\:192\\:631\\:770}}{\\Delta\\nu_{\\rm{Cs}}}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM15-Res8 ;
+	si:hasSymbol "Bq"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid4 .
+
+_:genid4 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :second .
+
+:becquerel si:isUnitOfQtyKind quantities:ARRN ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "becquerel"@en , "becquerel"@fr .
+# 
+# http://si-digital-framework.org/SI/units/bel
+
+:bel a owl:NamedIndividual , si:nonSIUnit ;
+	si:hasSymbol "B"^^xsd:string ;
+	si:hasUnitTypeAsString "Non-SI unit accepted for use with the SI"@en , "Unité en dehors du SI dont l'usage est accepté avec le SI"@fr ;
+	si:isUnitOfQtyKind quantities:RLGB ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "bel"@en , "bel"@fr .
+# 
+# http://si-digital-framework.org/SI/units/candela
+
+:candela a owl:NamedIndividual , si:SIBaseUnit ;
+	si:hasDefinition si:candela1948 , si:candela1967 , si:candela1979 , si:candela2018 ;
+	si:hasSymbol "cd"^^xsd:string ;
+	si:hasUnitTypeAsString "SI base unit"@en , "Unité SI de base"@fr ;
+	si:isUnitOfQtyKind quantities:LUIN ;
+	skos:prefLabel "candela"@en , "candela"@fr .
+# 
+# http://si-digital-framework.org/SI/units/coulomb
+
+:coulomb a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{C}} = \\left(\\frac{{9\\:192\\:631\\:770} \\times {e}}{{1.602\\:176\\:634 \\times 10^{-19}} \\times \\Delta\\nu_{\\rm{Cs}}}\\right) {\\rm{s}}^{-1}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM9-Res7 ;
+	si:hasSymbol "C"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid5 .
+
+_:genid5 si:hasLeftUnitTerm :ampere ;
+	si:hasRightUnitTerm :second .
+
+:coulomb si:isUnitOfQtyKind quantities:ELCH ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "coulomb"@en , "coulomb"@fr .
+# 
+# http://si-digital-framework.org/SI/units/dalton
+
+:dalton a owl:NamedIndividual , si:nonSIUnit ;
+	si:hasSymbol "Da"^^xsd:string ;
+	si:hasUnitTypeAsString "Non-SI unit accepted for use with the SI"@en , "Unité en dehors du SI dont l'usage est accepté avec le SI"@fr ;
+	si:inOtherSIUnits _:genid6 .
+
+_:genid6 a si:UnitMultiple ;
+	si:hasNumericFactor "1.6605391E-27"^^xsd:float ;
+	si:hasNumericFactorAsString "1.660\\:539\\:066\\:60(50) \\times 10^{-27}"^^xsd:string ;
+	si:hasUnitTerm :kilogram .
+
+:dalton si:isUnitOfQtyKind quantities:MASS ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "dalton"@en , "dalton"@fr .
+# 
+# http://si-digital-framework.org/SI/units/day
+
+:day a owl:NamedIndividual , si:nonSIUnit ;
+	si:hasSymbol "d"^^xsd:string ;
+	si:hasUnitTypeAsString "Non-SI unit accepted for use with the SI"@en , "Unité en dehors du SI dont l'usage est accepté avec le SI"@fr ;
+	si:inOtherSIUnits _:genid7 .
+
+_:genid7 a si:UnitMultiple ;
+	si:hasNumericFactor "86400"^^xsd:int ;
+	si:hasNumericFactorAsString "86\\:400"^^xsd:string ;
+	si:hasUnitTerm :second .
+
+:day si:isUnitOfQtyKind quantities:TIME ;
+	si:prefixRestriction "true"^^xsd:boolean ;
+	skos:prefLabel "day"@en , "jour"@fr .
+# 
+# http://si-digital-framework.org/SI/units/degree
+
+:degree a owl:NamedIndividual , si:nonSIUnit ;
+	si:hasSymbol "°"^^xsd:string ;
+	si:hasUnitTypeAsString "Non-SI unit accepted for use with the SI"@en , "Unité en dehors du SI dont l'usage est accepté avec le SI"@fr ;
+	si:inOtherSIUnits _:genid8 .
+
+_:genid8 a si:UnitMultiple ;
+	si:hasNumericFactor "0.017453292"^^xsd:float ;
+	si:hasNumericFactorAsString "(π \\; / \\; 180)"^^xsd:string ;
+	si:hasUnitTerm :radian .
+
+:degree si:isUnitOfQtyKind quantities:ANGP ;
+	si:prefixRestriction "true"^^xsd:boolean ;
+	skos:prefLabel "degree"@en , "degré"@fr .
+# 
+# http://si-digital-framework.org/SI/units/degreeCelsius
+
+:degreeCelsius a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{{^\\circ}{C}}} = \\left(\\frac{1.380\\:649 \\times 10^{-23}}{{k}}\\right) {\\rm{kg}}\\;{\\rm{m}}^2\\;{\\rm{s}}^{-2}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM9-Res7 ;
+	si:hasSymbol "℃"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits :kelvin ;
+	si:isUnitOfQtyKind quantities:TEMC ;
+	si:prefixRestriction "true"^^xsd:boolean ;
+	skos:prefLabel "degree Celsius"@en , "degré Celsius"@fr .
+# 
+# http://si-digital-framework.org/SI/units/electronvolt
+
+:electronvolt a owl:NamedIndividual , si:nonSIUnit ;
+	si:hasSymbol "eV"^^xsd:string ;
+	si:hasUnitTypeAsString "Non-SI unit accepted for use with the SI"@en , "Unité en dehors du SI dont l'usage est accepté avec le SI"@fr ;
+	si:inOtherSIUnits _:genid9 .
+
+_:genid9 a si:UnitMultiple ;
+	si:hasNumericFactor "1.6021766E-19"^^xsd:float ;
+	si:hasNumericFactorAsString "1.602\\:176\\:634 \\times 10^{-19}"^^xsd:string ;
+	si:hasUnitTerm :joule .
+
+:electronvolt si:isUnitOfQtyKind quantities:ENGY ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "electronvolt"@en , "électronvolt"@fr .
+# 
+# http://si-digital-framework.org/SI/units/farad
+
+:farad a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{F}} = \\left(\\frac{{6.626\\:070\\:15 \\times 10^{-34}} \\times ({299\\:792\\:458})^2 \\times {\\Delta\\nu_{\\rm{Cs}}}^4 \\times {{e}}^2} {({{9\\:192\\:631\\:770}})^4 \\times ({{1.602\\:176\\:634 \\times 10^{-19}}})^2 \\times {{h}} \\times {c}^2]\\right) {\\rm{m}}^2\\;{\\rm{s}}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM9-Res7 ;
+	si:hasSymbol "F"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid10 .
+
+_:genid10 si:hasLeftUnitTerm _:genid11 .
+
+_:genid11 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :kilogram .
+
+_:genid10 si:hasRightUnitTerm _:genid12 .
+
+_:genid12 si:hasLeftUnitTerm _:genid13 .
+
+_:genid13 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+_:genid12 si:hasRightUnitTerm _:genid14 .
+
+_:genid14 si:hasLeftUnitTerm _:genid15 .
+
+_:genid15 si:hasNumericExponent "4"^^xsd:short ;
+	si:hasUnitBase :second .
+
+_:genid14 si:hasRightUnitTerm _:genid16 .
+
+_:genid16 si:hasNumericExponent "2"^^xsd:short ;
+	si:hasUnitBase :ampere .
+
+:farad si:inOtherSIUnits _:genid17 .
+
+_:genid17 si:hasLeftUnitTerm :coulomb ;
+	si:hasRightUnitTerm _:genid18 .
+
+_:genid18 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :volt .
+
+:farad si:isUnitOfQtyKind quantities:ELCA ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "farad"@en , "farad"@fr .
+# 
+# http://si-digital-framework.org/SI/units/gram
+
+:gram a owl:NamedIndividual , si:MeasurementUnit ;
+	si:hasSymbol "g"^^xsd:string ;
+	si:isUnitOfQtyKind quantities:MASS ;
+	skos:prefLabel "gram"@en , "gramme"@fr .
+# 
+# http://si-digital-framework.org/SI/units/gray
+
+:gray a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{Gy}} = \\left(\\frac{{c}^2 \\times {\\Delta\\nu_{\\rm{Cs}}}^2}{({299\\:792\\:458})^2 \\times ({{9\\:192\\:631\\:770}})^2}\\right) {\\rm{s}}^2"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM15-Res9 ;
+	si:hasSymbol "Gy"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid19 .
+
+_:genid19 si:hasLeftUnitTerm _:genid20 .
+
+_:genid20 si:hasNumericExponent "2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+_:genid19 si:hasRightUnitTerm _:genid21 .
+
+_:genid21 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :second .
+
+:gray si:inOtherSIUnits _:genid22 .
+
+_:genid22 si:hasLeftUnitTerm :joule ;
+	si:hasRightUnitTerm _:genid23 .
+
+_:genid23 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :kilogram .
+
+:gray si:isUnitOfQtyKind quantities:ABDO ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "gray"@en , "gray"@fr .
+# 
+# http://si-digital-framework.org/SI/units/hectare
+
+:hectare a owl:NamedIndividual , si:nonSIUnit ;
+	si:hasSymbol "ha"^^xsd:string ;
+	si:hasUnitTypeAsString "Non-SI unit accepted for use with the SI"@en , "Unité en dehors du SI dont l'usage est accepté avec le SI"@fr ;
+	si:inOtherSIUnits _:genid24 .
+
+_:genid24 a si:UnitMultiple ;
+	si:hasNumericFactor "10000"^^xsd:int ;
+	si:hasNumericFactorAsString "10^{4}"^^xsd:string ;
+	si:hasUnitTerm _:genid25 .
+
+_:genid25 si:hasNumericExponent "2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+:hectare si:isUnitOfQtyKind quantities:AREA ;
+	si:prefixRestriction "true"^^xsd:boolean ;
+	skos:prefLabel "hectare"@en , "hectare"@fr .
+# 
+# http://si-digital-framework.org/SI/units/henry
+
+:henry a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{H}} = \\left(\\frac{({{1.602\\:176\\:634 \\times 10^{-19}}})^2 \\times {{h}} \\times {c}^2 \\times {\\Delta\\nu_{\\rm{Cs}}}^2}{{6.626\\:070\\:15 \\times 10^{-34}} \\times ({299\\:792\\:458})^2 \\times ({{9\\:192\\:631\\:770}})^2 \\times {{e}}^2}\\right) {\\rm{m}}^{-2}\\;{\\rm{s}}^5"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM9-Res7 ;
+	si:hasSymbol "H"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid26 .
+
+_:genid26 si:hasLeftUnitTerm :kilogram ;
+	si:hasRightUnitTerm _:genid27 .
+
+_:genid27 si:hasLeftUnitTerm _:genid28 .
+
+_:genid28 si:hasNumericExponent "2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+_:genid27 si:hasRightUnitTerm _:genid29 .
+
+_:genid29 si:hasLeftUnitTerm _:genid30 .
+
+_:genid30 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :second .
+
+_:genid29 si:hasRightUnitTerm _:genid31 .
+
+_:genid31 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :ampere .
+
+:henry si:inOtherSIUnits _:genid32 .
+
+_:genid32 si:hasLeftUnitTerm :weber ;
+	si:hasRightUnitTerm _:genid33 .
+
+_:genid33 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :ampere .
+
+:henry si:isUnitOfQtyKind quantities:ELIN ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "henry"@en , "henry"@fr .
+# 
+# http://si-digital-framework.org/SI/units/hertz
+
+:hertz a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{Hz}} = \\frac{{9\\:192\\:631\\:770}}{\\Delta\\nu_{\\rm{Cs}}}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM9-Res7 ;
+	si:hasSymbol "Hz"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid34 .
+
+_:genid34 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :second .
+
+:hertz si:isUnitOfQtyKind quantities:FREQ ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "hertz"@en , "hertz"@fr .
+# 
+# http://si-digital-framework.org/SI/units/hour
+
+:hour a owl:NamedIndividual , si:nonSIUnit ;
+	si:hasSymbol "h"^^xsd:string ;
+	si:hasUnitTypeAsString "Non-SI unit accepted for use with the SI"@en , "Unité en dehors du SI dont l'usage est accepté avec le SI"@fr ;
+	si:inOtherSIUnits _:genid35 .
+
+_:genid35 a si:UnitMultiple ;
+	si:hasNumericFactor "3600"^^xsd:int ;
+	si:hasNumericFactorAsString "3600"^^xsd:string ;
+	si:hasUnitTerm :second .
+
+:hour si:isUnitOfQtyKind quantities:TIME ;
+	si:prefixRestriction "true"^^xsd:boolean ;
+	skos:prefLabel "heure"@fr , "hour"@en .
+# 
+# http://si-digital-framework.org/SI/units/joule
+
+:joule a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{J}} = \\left(\\frac{{{h}} \\times {c}^2 \\times {\\Delta\\nu_{\\rm{Cs}}}^2}{{6.626\\:070\\:15 \\times 10^{-34}} \\times ({299\\:792\\:458})^2 \\times ({{9\\:192\\:631\\:770}})^2}\\right) {\\rm{m}}^{-2}\\;{\\rm{s}}^3"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM11-Res12 ;
+	si:hasSymbol "J"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid36 .
+
+_:genid36 si:hasLeftUnitTerm :kilogram ;
+	si:hasRightUnitTerm _:genid37 .
+
+_:genid37 si:hasLeftUnitTerm _:genid38 .
+
+_:genid38 si:hasNumericExponent "2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+_:genid37 si:hasRightUnitTerm _:genid39 .
+
+_:genid39 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :second .
+
+:joule si:inOtherSIUnits _:genid40 .
+
+_:genid40 si:hasLeftUnitTerm :newton ;
+	si:hasRightUnitTerm :metre .
+
+:joule si:isUnitOfQtyKind quantities:ENGY ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "joule"@en , "joule"@fr .
+# 
+# http://si-digital-framework.org/SI/units/katal
+
+:katal a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{kat}} = \\frac{6.022\\:140\\:76 \\times 10^{23} \\times \\Delta\\nu_{\\rm{Cs}}}{{9\\:192\\:631\\:770} \\times {N_{\\rm{A}}}}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM21-Res12 ;
+	si:hasSymbol "kat"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid41 .
+
+_:genid41 si:hasLeftUnitTerm :mole ;
+	si:hasRightUnitTerm _:genid42 .
+
+_:genid42 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :second .
+
+:katal si:isUnitOfQtyKind quantities:CATA ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "katal"@en , "katal"@fr .
+# 
+# http://si-digital-framework.org/SI/units/kelvin
+
+:kelvin a owl:NamedIndividual , si:SIBaseUnit ;
+	si:hasDefinition si:kelvin1967 , si:kelvin2018 ;
+	si:hasSymbol "K"^^xsd:string ;
+	si:hasUnitTypeAsString "SI base unit"@en , "Unité SI de base"@fr ;
+	si:isUnitOfQtyKind quantities:TEMT ;
+	skos:prefLabel "kelvin"@en , "kelvin"@fr .
+# 
+# http://si-digital-framework.org/SI/units/kilogram
+
+:kilogram a owl:NamedIndividual , si:PrefixedUnit , si:SIBaseUnit ;
+	si:hasDefinition si:kilogram1901 , si:kilogram2018 ;
+	si:hasNonPrefixedUnit :gram ;
+	si:hasPrefix prefixes:kilo ;
+	si:hasSymbol "kg"^^xsd:string ;
+	si:hasUnitTypeAsString "SI base unit"@en , "Unité SI de base"@fr ;
+	si:isUnitOfQtyKind quantities:MASS ;
+	skos:prefLabel "kilogram"@en , "kilogramme"@fr .
+# 
+# http://si-digital-framework.org/SI/units/litre
+
+:litre a owl:NamedIndividual , si:nonSIUnit ;
+	si:hasAltSymbol "l"^^xsd:string ;
+	si:hasSymbol "L"^^xsd:string ;
+	si:hasUnitTypeAsString "Non-SI unit accepted for use with the SI"@en , "Unité en dehors du SI dont l'usage est accepté avec le SI"@fr ;
+	si:inOtherSIUnits _:genid43 .
+
+_:genid43 a si:UnitMultiple ;
+	si:hasNumericFactor "0.001"^^xsd:float ;
+	si:hasNumericFactorAsString "0.001"^^xsd:string ;
+	si:hasUnitTerm _:genid44 .
+
+_:genid44 si:hasNumericExponent "-3"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+:litre si:isUnitOfQtyKind quantities:VOLU ;
+	si:prefixRestriction "true"^^xsd:boolean ;
+	skos:prefLabel "litre"@en , "litre"@fr .
+# 
+# http://si-digital-framework.org/SI/units/lumen
+
+:lumen a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{lm}} = \\left(\\frac{{K_{\\rm{cd}}}}{683}\\right) {\\rm{kg}}\\;{\\rm{m}}^2\\;{\\rm{s}}^{-3}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM11-Res12 ;
+	si:hasSymbol "lm"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid45 .
+
+_:genid45 si:hasLeftUnitTerm :candela ;
+	si:hasRightUnitTerm :steradian .
+
+:lumen si:inOtherSIUnits _:genid46 .
+
+_:genid46 si:hasLeftUnitTerm :candela ;
+	si:hasRightUnitTerm :steradian .
+
+:lumen si:isUnitOfQtyKind quantities:LUFL ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "lumen"@en , "lumen"@fr .
+# 
+# http://si-digital-framework.org/SI/units/lux
+
+:lux a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{lx}} = \\left(\\frac{({299\\:792\\:458)}^2 \\times {K_{\\rm{cd}}}}{683 \\times {c}^2}\\right) {\\rm{kg}}\\;{\\rm{m}}^2\\;{\\rm{s}}^{-5}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM11-Res12 ;
+	si:hasSymbol "lx"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid47 .
+
+_:genid47 si:hasLeftUnitTerm :candela ;
+	si:hasRightUnitTerm _:genid48 .
+
+_:genid48 si:hasLeftUnitTerm :steradian ;
+	si:hasRightUnitTerm _:genid49 .
+
+_:genid49 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+:lux si:inOtherSIUnits _:genid50 .
+
+_:genid50 si:hasLeftUnitTerm :lumen ;
+	si:hasRightUnitTerm _:genid51 .
+
+_:genid51 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+:lux si:isUnitOfQtyKind quantities:ILLU ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "lux"@en , "lux"@fr .
+# 
+# http://si-digital-framework.org/SI/units/metre
+
+:metre a owl:NamedIndividual , si:SIBaseUnit ;
+	si:hasDefinition si:metre1889 , si:metre1927 , si:metre1960 , si:metre1983 , si:metre2018 ;
+	si:hasSymbol "m"^^xsd:string ;
+	si:hasUnitTypeAsString "SI base unit"@en , "Unité SI de base"@fr ;
+	si:isUnitOfQtyKind quantities:LENG ;
+	skos:prefLabel "metre"@en , "mètre"@fr .
+# 
+# http://si-digital-framework.org/SI/units/minute
+
+:minute a owl:NamedIndividual , si:nonSIUnit ;
+	si:hasSymbol "min"^^xsd:string ;
+	si:hasUnitTypeAsString "Non-SI unit accepted for use with the SI"@en , "Unité en dehors du SI dont l'usage est accepté avec le SI"@fr ;
+	si:inOtherSIUnits _:genid52 .
+
+_:genid52 a si:UnitMultiple ;
+	si:hasNumericFactor "60"^^xsd:int ;
+	si:hasNumericFactorAsString "60"^^xsd:string ;
+	si:hasUnitTerm :second .
+
+:minute si:isUnitOfQtyKind quantities:TIME ;
+	si:prefixRestriction "true"^^xsd:boolean ;
+	skos:prefLabel "minute"@en , "minute"@fr .
+# 
+# http://si-digital-framework.org/SI/units/mole
+
+:mole a owl:NamedIndividual , si:SIBaseUnit ;
+	si:hasDefinition si:mole1971 , si:mole2018 ;
+	si:hasSymbol "mol"^^xsd:string ;
+	si:hasUnitTypeAsString "SI base unit"@en , "Unité SI de base"@fr ;
+	si:isUnitOfQtyKind quantities:AMSU ;
+	skos:prefLabel "mole"@en , "mole"@fr .
+# 
+# http://si-digital-framework.org/SI/units/neper
+
+:neper a owl:NamedIndividual , si:nonSIUnit ;
+	si:hasSymbol "Np"^^xsd:string ;
+	si:hasUnitTypeAsString "Non-SI unit accepted for use with the SI"@en , "Unité en dehors du SI dont l'usage est accepté avec le SI"@fr ;
+	si:isUnitOfQtyKind quantities:RLGN ;
+	si:prefixRestriction "true"^^xsd:boolean ;
+	skos:prefLabel "neper"@en , "néper"@fr .
+# 
+# http://si-digital-framework.org/SI/units/newton
+
+:newton a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{N}} = \\left(\\frac{{{h}} \\times c \\times {\\Delta\\nu_{\\rm{Cs}}}^2}{{6.626\\:070\\:15 \\times 10^{-34}} \\times 299\\:792\\:458 \\times ({{9\\:192\\:631\\:770}})^2}\\right) {\\rm{m}}^{-2}\\;{\\rm{s}}^2"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM9-Res7 ;
+	si:hasSymbol "N"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid53 .
+
+_:genid53 si:hasLeftUnitTerm :kilogram ;
+	si:hasRightUnitTerm _:genid54 .
+
+_:genid54 si:hasLeftUnitTerm :metre ;
+	si:hasRightUnitTerm _:genid55 .
+
+_:genid55 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :second .
+
+:newton si:isUnitOfQtyKind quantities:FORC ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "newton"@en , "newton"@fr .
+# 
+# http://si-digital-framework.org/SI/units/ohm
+
+:ohm a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{{\\Omega}} = \\left(\\frac{({{1.602\\:176\\:634 \\times 10^{-19}}})^2 \\times {{h}} \\times {c}^2 \\times {\\Delta\\nu_{\\rm{Cs}}}^3}{{6.626\\:070\\:15 \\times 10^{-34}} \\times ({299\\:792\\:458})^2 \\times ({{9\\:192\\:631\\:770}})^3 \\times {{e}}^2}\\right) {\\rm{m}}^{-2}\\;{\\rm{s}}^5"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM9-Res7 ;
+	si:hasSymbol "Ω"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid56 .
+
+_:genid56 si:hasLeftUnitTerm :kilogram ;
+	si:hasRightUnitTerm _:genid57 .
+
+_:genid57 si:hasLeftUnitTerm _:genid58 .
+
+_:genid58 si:hasNumericExponent "2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+_:genid57 si:hasRightUnitTerm _:genid59 .
+
+_:genid59 si:hasLeftUnitTerm _:genid60 .
+
+_:genid60 si:hasNumericExponent "-3"^^xsd:short ;
+	si:hasUnitBase :second .
+
+_:genid59 si:hasRightUnitTerm _:genid61 .
+
+_:genid61 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :ampere .
+
+:ohm si:inOtherSIUnits _:genid62 .
+
+_:genid62 si:hasLeftUnitTerm :volt ;
+	si:hasRightUnitTerm _:genid63 .
+
+_:genid63 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :ampere .
+
+:ohm si:isUnitOfQtyKind quantities:ELRE ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "ohm"@en , "ohm"@fr .
+# 
+# http://si-digital-framework.org/SI/units/pascal
+
+:pascal a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{Pa}} = \\left(\\frac{{{h}} \\times 299\\:792\\:458 \\times {\\Delta\\nu_{\\rm{Cs}}}^2}{{6.626\\:070\\:15 \\times 10^{-34}} \\times c \\times ({{9\\:192\\:631\\:770}})^2}\\right) {\\rm{m}}^{-2}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM14-Decl ;
+	si:hasSymbol "Pa"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid64 .
+
+_:genid64 si:hasLeftUnitTerm :kilogram ;
+	si:hasRightUnitTerm _:genid65 .
+
+_:genid65 si:hasLeftUnitTerm _:genid66 .
+
+_:genid66 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+_:genid65 si:hasRightUnitTerm _:genid67 .
+
+_:genid67 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :second .
+
+:pascal si:inOtherSIUnits _:genid68 .
+
+_:genid68 si:hasLeftUnitTerm :newton ;
+	si:hasRightUnitTerm _:genid69 .
+
+_:genid69 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+:pascal si:isUnitOfQtyKind quantities:PRES ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "pascal"@en , "pascal"@fr .
+# 
+# http://si-digital-framework.org/SI/units/radian
+
+:radian a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningResolution cgpm:CGPM11-Res12 ;
+	si:hasSymbol "rad"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid70 .
+
+_:genid70 si:hasLeftUnitTerm :metre ;
+	si:hasRightUnitTerm _:genid71 .
+
+_:genid71 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+:radian si:isUnitOfQtyKind quantities:ANGP ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "radian"@en , "radian"@fr .
+# 
+# http://si-digital-framework.org/SI/units/second
+
+:second a owl:NamedIndividual , si:SIBaseUnit ;
+	si:hasDefinition si:second1960 , si:second1967 , si:second2018 ;
+	si:hasSymbol "s"^^xsd:string ;
+	si:hasUnitTypeAsString "SI base unit"@en , "Unité SI de base"@fr ;
+	si:isUnitOfQtyKind quantities:TIME ;
+	skos:prefLabel "second"@en , "seconde"@fr .
+# 
+# http://si-digital-framework.org/SI/units/siemens
+
+:siemens a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{S}} = \\left(\\frac{{6.626\\:070\\:15 \\times 10^{-34}} \\times ({299\\:792\\:458})^2 \\times {\\Delta\\nu_{\\rm{Cs}}}^3 \\times {{e}}^2} {({{9\\:192\\:631\\:770}})^3 \\times ({{1.602\\:176\\:634 \\times 10^{-19}}})^2 \\times {{h}} \\times {c}^2]\\right) {\\rm{m}}^2\\;{\\rm{s}}"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM14-Decl ;
+	si:hasSymbol "S"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid72 .
+
+_:genid72 si:hasLeftUnitTerm _:genid73 .
+
+_:genid73 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :kilogram .
+
+_:genid72 si:hasRightUnitTerm _:genid74 .
+
+_:genid74 si:hasLeftUnitTerm _:genid75 .
+
+_:genid75 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+_:genid74 si:hasRightUnitTerm _:genid76 .
+
+_:genid76 si:hasLeftUnitTerm _:genid77 .
+
+_:genid77 si:hasNumericExponent "3"^^xsd:short ;
+	si:hasUnitBase :second .
+
+_:genid76 si:hasRightUnitTerm _:genid78 .
+
+_:genid78 si:hasNumericExponent "2"^^xsd:short ;
+	si:hasUnitBase :ampere .
+
+:siemens si:inOtherSIUnits _:genid79 .
+
+_:genid79 si:hasLeftUnitTerm :ampere ;
+	si:hasRightUnitTerm _:genid80 .
+
+_:genid80 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :volt .
+
+:siemens si:isUnitOfQtyKind quantities:ELCO ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "siemens"@en , "siemens"@fr .
+# 
+# http://si-digital-framework.org/SI/units/sievert
+
+:sievert a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{Sv}} = \\left(\\frac{{c}^2 \\times {\\Delta\\nu_{\\rm{Cs}}}^2}{({299\\:792\\:458})^2 \\times ({{9\\:192\\:631\\:770}})^2}\\right) {\\rm{s}}^2"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM16-Res5 ;
+	si:hasSymbol "Sv"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid81 .
+
+_:genid81 si:hasLeftUnitTerm _:genid82 .
+
+_:genid82 si:hasNumericExponent "2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+_:genid81 si:hasRightUnitTerm _:genid83 .
+
+_:genid83 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :second .
+
+:sievert si:inOtherSIUnits _:genid84 .
+
+_:genid84 si:hasLeftUnitTerm :joule ;
+	si:hasRightUnitTerm _:genid85 .
+
+_:genid85 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :kilogram .
+
+:sievert si:isUnitOfQtyKind quantities:DOEQ ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "sievert"@en , "sievert"@fr .
+# 
+# http://si-digital-framework.org/SI/units/steradian
+
+:steradian a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningResolution cgpm:CGPM11-Res12 ;
+	si:hasSymbol "sr"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid86 .
+
+_:genid86 si:hasLeftUnitTerm _:genid87 .
+
+_:genid87 si:hasNumericExponent "2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+_:genid86 si:hasRightUnitTerm _:genid88 .
+
+_:genid88 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+:steradian si:isUnitOfQtyKind quantities:ANGS ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "steradian"@en , "stéradian"@fr .
+# 
+# http://si-digital-framework.org/SI/units/tesla
+
+:tesla a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{T}} = \\left(\\frac{{1.602\\:176\\:634 \\times 10^{-19}} \\times {{h}}  \\times {\\Delta\\nu_{\\rm{Cs}}}^2}{{6.626\\:070\\:15 \\times 10^{-34}}  \\times ({{9\\:192\\:631\\:770}})^2 \\times {e}}\\right) {\\rm{m}}^{-2}\\;{\\rm{s}}^2"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM11-Res12 ;
+	si:hasSymbol "T"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid89 .
+
+_:genid89 si:hasLeftUnitTerm :kilogram ;
+	si:hasRightUnitTerm _:genid90 .
+
+_:genid90 si:hasLeftUnitTerm _:genid91 .
+
+_:genid91 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :second .
+
+_:genid90 si:hasRightUnitTerm _:genid92 .
+
+_:genid92 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :ampere .
+
+:tesla si:inOtherSIUnits _:genid93 .
+
+_:genid93 si:hasLeftUnitTerm :weber ;
+	si:hasRightUnitTerm _:genid94 .
+
+_:genid94 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+:tesla si:isUnitOfQtyKind quantities:MGFD ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "tesla"@en , "tesla"@fr .
+# 
+# http://si-digital-framework.org/SI/units/tonne
+
+:tonne a owl:NamedIndividual , si:nonSIUnit ;
+	si:hasSymbol "t"^^xsd:string ;
+	si:hasUnitTypeAsString "Non-SI unit accepted for use with the SI"@en , "Unité en dehors du SI dont l'usage est accepté avec le SI"@fr ;
+	si:inOtherSIUnits _:genid95 .
+
+_:genid95 a si:UnitMultiple ;
+	si:hasNumericFactor "1000"^^xsd:int ;
+	si:hasNumericFactorAsString "1000"^^xsd:string ;
+	si:hasUnitTerm :kilogram .
+
+:tonne si:isUnitOfQtyKind quantities:MASS ;
+	si:prefixRestriction "true"^^xsd:boolean ;
+	skos:prefLabel "tonne"@en , "tonne"@fr .
+# 
+# http://si-digital-framework.org/SI/units/volt
+
+:volt a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{V}} = \\left(\\frac{{1.602\\:176\\:634 \\times 10^{-19}} \\times {{h}} \\times {c}^2 \\times {\\Delta\\nu_{\\rm{Cs}}}^3}{{6.626\\:070\\:15 \\times 10^{-34}} \\times ({299\\:792\\:458})^2 \\times ({{9\\:192\\:631\\:770}})^3 \\times {e}}\\right) {\\rm{m}}^{-2}\\;{\\rm{s}}^4"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM11-Res12 ;
+	si:hasSymbol "V"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid96 .
+
+_:genid96 si:hasLeftUnitTerm :kilogram ;
+	si:hasRightUnitTerm _:genid97 .
+
+_:genid97 si:hasLeftUnitTerm _:genid98 .
+
+_:genid98 si:hasNumericExponent "2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+_:genid97 si:hasRightUnitTerm _:genid99 .
+
+_:genid99 si:hasLeftUnitTerm _:genid100 .
+
+_:genid100 si:hasNumericExponent "-3"^^xsd:short ;
+	si:hasUnitBase :second .
+
+_:genid99 si:hasRightUnitTerm _:genid101 .
+
+_:genid101 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :ampere .
+
+:volt si:inOtherSIUnits _:genid102 .
+
+_:genid102 si:hasLeftUnitTerm :watt ;
+	si:hasRightUnitTerm _:genid103 .
+
+_:genid103 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :ampere .
+
+:volt si:isUnitOfQtyKind quantities:ELPD ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "volt"@en , "volt"@fr .
+# 
+# http://si-digital-framework.org/SI/units/watt
+
+:watt a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{W}} = \\left(\\frac{{{h}} \\times {c}^2 \\times {\\Delta\\nu_{\\rm{Cs}}}^3}{{6.626\\:070\\:15 \\times 10^{-34}} \\times ({299\\:792\\:458})^2 \\times ({{9\\:192\\:631\\:770}})^3}\\right) {\\rm{m}}^{-2}\\;{\\rm{s}}^3"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM11-Res12 ;
+	si:hasSymbol "W"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid104 .
+
+_:genid104 si:hasLeftUnitTerm :kilogram ;
+	si:hasRightUnitTerm _:genid105 .
+
+_:genid105 si:hasLeftUnitTerm _:genid106 .
+
+_:genid106 si:hasNumericExponent "2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+_:genid105 si:hasRightUnitTerm _:genid107 .
+
+_:genid107 si:hasNumericExponent "-3"^^xsd:short ;
+	si:hasUnitBase :second .
+
+:watt si:inOtherSIUnits _:genid108 .
+
+_:genid108 si:hasLeftUnitTerm :joule ;
+	si:hasRightUnitTerm _:genid109 .
+
+_:genid109 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :second .
+
+:watt si:isUnitOfQtyKind quantities:POWR ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "watt"@en , "watt"@fr .
+# 
+# http://si-digital-framework.org/SI/units/weber
+
+:weber a owl:NamedIndividual , si:SISpecialNamedUnit ;
+	si:hasDefiningEquation "1\\;{\\rm{Wb}} = \\left(\\frac{{1.602\\:176\\:634 \\times 10^{-19}} \\times {{h}} \\times {c}^2 \\times {\\Delta\\nu_{\\rm{Cs}}}^2}{{6.626\\:070\\:15 \\times 10^{-34}} \\times ({299\\:792\\:458})^2 \\times ({{9\\:192\\:631\\:770}})^2 \\times {e}}\\right) {\\rm{m}}^{-2}\\;{\\rm{s}}^4"^^xsd:string ;
+	si:hasDefiningResolution cgpm:CGPM11-Res12 ;
+	si:hasSymbol "Wb"^^xsd:string ;
+	si:hasUnitTypeAsString "Named SI derived unit"@en , "Unité SI dérivée ayant un nom spécial"@fr ;
+	si:inBaseSIUnits _:genid110 .
+
+_:genid110 si:hasLeftUnitTerm :kilogram ;
+	si:hasRightUnitTerm _:genid111 .
+
+_:genid111 si:hasLeftUnitTerm _:genid112 .
+
+_:genid112 si:hasNumericExponent "2"^^xsd:short ;
+	si:hasUnitBase :metre .
+
+_:genid111 si:hasRightUnitTerm _:genid113 .
+
+_:genid113 si:hasLeftUnitTerm _:genid114 .
+
+_:genid114 si:hasNumericExponent "-2"^^xsd:short ;
+	si:hasUnitBase :second .
+
+_:genid113 si:hasRightUnitTerm _:genid115 .
+
+_:genid115 si:hasNumericExponent "-1"^^xsd:short ;
+	si:hasUnitBase :ampere .
+
+:weber si:inOtherSIUnits _:genid116 .
+
+_:genid116 si:hasLeftUnitTerm :volt ;
+	si:hasRightUnitTerm :second .
+
+:weber si:isUnitOfQtyKind quantities:MGFL ;
+	si:prefixRestriction "false"^^xsd:boolean ;
+	skos:prefLabel "weber"@en , "weber"@fr .
+# 
+# Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
