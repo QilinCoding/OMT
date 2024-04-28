@@ -1,0 +1,1784 @@
+@prefix : <http://www.nmdc.com/ontology/OMT/examples/cylinder#> .
+@prefix si: <http://si-digital-framework.org/SI#> .
+@prefix omt: <http://www.nmdc.com/ontology/OMT#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.nmdc.com/ontology/OMT/examples/cylinder> .
+
+<http://www.nmdc.com/ontology/OMT/examples/cylinder> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://si-digital-framework.org/SI#hasDefinition
+si:hasDefinition rdf:type owl:AnnotationProperty .
+
+
+###  http://si-digital-framework.org/SI#hasSymbol
+si:hasSymbol rdf:type owl:AnnotationProperty .
+
+
+###  http://si-digital-framework.org/SI#hasUnitTypeAsString
+si:hasUnitTypeAsString rdf:type owl:AnnotationProperty .
+
+
+###  http://si-digital-framework.org/SI#isUnitOfQtyKind
+si:isUnitOfQtyKind rdf:type owl:AnnotationProperty .
+
+
+###  http://www.nmdc.com/ontology/OMT#vimID
+omt:vimID rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasDatatype
+<https://si-digital-framework.org/SI#hasDatatype> rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasDefiningResolution
+<https://si-digital-framework.org/SI#hasDefiningResolution> rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasScalingFactor
+<https://si-digital-framework.org/SI#hasScalingFactor> rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasSymbol
+<https://si-digital-framework.org/SI#hasSymbol> rdf:type owl:AnnotationProperty .
+
+
+###  https://si-digital-framework.org/SI#hasUnit
+<https://si-digital-framework.org/SI#hasUnit> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.nmdc.com/ontology/OMT#LatexText
+omt:LatexText rdf:type rdfs:Datatype .
+
+
+###  http://www.nmdc.com/ontology/OMT#MarkdownText
+omt:MarkdownText rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.nmdc.com/ontology/OMT#accordingTo
+omt:accordingTo rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+                rdfs:label "according to"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "X依据Y，表示X以Y为前提或参考。"@zh ;
+                <http://www.w3.org/2004/02/skos/core#example> "测量程序的制定要依据测量方法等因素，实验室的管理制度要依据国标来制定。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#basedOn
+omt:basedOn rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+            owl:inverseOf omt:isBasisOf ;
+            rdfs:label "based on"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Y是X的基础，表示Y是X发展或存在的基础和前提。"@zh ;
+            <http://www.w3.org/2004/02/skos/core#example> "热胀冷缩原理是水银温度计测量温度的基础。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#cause
+omt:cause rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+          owl:inverseOf omt:stemFrom ;
+          rdfs:label "cause"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#describe
+omt:describe rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+             owl:inverseOf omt:isDescribedBy ;
+             rdfs:label "describe"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "X描述Y，指X可以数学或文字等形式对Y这个过程进行解释、说明或概括。"@zh ;
+             <http://www.w3.org/2004/02/skos/core#example> "软件的帮助文档描述了软件的使用流程。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasAccuracyClass
+omt:hasAccuracyClass rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf omt:hasMeasuringDeviceObjectProperty ;
+                     rdfs:label "has accuracy class"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasBlankIndication
+omt:hasBlankIndication rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf omt:hasIndication ;
+                       rdfs:range omt:QuantityValue ;
+                       rdfs:label "has blank indication"@en ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "Also known as background indication, it is assumed that the quantity of interest does not exist or contributes to the indication, but the indication is obtained from a phenomenon, object or substance similar to the quantity being studied."@en ,
+                                                                        "又称本底示值(background indication) 假定所关注的量不存在或对示值没有贡献，而从类似于被研究的量的现象、物体或 物质中所获得的示值。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasCombinedStandardUncertainty
+omt:hasCombinedStandardUncertainty rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf omt:hasMeasurementUncertainty ;
+                                   rdfs:label "has combined standard uncertainty"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasDatumError
+omt:hasDatumError rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf omt:hasMeasuringDeviceObjectProperty ;
+                  rdfs:range omt:QuantityValue ;
+                  rdfs:label "has datum error"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "The measurement error of a measuring instrument or measuring system on a specified measured value."@en ,
+                                                                   "简称基值误差(datum error) 在规定的测得值上测量仪器或测量系统的测量误差。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasDeviation
+omt:hasDeviation rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf omt:hasMeasurementResultParameter ;
+                 rdfs:domain omt:MeasurementResult ;
+                 rdfs:label "has deviation"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "experimental standard deviation for short, the same measurement was measured n times to represent the dispersion of the measurement results. It's denoted by the symbol s."@en ,
+                                                                  "简称实验标准差(experimental standard deviation)，对同一被测量进行n次测量，表征测量结果分散性的量。用符号s表示。"@zh ;
+                 <http://www.w3.org/2004/02/skos/core#note> """1.n次测量中某单个测得值Xk的实验标准偏差s(xk)可按贝塞尔公式计算：s(xk)=√{[Σ(n)(i-1)(xi-¯x)²]/(n-1)}
+示中：xi——第i次测量的测得值；n——测量次数； ¯x——n次测量所得一组测得值的算术平均值。
+2.n次测量的算术平均值¯x的实验标准偏差s(¯x)为：s(¯x)=s(xk)/√(n)"""@zh ,
+                                                            "无"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasError
+omt:hasError rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf omt:hasMeasurementResultParameter ;
+             rdfs:domain omt:MeasurementResult ;
+             rdfs:range omt:MeasurementError ;
+             rdfs:label "has measurement error"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "measured quantity value minus a reference quantity value"@en ,
+                                                              "简称误差(error)测得的量值减去参考量值。"@zh ;
+             <http://www.w3.org/2004/02/skos/core#note> """1.测量误差的概念在以下两种情况下均可使用：
+①当涉及存在单个参考量值，如用测得值的测量不确定度可忽略的测量标准进行校准，或约定量值给定时，测量误差是已知的；
+②假设被测量使用唯一的真值或范围可忽略的一组真值表征时，测量误差是未知的。
+2.测量误差不应与出现的错误或过失相混淆。"""@zh ,
+                                                        """NOTE 1.The concept of ‘measurement error’ can be used both a when there is a single reference quantity value to refer to, which occurs if a calibration is made by means of a measurement standard with a measured quantity value having a negligible measurement uncertainty or if a conventional quantity value is given, in which case the measurement error is known, and b) if a measurand is supposed to be represented by a unique true quantity value or a set of true quantity values of negligible range, in which case the measurement error is not known. 
+NOTE 2.Measurement error should not be confused with production error or mistake."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasExpandedUncertainty
+omt:hasExpandedUncertainty rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf omt:hasMeasurementUncertainty ;
+                           rdfs:label "has expanded uncertainty"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasFiduciallyError
+omt:hasFiduciallyError rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf omt:hasMeasuringDeviceObjectProperty ;
+                       rdfs:range omt:QuantityValue ;
+                       rdfs:label "has fiducially error"@en ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "The error of the measuring instrument or measuring system is divided by the specific value of the instrument."@en ,
+                                                                        "测量仪器或测量系统的误差除以仪器的特定值。"@zh ;
+                       <http://www.w3.org/2004/02/skos/core#note> "This particular value is generally referred to as a reference value, which can be, for example, the upper limit of the measuring instrument`s range or nominal range."@en ,
+                                                                  "该特定值一般称为引用值，例如，可以是测量仪器的量程或标称范围的上限。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasGeneralObjectProperty
+omt:hasGeneralObjectProperty rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdfs:label "has general object property"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasHumidityCondition
+omt:hasHumidityCondition rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf omt:hasOperatingCondition ;
+                         rdfs:label "has humidity condition"@en ,
+                                    "湿度条件"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasIndication
+omt:hasIndication rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf omt:hasMeasuringDeviceObjectProperty ;
+                  rdfs:range omt:QuantityValue ;
+                  rdfs:label "has indication"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "The measurement value given by the measuring instrument or measuring system."@en ,
+                                                                   "由测量仪器或测量系统给出的量值。"@zh ;
+                  <http://www.w3.org/2004/02/skos/core#note> """1.示值可用可视形式或声响形式表示，也可传输到其他装置。示值通常由模拟输出显示器上指示的位置、数字输出所显示或打印的数字、编码输出的码形图、实物量具的赋值给出。
+2.示值与相应的被测量值不必是同类量的值。"""@zh ,
+                                                             """NOTE 1. The indication value can be expressed in visual or acoustic form, and can also be transmitted to other devices. The indication is usually given by the position indicated on the analog output display, the number displayed or printed by the digital output, the pattern pattern of the coded output, and the assignment of the physical measuring tool.
+NOTE 2. The indicated value and the corresponding measured value do not have to be the same value. """@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasIndicationError
+omt:hasIndicationError rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf omt:hasMeasuringDeviceObjectProperty ;
+                       rdfs:range omt:QuantityValue ;
+                       rdfs:label "has indication error"@en ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "The difference between the indicated value of the measuring instrument and the reference value of the corresponding input quantity."@en ,
+                                                                        "测量仪器示值与对应输入量的参考量值之差。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasIndicationInterval
+omt:hasIndicationInterval rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf omt:hasMeasuringDeviceObjectProperty ;
+                          rdfs:label "has indication interval"@en ;
+                          <http://www.w3.org/2004/02/skos/core#definition> "A set of quantities within the limit indication boundary."@en ,
+                                                                           "极限示值界限内的一组量值。"@zh ;
+                          <http://www.w3.org/2004/02/skos/core#note> """1.示值区间可以用标在显示装置上的单位表示99V〜201V.
+2.在某些领域中，本术语也称”示值范围(range of indication)"""@zh ,
+                                                                     """NOTE 1.The indication range can be expressed in units marked on the display device from 99V to 201V
+NOTE 2.In some fields, this term is also called range of \"indication\"."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasInput
+omt:hasInput rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+             rdfs:label "has input"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasInstrumentalUncertainty
+omt:hasInstrumentalUncertainty rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf omt:hasMeasuringDeviceObjectProperty ;
+                               rdfs:domain omt:MeasuringInstrument ;
+                               rdfs:range omt:QuantityValue ;
+                               rdfs:label "has instrumental measurement uncertainty"@en ;
+                               <http://www.w3.org/2004/02/skos/core#definition> "The component of the measurement uncertainty caused by the measuring instrument or measuring system used."@en ,
+                                                                                "由所用的测量仪器或测量系统引起的测量不确定度的分量。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasIntermediatePrecision
+omt:hasIntermediatePrecision rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf omt:hasPrecision ;
+                             rdfs:domain omt:MeasurementResult ;
+                             rdfs:range omt:IntermediateMeasurementPrecision ;
+                             rdfs:label "has intermediate precision"@en ;
+                             <http://www.w3.org/2004/02/skos/core#definition> "measurement precision under a set of intermediate precision conditions of measurement"@en ,
+                                                                              "简称精密度(precision)，在规定条件下，对同一或类似被测对象重复测量所得示值或测得值间的一致程度。"@zh ;
+                             <http://www.w3.org/2004/02/skos/core#note> "NOTE Relevant statistical terms are given in ISO 5725-3:1994."@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasIntrinsicError
+omt:hasIntrinsicError rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf omt:hasMeasuringDeviceObjectProperty ;
+                      rdfs:range omt:QuantityValue ;
+                      rdfs:label "has intrinsic error"@en ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "Also known as the basic error The error of a measuring instrument or measuring system determined under reference conditions."@en ,
+                                                                       "又称基本误差在参考条件下确定的测量仪器或测量系统的误差。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasLimitingOperatingCondition
+omt:hasLimitingOperatingCondition rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf omt:hasOperatingCondition ;
+                                  rdfs:label "has limiting operating condition"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasLowerHumidityLimit
+omt:hasLowerHumidityLimit rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf omt:hasHumidityCondition ;
+                          rdfs:label "has lower humidity limit"@en ,
+                                     "湿度下限"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasLowerTemperatureLimit
+omt:hasLowerTemperatureLimit rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf omt:hasTemperatureCondition ;
+                             rdfs:label "has lower temperature limit"@en ,
+                                        "温度下限"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMaximumPermissibleError
+omt:hasMaximumPermissibleError rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf omt:hasMeasuringDeviceObjectProperty ;
+                               rdfs:range omt:QuantityValue ;
+                               rdfs:label "has maximum permissible error"@en ;
+                               <http://www.w3.org/2004/02/skos/core#definition> "Abbreviated as maximum permissible errors, also known as limit of error, the limit value of the measurement error allowed by the specification or procedure for a given measurement, measuring instrument or measurement system, relative to the known reference value."@en ,
+                                                                                "简称最大允许误差(maximum permissible errors)，又称误差限(limit of error) 对给定的测量、测量仪器或测量系统，由规范或规程所允许的，相对于已知参考量 值的测量误差的极限值。"@zh ;
+                               <http://www.w3.org/2004/02/skos/core#note> """1.通常，术语“最大允许误差”或“误差限”是用在有两个极端值的场合。
+2.不应该用术语“容差”表示“最大允许误差。"""@zh ,
+                                                                          """NOTE 1. Generally, the terms \"maximum allowable error\" or \"error limit\" are used when there are two extreme values. 
+NOTE 2. The term \"tolerance\" should not be used to mean \"maximum allowable error none.\""""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasuredObject
+omt:hasMeasuredObject rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf omt:hasMeasurementFactor ;
+                      rdfs:range omt:MeasuredObject ;
+                      rdfs:label "has measured object"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasuredQuantityValue
+omt:hasMeasuredQuantityValue rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf omt:hasQuantityValue ;
+                             rdfs:range omt:QuantityValue ;
+                             rdfs:label "has measured quantity value"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasurementDevice
+omt:hasMeasurementDevice rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf omt:hasMeasurementFactor ;
+                         rdfs:range omt:MeasuringInstrument ;
+                         rdfs:label "has measurement device"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasurementFactor
+omt:hasMeasurementFactor rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf omt:hasMeasurementObjectProperty ;
+                         rdfs:label "has measurement factor"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasurementModel
+omt:hasMeasurementModel rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf omt:hasMeasurementFactor ;
+                        rdfs:range omt:MeasurementModel ;
+                        rdfs:label "has measurement model"@en ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "mathematical relation among all quantities known to be involved in a measurement"@en ,
+                                                                         "简称模型(model)，测量中涉及的所有已知量间的数学关系"@zh ;
+                        <http://www.w3.org/2004/02/skos/core#note> """1.测量模型的通用形式是方程：h(Y,X1,…..Xn)=0 其中测量模型中的输出量Y是被测量，其测量值由测量模型中输入量X1…..Xn的有关信息推导得到。
+2.在有两个或多个输出量的较复杂情况下，测量模型包含一个以上的方程"""@zh ,
+                                                                   """NOTE 1.A general form of a measurement model is the equation h(Y, X1, ¼, Xn) = 0, where Y, the output quantity in the measurement model, is the measurand, the quantity value of which is to be inferred from information about input quantities in the measurement model X1, ¼, Xn. 
+NOTE 2.In more complex cases where there are two or more output quantities in a measurement model, the measurement model consists of more than one equation."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasurementObjectProperty
+omt:hasMeasurementObjectProperty rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf owl:topObjectProperty ;
+                                 rdfs:label "has measurement object property"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasurementProcedure
+omt:hasMeasurementProcedure rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf omt:hasMeasurementFactor ;
+                            rdfs:range omt:MeasurementProcedure ;
+                            rdfs:label "has measurement procedure"@en ;
+                            <http://www.w3.org/2004/02/skos/core#definition> "detailed description of a measurement according to one or more measurement principles and to a given measurement method, based on a measurement model and including any calculation to obtain a measurement result."@en ,
+                                                                             "根据一种或多种测量原理及给定的测量方法，在测量模型和获得测量结果所需计算的基础上，对测量所做的详细描述。"@zh ;
+                            <http://www.w3.org/2004/02/skos/core#note> """1.测量程序通常要写成充分而详尽的文件，以便操作者能进行测量。
+2.测量程序可包括有关目标测量不确定度的陈述。
+3.测量程序有时被称作标准操作程序，缩写为SOP。
+4.参考测量程序（reference measurement procedure）【VIM2.7】是在校准或表征标准物质时为提供测量结果所采用的测量程序，它适用于评定由同类量的其他测量程序获得的被测量量值的测量正确度。5 原级参考测量程序（primary reference measurement procedure）或原级参考程序（primary reference procedure）【VIM2.8】是用于获得与同类量测量标准没有关系的测量结果所用的参考测量程序。物质的量咨询委员会-化学计量（CCQM）对于这个概念使用术语“原级测量方法”。两个下级概念的术语“直接原级测量程序”和“比例原级参考浏量程序”的定义由CCGM给出（第五次大会，1999）。"""@zh ,
+                                                                       """NOTE 1. A measurement procedure is usually documented in sufficient detail to enable an operator to perform a measurement. 
+NOTE 2. A measurement procedure can include a statement concerning a target measurement uncertainty. 
+NOTE 3. A measurement procedure is sometimes called a standard operating procedure, abbreviated SOP."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasurementResultParameter
+omt:hasMeasurementResultParameter rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf omt:hasMeasurementObjectProperty ;
+                                  rdfs:domain omt:MeasurementResult ;
+                                  rdfs:label "has measurement result parameter"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasurementUncertainty
+omt:hasMeasurementUncertainty rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf omt:hasMeasurementResultParameter ;
+                              rdfs:label "has measurement uncertainty"@en ;
+                              <http://www.w3.org/2004/02/skos/core#definition> "non-negative parameter characterizing the dispersion of the quantity values being attributed to a measurand, based on the information used"@en ,
+                                                                               "简称不确定度(uncertainty),根据所用到的信息，表征赋予被测量量值分散性的非负参数。"@zh ;
+                              <http://www.w3.org/2004/02/skos/core#note> """1.测量不确定度包括由系统影响引起的分量，如与修正量和测量标准所赋量值有关的分量及定义的不确定度。有时对估计的系统影响未作修正，而是当作不确定度分量处理。
+2.此参数可以是诸如称为标准测量不确定度的标准偏差(或其特定倍数)，或是说明了包含概率的区间半宽度
+3.测量不确定度一般由若干分量组成。其中一些分量可根据一系列测量值的统计分布，按测量不确定度的A类评定进行评定，并可用标准差表征。而另一些分量则可根据基于经验或其 他信息所获得的概率密度函数，按测量不确定度的B类评定进行评定，也用标准偏差表征。
+4.通常，对于一组给定的信息,测量不确定度是相应于所赋予被测量的值的。该值的改变将导致相应的不确定度的改变。
+5.本定义是按2008版VIIM给出的。而在GUM中的定义是：表征合理地赋予被测量之值的分散性，与测量结果相联系的参数。"""@zh ,
+                                                                         """NOTE 1.Measurement uncertainty includes components arising from systematic effects, such as components associated with corrections and the assigned quantity values of measurement standards, as well as the definitional uncertainty. Sometimes estimated systematic effects are not corrected for but, instead, associated measurement uncertainty components are incorporated.
+NOTE 2.The parameter may be, for example, a standard deviation called standard measurement uncertainty(or a specified multiple of it), or the half-width of an interval, having a stated coverage probability. 
+NOTE 3.Measurement uncertainty comprises, in general, many components. Some of these may be evaluatedby Type A evaluation of measurement uncertainty from the statistical distribution of the quantity values from series of measurements and can be characterized by standard deviations. The other components, which may be evaluated by Type B evaluation of measurement uncertainty, can also be characterized by standard deviations, evaluated from probability density functions based on experience or other information. 
+NOTE 4.In general, for a given set of information, it is understood that the measurement uncertainty is associated with a stated quantity value attributed to the measurand. A modification of this value results in a modification of the associated uncertainty. """@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasuringDeviceObjectProperty
+omt:hasMeasuringDeviceObjectProperty rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                     rdfs:domain omt:MeasuringInstrument ;
+                                     rdfs:label "has measuring device object property"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasuringInterval
+omt:hasMeasuringInterval rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf omt:hasMeasuringDeviceObjectProperty ;
+                         rdfs:label "has measuring interval"@en ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "Also known as working interval, under specified conditions, a set of similar quantities can be measured by a measuring instrument or measuring system with a certain degree of instrument uncertainty"@en ,
+                                                                          "又称工作区间（working interval）在规定条件下，由具有一定的仪器不确定度的测量仪器或测量系统能够测量出的一组同类量的量值"@zh ;
+                         <http://www.w3.org/2004/02/skos/core#note> """1.在某些领域，此术语也称“测量范围（measuring range）或工作范围（working range）”。 
+2.测量区间的下限不应与检测限相混淆"""@zh ,
+                                                                    """NOTE 1.In some areas, this term is also called \"measuring range\" or working range.
+NOTE 2.The lower limit of the measurement interval should not be confused with the detection limit."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMethod
+omt:hasMethod rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+              rdfs:label "has method"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "X有方法Y，表示过程或活动X有某种实施流程或规则Y。"@zh ;
+              <http://www.w3.org/2004/02/skos/core#example> "房价预测有线性回归的方法。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasNullUncertainty
+omt:hasNullUncertainty rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf omt:hasMeasuringDeviceObjectProperty ;
+                       rdfs:range omt:QuantityValue ;
+                       rdfs:label "has null measurement uncertainty"@en ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "Measurement uncertainty when the measured value is zero."@en ,
+                                                                        "测得值为零时的测量不确定度。"@zh ;
+                       <http://www.w3.org/2004/02/skos/core#note> """1.零的测量不确定度与零位或接近零的示值有关，它包含被测量小到不知是否能检测的区间或仅由噪声引起的测量仪器的示值区间。 
+2.零的测量不确定度的概念也适用于当对样品与空白进行测量并获得差值时。"""@zh ,
+                                                                  """NOTE 1. The measurement uncertainty of zero is related to the indication of zero or close to zero, which contains the interval that is measured so small that it is not known whether it can be detected or the indication interval of the measuring instrument caused only by noise. 
+NOTE 2.The concept of zero measurement uncertainty also applies when the sample is measured against the blank and the difference is obtained. """@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasOperatingCondition
+omt:hasOperatingCondition rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf omt:hasMeasurementObjectProperty ;
+                          rdfs:range omt:OperatingCondition ;
+                          rdfs:label "has operating condition"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasOperatingLocation
+omt:hasOperatingLocation rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf omt:hasOperatingCondition ;
+                         rdfs:range omt:OperatingLocation ;
+                         rdfs:label "has operating location"@en ,
+                                    "测量地点"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasOutput
+omt:hasOutput rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+              rdfs:label "has output"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasPart
+omt:hasPart rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+            owl:inverseOf omt:isPartOf ;
+            rdfs:label "has part"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "X有部分Y，表示Y为X的一部分，Y和其他元素共同组成了X。"@zh ;
+            <http://www.w3.org/2004/02/skos/core#example> "一个测量结果由量值和测量不确定度组成。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasPrecision
+omt:hasPrecision rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf omt:hasMeasurementResultParameter ;
+                 rdfs:domain omt:MeasurementResult ;
+                 rdfs:range omt:MeasurementPrecision ;
+                 rdfs:label "has precision"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "closeness of agreement between indications or measured quantity values obtained by replicate measurements on the same or similar objects under specified conditions"@en ,
+                                                                  "简称精密度(precision)，在规定条件下，对同一或类似被测对象重复测量所得示值或测得值间的一致程度。"@zh ;
+                 <http://www.w3.org/2004/02/skos/core#note> """1.测量精密度通常用不精密程度以数字形式表示，如在规定测量条件下的标准偏差、方差或变差系数。
+2.规定条件可以是重复性测量条件、期间精密度测量条件或复现性测量条件。
+3.测量精密度用于定义测量重复性、期间测量精密度或测量复现性。
+4.术语\"测量精密度\"有时用于指\"测量准确度\"，这是错误的"""@zh ,
+                                                            """NOTE 1.Measurement precision is usually expressed numerically by measures of imprecision, such as standard deviation, variance, or coefficient of variation under the specified conditions of measurement.
+NOTE 2.The ‘specified conditions’ can be, for example,repeatability conditions of measurement, intermediate precision conditions of measurement, or，reproducibility conditions of measurement (seeISO 5725-1:1994).
+NOTE 3.Measurement precision is used to define measurement repeatability, intermediate measurement precision, and measurement reproducibility.
+NOTE 4.Sometimes “measurement precision” is erroneously used to mean measurement accuracy."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasPrefix
+omt:hasPrefix rdf:type owl:ObjectProperty ;
+              rdfs:domain omt:QuantityValue ;
+              rdfs:range <https://si-digital-framework.org/SI#SIPrefix> ;
+              rdfs:label "has prefix"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasQuantityValue
+omt:hasQuantityValue rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf omt:hasMeasurementObjectProperty ;
+                     rdfs:range omt:QuantityValue ;
+                     rdfs:label "has quantity value"@en ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "number and reference together expressing magnitude of a quantity."@en ,
+                                                                      "用数和参照对象一起表示的量的大小。"@zh ;
+                     <http://www.w3.org/2004/02/skos/core#example> """1.给定杆的长度：5.34m或534cm。
+2.给定物体的质量：0.152kg或152g。
+3.绐定孤的曲率：112m^(-1)。
+4.给定样品的摄氏温度：-5℃。
+5.在给定频率上给定电路组件的阻抗（其中j是虚数单位）：(7+3j)Ω。
+6.给定玻璃样品的折射率：1.52。
+7.给定样品的洛氏C标尺硬度（150kg负荷下）:43.5HRC(150kg)。
+8.铜材样品中镉的质量分数：3μg/kg或3×10^(-9)。
+9.水样品中溶质Pb^(2+)的质量摩尔浓度：1.76 mmol/kg。
+10.在给定血浆样本中任意镥亲菌素的物质的量浓度（世界卫生组织国际标准80/552）：50国际单位/I。"""@zh ,
+                                                                   """EXAMPLE 1.Length of a given rod:5.34 m or 534 cm.
+EXAMPLE 2.Mass of a given body:0.152 kg or 152 g.
+EXAMPLE 3.Curvature of a given arc:112 m(-1).
+EXAMPLE 4.Celsius temperature of a given sample:-5℃.
+EXAMPLE 5.Electric impedance of a given circuit element at a given frequency, where j is the imaginary unit:(7+3j)Ω.
+EXAMPLE 6.Refractive index of a given sample of glass:1.52.
+EXAMPLE 7.Rockwell C hardness of a given sample:43.5 HRC(150kg).
+EXAMPLE 8.Mass fraction of cadmium in a given sample of copper:3μg/kg or 3×10^(-9).
+EXAMPLE 9.Molality of Pb2+ in a given sample of water: 1.76 µmol/kg.
+EXAMPLE 10.Arbitrary amount-of-substance concentration of lutropin in a given sample of human blood plasma (WHO International Standard 80/552 used as a calibrator):5.0 IU/l, where “IU” stands for\"WHO International Unit\"."""@en ;
+                     <http://www.w3.org/2004/02/skos/core#note> """1.根据参照对象的类型，量值可表示为：一个数和一个测量单位的乘积（见例1，2，3，4，5，8和9），量纲为一，测量单位1，通常不表示（见例6和8）； 一个数和一个作为参照对象的测量程序（见例7）；一个数和一个标准物质（见例10）。
+2.数可以是复数（见例5）。
+3.一个量值可用多种方式表示（见例1，2和8）。
+4.对向量或张量，每个分量有一个量值。例：作用在给定质点上的力用笛卡尔坐标分量表示为(Fx:Fy:Fz)=(-31.5;43.2;17.0)N。"""@zh ,
+                                                                """NOTE 1.Depending on the type of reference object, a quantity can be expressed as: a product of a number and a unit of measurement (see examples 1, 2, 3, 4, 5, 8 and 9) with a measure of one and a unit of measurement 1, which is usually not expressed (see examples 6 and 8); a number and a measurement procedure as a reference object (see example 7); a number and a standard substance (see example 10). 
+NOTE 2. The number can be a complex number (see example 5).
+NOTE 3.A quantity value can be presented in more than one way (see Examples 1, 2 and 8).
+NOTE 4.In the case of vector or tensor quantities, each component has a quantity value.EXAMPLE:Force acting on a given particle, e.g. in 
+Cartesian components (Fx:Fy:Fz)=(-31.5;43.2;17.0)N."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasRatedOperatingConditon
+omt:hasRatedOperatingConditon rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf omt:hasOperatingCondition ;
+                              rdfs:label "has rated operating condition"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasReferenceOperatingCondition
+omt:hasReferenceOperatingCondition rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf omt:hasOperatingCondition ;
+                                   rdfs:label "has reference operating condition"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasRepeatability
+omt:hasRepeatability rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf omt:hasPrecision ;
+                     rdfs:domain omt:MeasurementResult ;
+                     rdfs:range omt:MeasurementRepeatability ;
+                     rdfs:label "has repeatability"@en ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "measurement precision under a set of repeatability conditions of measurement"@en ,
+                                                                      "简称重复性(repeatability)，在一组重复性测量条件下的测量精密度。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasReproducibility
+omt:hasReproducibility rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf omt:hasPrecision ;
+                       rdfs:domain omt:MeasurementResult ;
+                       rdfs:range omt:Reproducibility ;
+                       rdfs:label "has reproducibility"@en ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "measurement precision under reproducibility  conditions of measurement"@en ,
+                                                                        "简称复现性(reproducibility)，在复现性测量条件下的测量精密度。"@zh ;
+                       <http://www.w3.org/2004/02/skos/core#note> "Relevant statistical terms are given in ISO 5725-1:1994 and ISO 5725-2:1994."@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasResolution
+omt:hasResolution rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf omt:hasMeasuringDeviceObjectProperty ;
+                  rdfs:range omt:QuantityValue ;
+                  rdfs:label "has resolution"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasResult
+omt:hasResult rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+              owl:inverseOf omt:isResultOf ;
+              rdfs:label "has result"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "X有结果Y，表示过程X结束后可以产生Y的结果。"@zh ;
+              <http://www.w3.org/2004/02/skos/core#example> "模型的预测能够产生一个预测结果。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasStandardUncertainty
+omt:hasStandardUncertainty rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf omt:hasMeasurementUncertainty ;
+                           rdfs:label "has standard uncertainty"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasSteadyStateOperatingCondition
+omt:hasSteadyStateOperatingCondition rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf omt:hasOperatingCondition ;
+                                     rdfs:label "has steady state operating condition"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasTemperatureCondition
+omt:hasTemperatureCondition rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf omt:hasOperatingCondition ;
+                            rdfs:label "has temperature condition"@en ,
+                                       "温度条件"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasTypeAComponent
+omt:hasTypeAComponent rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf omt:hasUncertaintyComponent ;
+                      rdfs:domain omt:MeasurementUncertainty ;
+                      rdfs:label "has type A component"@en ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "evaluation of a component of measurement uncertainty by a statistical analysis of measured quantity values obtained under defined measurement conditions"@en ,
+                                                                       "简称A类评定（Type A evaluation），对在规定测量条件下测得的量值用统计分析的方法进行测量不确定度分量的评定。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasTypeBComponent
+omt:hasTypeBComponent rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf omt:hasUncertaintyComponent ;
+                      rdfs:domain omt:MeasurementUncertainty ;
+                      rdfs:label "has type B component"@en ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "evaluation of a component of measurement uncertainty determined by means other than a Type A evaluation of measurement uncertainty"@en ,
+                                                                       "简称B类评定（Type B evaluation），用不同于测量不确定度A类评定的方法对测量不确定度分量进行评定。"@zh ;
+                      <http://www.w3.org/2004/02/skos/core#example> """Evaluation based on information：— associated with authoritative published quantity values,
+— associated with the quantity value of a certified reference material,
+— obtained from a calibration certificate,
+— about drift,
+— obtained from the accuracy class of a verified measuring instrument,
+— obtained from limits deduced through personal experience."""@en ,
+                                                                    "评定基于以下信息：权威机构发布的；有证标准物质的量值；校准证书；仪器的漂移；经检定的测量仪器的准确度等级；根据人员经验推断的极限值等"@zh ;
+                      <http://www.w3.org/2004/02/skos/core#note> "See also GUM:1995, 2.3.3."@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasUncertaintyComponent
+omt:hasUncertaintyComponent rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf omt:hasMeasurementObjectProperty ;
+                            rdfs:domain omt:MeasurementUncertainty ;
+                            rdfs:label "has uncertainty component"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasUnit
+omt:hasUnit rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain omt:QuantityValue ;
+            rdfs:range omt:Unit ;
+            rdfs:label "has unit"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasUpperHumidityLimit
+omt:hasUpperHumidityLimit rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf omt:hasHumidityCondition ;
+                          rdfs:label "has upper humidity limit"@en ,
+                                     "湿度上限"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasUpperTemperatureLimit
+omt:hasUpperTemperatureLimit rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf omt:hasTemperatureCondition ;
+                             rdfs:label "has upper temperature limit"@en ,
+                                        "温度上限"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasZeroError
+omt:hasZeroError rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf omt:hasMeasuringDeviceObjectProperty ;
+                 rdfs:range omt:QuantityValue ;
+                 rdfs:label "has zero error"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "The base value measurement error when the measured value is zero."@en ,
+                                                                  "测得值为零值时的基值测量误差。"@zh ;
+                 <http://www.w3.org/2004/02/skos/core#note> "The zero value error should not be confused with the absence of measurement error. "@en ,
+                                                            "零值误差不应与没有测量误差相混淆。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#isBasisOf
+omt:isBasisOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+              rdfs:label "is basis of"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Y是X的基础，表示Y是X发展或存在的基础和前提。"@zh ;
+              <http://www.w3.org/2004/02/skos/core#example> "热胀冷缩原理是水银温度计测量温度的基础。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#isDescribedBy
+omt:isDescribedBy rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+                  rdfs:label "is described by"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "X描述Y，指X可以数学或文字等形式对Y这个过程进行解释、说明或概括。"@zh ;
+                  <http://www.w3.org/2004/02/skos/core#example> "软件的帮助文档描述了软件的使用流程。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#isMeasuredBy
+omt:isMeasuredBy rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf omt:hasMeasurementObjectProperty ;
+                 owl:inverseOf omt:measures ;
+                 rdfs:label "is measured by"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "process of experimentally obtaining one or more quantity values that can reasonably be attributed to a quantity."@en ,
+                                                                  "通过实验获得并可合理赋予某量一个或多个量值的过程。"@zh ;
+                 <http://www.w3.org/2004/02/skos/core#note> """1. 测量不适用于标称特性（见3.32条）。
+2. 测量意味着量的比较并包括实体的计数。
+3. 测量的先决条件是对测量结果预期用途相适应的量的描述、测量程序以及根据规定测量程序（包括测量条件）进行操作的经校准的测量系统。"""@zh ,
+                                                            """NOTE 1. Measurement does not apply to nominal properties. 
+NOTE 2. Measurement implies comparison of quantities or counting of entities. 
+NOTE 3. Measurement presupposes a description of the quantity commensurate with the intended use of a measurement result, a measurement procedure, and a calibrated measuring system operating according to the specified measurement procedure, including the measurement conditions."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#isPartOf
+omt:isPartOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+             rdfs:label "is part of"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "X有部分Y，表示Y为X的一部分，Y和其他元素共同组成了X。"@zh ;
+             <http://www.w3.org/2004/02/skos/core#example> "一个测量结果由量值和测量不确定度组成。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#isRepresentedBy
+omt:isRepresentedBy rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+                    owl:inverseOf omt:represent ;
+                    rdfs:label "is represented by"@en ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "X表征Y，表示X可以体现Y的特性。"@zh ;
+                    <http://www.w3.org/2004/02/skos/core#example> "光谱测定结果可以表征元素组成。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#isResultOf
+omt:isResultOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+               rdfs:label "is result of"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "X有结果Y，表示过程X结束后可以产生Y的结果。"@zh ;
+               <http://www.w3.org/2004/02/skos/core#example> "模型的预测能够产生一个预测结果。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#measures
+omt:measures rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf omt:hasMeasurementObjectProperty ;
+             rdfs:label "measures"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "process of experimentally obtaining one or more quantity values that can reasonably be attributed to a quantity."@en ,
+                                                              "通过实验获得并可合理赋予某量一个或多个量值的过程。"@zh ;
+             <http://www.w3.org/2004/02/skos/core#note> """1. 测量不适用于标称特性（见3.32条）。
+2. 测量意味着量的比较并包括实体的计数。
+3. 测量的先决条件是对测量结果预期用途相适应的量的描述、测量程序以及根据规定测量程序（包括测量条件）进行操作的经校准的测量系统。"""@zh ,
+                                                        """NOTE 1. Measurement does not apply to nominal properties. 
+NOTE 2. Measurement implies comparison of quantities or counting of entities. 
+NOTE 3. Measurement presupposes a description of the quantity commensurate with the intended use of a measurement result, a measurement procedure, and a calibrated measuring system operating according to the specified measurement procedure, including the measurement conditions."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#represent
+omt:represent rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+              rdfs:label "represent"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "X表征Y，表示X可以体现Y的特性。"@zh ;
+              <http://www.w3.org/2004/02/skos/core#example> "光谱测定结果可以表征元素组成。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#stemFrom
+omt:stemFrom rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf omt:hasGeneralObjectProperty ;
+             rdfs:label "stem from"@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> rdf:type owl:ObjectProperty ;
+                                                    owl:inverseOf <http://www.w3.org/2004/02/skos/core#topConceptOf> ;
+                                                    rdfs:domain <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                    rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                                    rdfs:label "has top concept"@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty ;
+                                               rdfs:range <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                               rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                               rdfs:label "is in scheme"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
+                                               <http://www.w3.org/2004/02/skos/core#scopeNote> "A concept may be a member of more than one concept scheme."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#semanticRelation
+<http://www.w3.org/2004/02/skos/core#semanticRelation> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                       rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                                       rdfs:label "is in semantic relation with"@en ;
+                                                       <http://www.w3.org/2004/02/skos/core#definition> "Links a concept to a concept related by meaning."@en ;
+                                                       <http://www.w3.org/2004/02/skos/core#scopeNote> "This property should not be used directly, but as a super-property for all properties denoting a relationship of meaning between concepts."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.nmdc.com/ontology/OMT#content
+omt:content rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf omt:hasGeneralDataProperty ;
+            rdfs:range [ rdf:type rdfs:Datatype ;
+                         owl:unionOf ( omt:LatexText
+                                       omt:MarkdownText
+                                     )
+                       ] ;
+            rdfs:label "content"@en ,
+                       "内容"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#description
+omt:description rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf omt:hasGeneralDataProperty ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:unionOf ( omt:LatexText
+                                           omt:MarkdownText
+                                         )
+                           ] ;
+                rdfs:label "description"@en ,
+                           "描述"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasCoverageFactor
+omt:hasCoverageFactor rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf omt:hasMeasurementDataProperty ;
+                      rdfs:domain omt:ExpandedUncertainty ;
+                      rdfs:range xsd:decimal ;
+                      rdfs:label "has coverage factor"@en ,
+                                 "包含因子"@zh ;
+                      <http://www.w3.org/2004/02/skos/core#definition> " 为获得扩展不确定度，对合成标准不确定度所乘的大于1的数"@zh ,
+                                                                       "number larger than one by which a combined standard measurement uncertainty is multiplied to obtain an expanded measurement uncertainty"@en ;
+                      <http://www.w3.org/2004/02/skos/core#note> "A coverage factor is usually symbolized k (see also GUM:1995, 2.3.6)."@en ,
+                                                                 "包含因子通常用符号k表示"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasCoverageInterval
+omt:hasCoverageInterval rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf omt:hasMeasurementDataProperty ;
+                        rdfs:domain omt:ExpandedUncertainty ;
+                        rdfs:label "has coverage interval"@en ,
+                                   "包含区间"@zh ;
+                        <http://www.w3.org/2004/02/skos/core#definition> """interval containing the set of true quantity values of a measurand with a stated probability, based on
+the information available"""@en ,
+                                                                         "基于可获得的信息确定的包含被测量一组值的区间，被测量值以一定概率落在该区间内。"@zh ;
+                        <http://www.w3.org/2004/02/skos/core#note> """1.包含区间不一定以所选的测得值为中心。
+2.不应把包含区间称为置信区间，以避免与统计学概念混淆。
+3.包含区间可由扩展测量不确定度导出。"""@zh ,
+                                                                   """NOTE 1.A coverage interval does not need to be centred on the chosen measured quantity value (see JCGM 101:2008).
+NOTE 2.A coverage interval should not be termed “confidence interval” to avoid confusion with the statistical concept (see GUM:1995, 6.2.2). 
+NOTE 3.A coverage interval can be derived from an expanded measurement uncertainty (see GUM:1995, 2.3.5)."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasCoverageProbability
+omt:hasCoverageProbability rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf omt:hasMeasurementDataProperty ;
+                           rdfs:domain omt:ExpandedUncertainty ;
+                           rdfs:range xsd:decimal ;
+                           rdfs:label "has coverage probability"@en ,
+                                      "包含概率"@zh ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "probability that the set of true quantity values of a measurand is contained within a specified coverage interval"@en ,
+                                                                            "在规定的包含区间内包含被测量的一组值的概率"@zh ;
+                           <http://www.w3.org/2004/02/skos/core#note> """1.为避免与统计学概念混淆，不应把包含概率称为置信水平。
+2.在GUM中包含概率又称\"置信的水平(level of confidence)\"
+3.包含概率替代了曾经使用过的“置信水准”。"""@zh ,
+                                                                      """NOTE 1.This definition pertains to the Uncertainty Approach as presented in the GUM.
+NOTE 2.The coverage probability is also termed “level of confidence” in the GUM."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasDeadBand
+omt:hasDeadBand rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf omt:hasMeasuringDeviceDataProperty ;
+                rdfs:label "has dead band"@en ,
+                           "死区"@zh ;
+                <http://www.w3.org/2004/02/skos/core#definition> "When the measured value changes in both directions, the corresponding indication does not produce the maximum interval of detectable change."@en ,
+                                                                 "当被测量值双向变化时，相应示值不产生可检测到的变化的最大区间。"@zh ;
+                <http://www.w3.org/2004/02/skos/core#note> "The dead zone may be related to the rate of change. "@en ,
+                                                           "死区可能与变化速率有关。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasDetectionLimit
+omt:hasDetectionLimit rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf omt:hasMeasuringDeviceDataProperty ;
+                      rdfs:label "has detection limit"@en ,
+                                 "检出限"@zh ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "The probability of misjudgment claiming the absence of a substance component is β for the measured value obtained by a given measurement program and α for the claimed existence of a substance component."@en ,
+                                                                       "由给定测量程序获得的测得值，其声称的物质成分不存在的误判概率为β，声称物质成分存在的误判概率为α。"@zh ;
+                      <http://www.w3.org/2004/02/skos/core#note> """1.国际理论和应用化学联合会（IUPAC）推荐α和β的默认值为0.05。
+2.有时使用缩写词LOD
+3.不要用术语“灵敏度”表示“检出限”。"""@zh ,
+                                                                 """NOTE 1.The International Union of Pure and Applied Chemistry (IUPAC) recommends a default value of 0.05 for α and β.   
+NOTE 2.Sometimes the abbreviation LOD None 3. Do not use the term \"sensitivity\" to mean \"detection limit\" none"""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasDiscriminationThreshold
+omt:hasDiscriminationThreshold rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf omt:hasMeasuringDeviceDataProperty ;
+                               rdfs:label "has discrimination threshold"@en ,
+                                          "鉴别阈"@zh ;
+                               <http://www.w3.org/2004/02/skos/core#definition> "The maximum change in the measured value that caused the corresponding indication to be undetectable."@en ,
+                                                                                "引起相应示值不可检测到变化的被测量值的最大变化。"@zh ;
+                               <http://www.w3.org/2004/02/skos/core#note> "The discrimination threshold may be related to things like noise (internal or external) or friction, or to the value being measured and how its changes are applied."@en ,
+                                                                          "鉴别阈可能与诸如噪声(内部或外部的)或摩擦有关，也可能与被测量的值及其变化是如何施加的有关。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasGeneralDataProperty
+omt:hasGeneralDataProperty rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf owl:topDataProperty ;
+                           rdfs:label "has general data property"@en ,
+                                      "通用数据属性"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasInstrumentBias
+omt:hasInstrumentBias rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf omt:hasMeasuringDeviceDataProperty ;
+                      rdfs:label "has instrument bias"@en ,
+                                 "仪器偏移"@zh ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "The average value of the repeated measurement indication minus the reference value."@en ,
+                                                                       "重复测量示值的平均值减去参考量值，"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasInstrumentDrift
+omt:hasInstrumentDrift rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf omt:hasMeasuringDeviceDataProperty ;
+                       rdfs:label "has instrument drift"@en ,
+                                  "仪器漂移"@zh ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "Continuous or incremental changes in the indicated values over a period of time due to changes in the metrological characteristics of measuring instruments."@en ,
+                                                                        "由于测量仪器计量特性的变化引起的示值在一段时间内的连续或增量变化。"@zh ;
+                       <http://www.w3.org/2004/02/skos/core#note> "Instrument drift is independent of either the change being measured or any change in the amount of influence recognized."@en ,
+                                                                  "仪器漂移既与被测量的变化无关，也与任何认识到的影响量的变化无关。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasJsonData
+omt:hasJsonData rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf omt:hasGeneralDataProperty .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasurementDataProperty
+omt:hasMeasurementDataProperty rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf owl:topDataProperty ;
+                               rdfs:label "has measurement data property"@en ,
+                                          "测量数据属性"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasurementFunction
+omt:hasMeasurementFunction rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf omt:hasMeasurementDataProperty ;
+                           rdfs:range omt:LatexText ;
+                           rdfs:label "has measurement function"@en ,
+                                      "测量函数"@zh ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "function of quantities, the value of which, when calculated using known quantity values for the input quantities in a measurement model, is a measured quantity value of the output quantity in the measurement model"@en ,
+                                                                            "在测量模型中，由输入量的已知量值计算得到的值是输出量的测得值时，输入量与输出量之间量的函数关系。"@zh ;
+                           <http://www.w3.org/2004/02/skos/core#note> """1.如果测量模型h(Y,X1,…..Xn)=0可明确的写成y=f(X1,…..Xn),其中Y是测量模型中的输出量，则函数f是测量函数。更通俗的说，f是一个算法符号，算出与输入量X1,…..Xn相应的的唯一的输出量值y=f(X1,…..Xn)。
+2.测量函数也用于计算测得值Y的测量不确定度。"""@zh ,
+                                                                      """NOTE 1.If a measurement model h(Y, X1, ¼, Xn) = 0 can explicitly be written as Y = f (X1, ¼, Xn), where Y is the output quantity in the measurement model, the function f is the measurement function. More generally, f may symbolize an algorithm, yielding for input quantity values x1, ¼, xn a corresponding unique output quantity value y = f (x1, ¼, xn). 
+NOTE 2.A measurement function is also used to calculate the measurement uncertainty associated with the measured quantity value of Y."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasurementPrinciple
+omt:hasMeasurementPrinciple rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf omt:hasMeasurementDataProperty ;
+                            rdfs:label "has measurement principle"@en ,
+                                       "有测量原理"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasMeasuringDeviceDataProperty
+omt:hasMeasuringDeviceDataProperty rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf owl:topDataProperty ;
+                                   rdfs:label "has measuring device data property"@en ,
+                                              "测量仪器数据属性"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasName
+omt:hasName rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf omt:hasGeneralDataProperty ;
+            rdfs:label "has name"@en ,
+                       "名称"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasNote
+omt:hasNote rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf omt:hasGeneralDataProperty ;
+            rdfs:range xsd:string ;
+            rdfs:label "has note"@en ,
+                       "注释"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasStability
+omt:hasStability rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf omt:hasMeasuringDeviceDataProperty ;
+                 rdfs:label "stability"@en ,
+                            "测量仪器的稳定性"@zh ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Referred to as stability, the ability of a measuring instrument to maintain its metrological characteristics constant over time."@en ,
+                                                                  "简称稳定性（stability），测量仪器保持其计量特性随时间恒定的能力。"@zh ;
+                 <http://www.w3.org/2004/02/skos/core#note> """1.稳定性可用几种方式量化，用计量特性变化到某个规定的量所经过的时间间隔表示；
+2.用特性在规定时间间隔内发生的变化表示"""@zh ,
+                                                            """NOTE 1.Stability can be quantified in several ways1 expressed in terms of the time interval elapsed by which the measurement characteristics change to a specified amount; 
+NOTE 2.Expressed in terms of changes in characteristics that occur within a specified time interval"""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasStepResponseTime
+omt:hasStepResponseTime rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf omt:hasMeasuringDeviceDataProperty ;
+                        rdfs:label "has step response time"@en ,
+                                   "阶跃响应时间"@zh ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "The duration between the moment when the input value of a measuring instrument or measuring system changes abruptly between two specified constant values and the moment when the corresponding indicated value reaches the specified limit of its final stable value."@en ,
+                                                                         "测量仪器或测量系统的输入量值在两个规定常量值之间发生突然变化的瞬间，到与 相应示值达到其最终稳定值的规定极限内时的瞬间，这两者间的持续时间。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasSymbol
+omt:hasSymbol rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf omt:hasGeneralDataProperty ;
+              rdfs:range omt:LatexText ;
+              rdfs:label "has symbol"@en ,
+                         "符号"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasValue
+omt:hasValue rdf:type owl:DatatypeProperty ;
+             rdfs:domain omt:QuantityValue ;
+             rdfs:range xsd:double ;
+             rdfs:label "has value"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#hasVariationDueToAnInfluenceQuantity
+omt:hasVariationDueToAnInfluenceQuantity rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf omt:hasMeasuringDeviceDataProperty ;
+                                         rdfs:label "variation due to an influence quantity"@en ,
+                                                    "影响量引起的变差"@zh ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "When the influencing quantity presents two different magnitudes in sequence, the difference between the indicated value to be measured or the difference between the magnitude provided by the physical gage is given."@en ,
+                                                                                          "当影响量依次呈现两个不同的量值时，给定被测量的示值差或实物量具提供的量值差。"@zh ;
+                                         <http://www.w3.org/2004/02/skos/core#note> "For physical measuring tools, the difference caused by the influence quantity is the difference between the provided quantities when the influence quantity presents two different values."@en ,
+                                                                                    "对实物量具，影响量引起的变差是影响量呈现两个不同值时其提供量值间的差值。"@zh .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://si-digital-framework.org/SI#Definition
+si:Definition rdf:type owl:Class ;
+              rdfs:subClassOf omt:Unit .
+
+
+###  http://si-digital-framework.org/SI#DefinitionNote
+si:DefinitionNote rdf:type owl:Class ;
+                  rdfs:subClassOf omt:Unit .
+
+
+###  http://si-digital-framework.org/SI#MeasurementUnit
+si:MeasurementUnit rdf:type owl:Class ;
+                   rdfs:subClassOf omt:Unit .
+
+
+###  http://si-digital-framework.org/SI#PrefixedUnit
+si:PrefixedUnit rdf:type owl:Class ;
+                rdfs:subClassOf omt:Unit .
+
+
+###  http://si-digital-framework.org/SI#SIBaseUnit
+si:SIBaseUnit rdf:type owl:Class ;
+              rdfs:subClassOf omt:Unit .
+
+
+###  http://si-digital-framework.org/SI#SISpecialNamedUnit
+si:SISpecialNamedUnit rdf:type owl:Class ;
+                      rdfs:subClassOf omt:Unit .
+
+
+###  http://si-digital-framework.org/SI#UnitMultiple
+si:UnitMultiple rdf:type owl:Class ;
+                rdfs:subClassOf omt:Unit .
+
+
+###  http://si-digital-framework.org/SI#nonSIUnit
+si:nonSIUnit rdf:type owl:Class ;
+             rdfs:subClassOf omt:Unit .
+
+
+###  http://www.nmdc.com/ontology/OMT#CombinedStandardUncertainty
+omt:CombinedStandardUncertainty rdf:type owl:Class ;
+                                rdfs:subClassOf omt:MeasurementUncertainty ;
+                                omt:vimID "2. 31" ;
+                                rdfs:label "Combined Standard Uncertainty"@en ,
+                                           "合成标准不确定度"@zh ;
+                                <http://www.w3.org/2004/02/skos/core#definition> "standard measurement uncertainty that is obtained using the individual standard measurement uncertainties associated with the input quantities in a measurement model"@en ,
+                                                                                 "全称合成标准测量不确定度(combined standard measurement uncertainty) 由在一个测量模型中各输入量的标准测量不确定度获得的输出量的标准测量不确定度。"@zh ;
+                                <http://www.w3.org/2004/02/skos/core#note> "In case of correlations of input quantities in a measurement model, covariances must also be taken into account when calculating the combined standard measurement uncertainty; see also GUM:1995, 2.3.4."@en ,
+                                                                           "在数学模型中的输入量相关的情况下，当计算合成标准不确定度时必须考虑协方差。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#DefinitionalUncertainty
+omt:DefinitionalUncertainty rdf:type owl:Class ;
+                            rdfs:subClassOf omt:MeasurementUncertainty ;
+                            omt:vimID "2. 27  " ;
+                            rdfs:label "Definitional Uncertainty "@en ,
+                                       "定义的不确定度"@zh ;
+                            <http://www.w3.org/2004/02/skos/core#definition> "component of measurement uncertainty resulting from the finite amount of detail in the definition of a measurand"@en ,
+                                                                             "由于被测量定义中细节量有限所引起的测量不确定度分量。"@zh ;
+                            <http://www.w3.org/2004/02/skos/core#note> """1.定义的不确定度是在任何给定被测量的测量中实际可达到的最小测量不确定度.
+2.所描述细节中的任何改变导致另一个定义的不确定度。"""@zh ,
+                                                                       "NOTE 1. Definitional uncertainty is the practical minimum measurement uncertainty achievable in any measurement of a given measurand. NOTE 2. Any change in the descriptive detail leads to another definitional uncertainty. NOTE 3 In the GUM:1995, D.3.4, and in IEC 60359, the concept ‘definitional uncertainty’ is termed “intrinsic uncertainty”."@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#DisplayingMeasuringInstrument
+omt:DisplayingMeasuringInstrument rdf:type owl:Class ;
+                                  rdfs:subClassOf omt:MeasuringInstrument ;
+                                  rdfs:label "Displaying Measuring Instrument"@en ,
+                                             "显示式测量仪器"@zh ;
+                                  <http://www.w3.org/2004/02/skos/core#definition> "indicating measuring instrument where the output signal is presented in visual form"@en ,
+                                                                                   "输出信号以可视形式表示的指示式测量仪器"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#ExpandedUncertainty
+omt:ExpandedUncertainty rdf:type owl:Class ;
+                        rdfs:subClassOf omt:MeasurementUncertainty ;
+                        omt:vimID "2.35" ;
+                        rdfs:label "Expanded Uncertainty "@en ,
+                                   "扩展不确定度"@zh ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "product of a combined standard measurement uncertainty and a factor larger than the number one"@en ,
+                                                                         "全称扩展测量不确定度(expanded measurement uncertainty)合成标准不确定度与一个大于1的数字因子的乘积。"@zh ;
+                        <http://www.w3.org/2004/02/skos/core#note> """1.该因子取决于测量模型中输出量的概率分布类型及所选取的包含概率。
+2.本定义中术语“因子\"是指包含因子。"""@zh ,
+                                                                   """NOTE 1.The factor depends upon the type of probability distribution of the output quantity in a measurement model and on the selected coverage probability. 
+NOTE 2.The term “factor” in this definition refers to a coverage factor. 
+"""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#HumidityCondition
+omt:HumidityCondition rdf:type owl:Class ;
+                      rdfs:subClassOf omt:OperatingCondition ;
+                      rdfs:label "Humidity Condition"@en ,
+                                 "湿度条件"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#IndicatingMeasuringInstrument
+omt:IndicatingMeasuringInstrument rdf:type owl:Class ;
+                                  rdfs:subClassOf omt:MeasuringInstrument ;
+                                  rdfs:label "Indicating Measuring Instrument "@en ,
+                                             "指示式测量仪器"@zh ;
+                                  <http://www.w3.org/2004/02/skos/core#definition> " 一提供带有被测量量值信息的输出信号的测量仪器。"@zh ,
+                                                                                   "measuring instrument providing an output signal carrying information about the value of the quantity being measured"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#example> "Voltmeter, micrometer, thermometer, electronic balance."@en ,
+                                                                                "电压表，测微仪，温度计，电子天平。"@zh ;
+                                  <http://www.w3.org/2004/02/skos/core#note> """1.指示式测量仪器可以提供其示值的记录。
+2.输出信号能以可视形式或声响形式表示，也可传输到一个或多个其他装置"""@zh ,
+                                                                             """NOTE 1.An indicating measuring instrument may provide a record of its indication. 
+NOTE 2.An output signal may be presented in visual or acoustic form. It may also be transmitted to one or more other devices."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#IntermediateMeasurementPrecision
+omt:IntermediateMeasurementPrecision rdf:type owl:Class ;
+                                     rdfs:subClassOf omt:MeasurementPrecision ;
+                                     omt:vimID "2.23" ;
+                                     rdfs:label "Intermediate Measurement Precision"@en ,
+                                                "期间测量精密度"@zh ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "measurement precision under a set of intermediate precision conditions of measurement"@en ,
+                                                                                      "简称精密度(precision)，在规定条件下，对同一或类似被测对象重复测量所得示值或测得值间的一致程度。"@zh ;
+                                     <http://www.w3.org/2004/02/skos/core#note> "NOTE Relevant statistical terms are given in ISO 5725-3:1994."@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#MaterialMeasure
+omt:MaterialMeasure rdf:type owl:Class ;
+                    rdfs:subClassOf omt:MeasuringInstrument ;
+                    rdfs:label "Material Measure "@en ,
+                               "实物量具"@zh ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "measuring instrument reproducing or supplying, in a permanent manner during its use, quantities of one or more given kinds, each with an assigned quantity value"@en ,
+                                                                     "具有所赋量值，使用时以固定形态复现或提供一个或多个量值的测量仪器。"@zh ;
+                    <http://www.w3.org/2004/02/skos/core#example> "Standard weight, volume measure (supplying one or several quantity values, with or without a quantity-value scale), standard electric resistor, line scale (ruler), gauge block, standard signal generator, certified reference material."@en ,
+                                                                  "标准秩码；容积量器（提供单个或多个量值，带或不带量的标尺）；标准电阻器；线纹尺；量块；标准信号发生器；有证标准物质"@zh ;
+                    <http://www.w3.org/2004/02/skos/core#note> """1.实物量具的示值是其所赋的量值。
+2.实物量具可以是测量标准。"""@zh ,
+                                                               """NOTE 1.The indication of a material measure is its assigned quantity value.
+NOTE 2.A material measure can be a measurement standard. """@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#MeasuredObject
+omt:MeasuredObject rdf:type owl:Class ;
+                   rdfs:subClassOf omt:MeasurementConcept ;
+                   rdfs:label "Measured Object"@en ,
+                              "测量对象"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#MeasurementConcept
+omt:MeasurementConcept rdf:type owl:Class ;
+                       rdfs:label "Measurement Concept"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#MeasurementError
+omt:MeasurementError rdf:type owl:Class ;
+                     rdfs:subClassOf omt:MeasurementParameter ;
+                     omt:vimID "2.16" ;
+                     rdfs:label "Measurement Error"@en ,
+                                "测量误差"@zh ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "measured quantity value minus a reference quantity value"@en ,
+                                                                      "简称误差(error)测得的量值减去参考量值。"@zh ;
+                     <http://www.w3.org/2004/02/skos/core#note> """1.测量误差的概念在以下两种情况下均可使用：
+①当涉及存在单个参考量值，如用测得值的测量不确定度可忽略的测量标准进行校准，或约定量值给定时，测量误差是已知的；
+②假设被测量使用唯一的真值或范围可忽略的一组真值表征时，测量误差是未知的。
+2.测量误差不应与出现的错误或过失相混淆。"""@zh ,
+                                                                """NOTE 1.The concept of ‘measurement error’ can be used both a) when there is a single reference quantity value to refer to, which occurs if a calibration is made by means of a measurement standard with a measured quantity value having a negligible measurement uncertainty or if a conventional quantity value is given, in which case the measurement error is known, and b) if a measurand is supposed to be represented by a unique true quantity value or a set of true quantity values of negligible range, in which case the measurement error is not known. 
+NOTE 2.Measurement error should not be confused with production error or mistake."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#MeasurementMethod
+omt:MeasurementMethod rdf:type owl:Class ;
+                      rdfs:subClassOf omt:MeasurementConcept ;
+                      omt:vimID "2.5" ;
+                      rdfs:label "Measurement Method"@en ,
+                                 "测量方法"@zh ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "generic description of a logical organization of operations used in a measurement"@en ,
+                                                                       "对测量过程中使用的操作所给出的逻辑性安排的一般性描述。"@zh ;
+                      <http://www.w3.org/2004/02/skos/core#note> """Measurement methods may be qualified in various ways such as: 
+— substitution measurement method, 
+— differential measurement method, and 
+— null measurement method; 
+or 
+— direct measurement method, and 
+— indirect measurement method. 
+See IEC 60050-300:2001"""@en ,
+                                                                 "测量方法可用不同方式表述，如替代测量法、微差测量法、零位测量法、直接测量法、间接测量法。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#MeasurementModel
+omt:MeasurementModel rdf:type owl:Class ;
+                     rdfs:subClassOf omt:MeasurementConcept ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty omt:hasMeasurementFunction ;
+                                       owl:someValuesFrom omt:LatexText
+                                     ] ;
+                     omt:vimID "2. 48   " ;
+                     rdfs:label "Measurement Model"@en ,
+                                "测量模型"@zh ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "mathematical relation among all quantities known to be involved in a measurement"@en ,
+                                                                      "简称模型(model)，测量中涉及的所有已知量间的数学关系"@zh ;
+                     <http://www.w3.org/2004/02/skos/core#note> """1.测量模型的通用形式是方程：h(Y,X1,…..Xn)=0 其中测量模型中的输出量Y是被测量，其测量值由测量模型中输入量X1…..Xn的有关信息推导得到。
+2.在有两个或多个输出量的较复杂情况下，测量模型包含一个以上的方程"""@zh ,
+                                                                """NOTE 1.A general form of a measurement model is the equation h(Y, X1, ¼, Xn) = 0, where Y, the output quantity in the measurement model, is the measurand, the quantity value of which is to be inferred from information about input quantities in the measurement model X1, ¼, Xn. 
+NOTE 2.In more complex cases where there are two or more output quantities in a measurement model, the measurement model consists of more than one equation."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#MeasurementParameter
+omt:MeasurementParameter rdf:type owl:Class ;
+                         rdfs:subClassOf omt:MeasurementConcept ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty omt:hasUncertaintyComponent ;
+                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onClass omt:QuantityValue
+                                         ] ;
+                         rdfs:label "Measurement Parameter"@en ,
+                                    "测量参数"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#MeasurementPrecision
+omt:MeasurementPrecision rdf:type owl:Class ;
+                         rdfs:subClassOf omt:MeasurementParameter ;
+                         omt:vimID "2.15" ;
+                         rdfs:label "Measurement Precision"@en ,
+                                    "测量精密度"@zh ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "closeness of agreement between indications or measured quantity values obtained by replicate measurements on the same or similar objects under specified conditions"@en ,
+                                                                          "简称精密度(precision)，在规定条件下，对同一或类似被测对象重复测量所得示值或测得值间的一致程度。"@zh ;
+                         <http://www.w3.org/2004/02/skos/core#note> """1.测量精密度通常用不精密程度以数字形式表示，如在规定测量条件下的标准偏差、方差或变差系数。
+2.规定条件可以是重复性测量条件、期间精密度测量条件或复现性测量条件。
+3.测量精密度用于定义测量重复性、期间测量精密度或测量复现性。
+4.术语\"测量精密度\"有时用于指\"测量准确度\"，这是错误的"""@zh ,
+                                                                    """NOTE 1.Measurement precision is usually expressed numerically by measures of imprecision, such as standard deviation, variance, or coefficient of variation under the specified conditions of measurement.
+NOTE 2.The ‘specified conditions’ can be, for example,repeatability conditions of measurement, intermediate precision conditions of measurement, or，reproducibility conditions of measurement (seeISO 5725-1:1994).
+NOTE 3.Measurement precision is used to define measurement repeatability, intermediate measurement precision, and measurement reproducibility.
+NOTE 4.Sometimes “measurement precision” is erroneously used to mean measurement accuracy."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#MeasurementProcedure
+omt:MeasurementProcedure rdf:type owl:Class ;
+                         rdfs:subClassOf omt:MeasurementConcept ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty omt:hasResult ;
+                                           owl:allValuesFrom omt:MeasurementResult
+                                         ] ;
+                         omt:vimID "2.6" ;
+                         rdfs:label "Measurement Procedure"@en ,
+                                    "测量程序"@zh ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "detailed description of a measurement according to one or more measurement principles and to a given measurement method, based on a measurement model and including any calculation to obtain a measurement result."@en ,
+                                                                          "根据一种或多种测量原理及给定的测量方法，在测量模型和获得测量结果所需计算的基础上，对测量所做的详细描述。"@zh ;
+                         <http://www.w3.org/2004/02/skos/core#note> """1.测量程序通常要写成充分而详尽的文件，以便操作者能进行测量。
+2.测量程序可包括有关目标测量不确定度的陈述。
+3.测量程序有时被称作标准操作程序，缩写为SOP。
+4.参考测量程序（reference measurement procedure）【VIM2.7】是在校准或表征标准物质时为提供测量结果所采用的测量程序，它适用于评定由同类量的其他测量程序获得的被测量量值的测量正确度。5 原级参考测量程序（primary reference measurement procedure）或原级参考程序（primary reference procedure）【VIM2.8】是用于获得与同类量测量标准没有关系的测量结果所用的参考测量程序。物质的量咨询委员会-化学计量（CCQM）对于这个概念使用术语“原级测量方法”。两个下级概念的术语“直接原级测量程序”和“比例原级参考浏量程序”的定义由CCGM给出（第五次大会，1999）。"""@zh ,
+                                                                    """NOTE 1. A measurement procedure is usually documented in sufficient detail to enable an operator to perform a measurement. 
+NOTE 2. A measurement procedure can include a statement concerning a target measurement uncertainty. 
+NOTE 3. A measurement procedure is sometimes called a standard operating procedure, abbreviated SOP."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#MeasurementRepeatability
+omt:MeasurementRepeatability rdf:type owl:Class ;
+                             rdfs:subClassOf omt:MeasurementPrecision ;
+                             omt:vimID "2.21" ;
+                             rdfs:label "Measurement Repeatability"@en ,
+                                        "测量重复性"@zh ;
+                             <http://www.w3.org/2004/02/skos/core#definition> "measurement precision under a set of repeatability conditions of measurement"@en ,
+                                                                              "简称重复性(repeatability)，在一组重复性测量条件下的测量精密度。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#MeasurementResult
+omt:MeasurementResult rdf:type owl:Class ;
+                      rdfs:subClassOf omt:MeasurementConcept ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty omt:hasError ;
+                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass omt:MeasurementError
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty omt:hasMeasurementModel ;
+                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass omt:MeasurementModel
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty omt:hasMeasurementUncertainty ;
+                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass omt:MeasurementUncertainty
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty omt:hasPrecision ;
+                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onClass omt:MeasurementPrecision
+                                      ] ;
+                      omt:vimID "2.9" ;
+                      rdfs:label "Measurement Result"@en ,
+                                 "测量结果"@zh ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "set of quantity values being attributed to a measurand together with any other available relevant information."@en ,
+                                                                       "与其他有用的相关信息一起赋予被测量的一组量值。"@zh ;
+                      <http://www.w3.org/2004/02/skos/core#note> """1.测量结果通常包含这组量值的“相关信息”，诸如某些可以比其他方式更能代表被测量的信息,它可以概率密度函数（PDF）的方式表示。
+2.测量结果通常表示为单个测得的量值和一个测量不确定度。对某些用途，如果认为测量不确定度可忽略不计，则测量结果可表示为单个测得的量值。在许多领域中这是表示测量结果的常用方式。
+3.在传统文献和1993版VIM中，测量结果定义为赋予被测量的值，并按情况解释为平均示值、未修正的结果或已修正的结果。"""@zh ,
+                                                                 """NOTE 1.A measurement result generally contains “relevant information” about the set of quantity values, such that some may be more representative of the measurand than others. This may be expressed in the form of a probability density function (PDF). 
+NOTE 2.A measurement result is generally expressed as a single measured quantity value and a measurement uncertainty. If the measurement uncertainty is considered to be negligible for some purpose, the measurement result may be expressed as a single measured quantity value. In many fields, this is the common way of expressing a measurement result. 
+NOTE 3.In the traditional literature and in the previous edition of the VIM, measurement result was defined as a value attributed to a measurand and explained to mean an indication, or an uncorrected result, or a corrected result, according to the context."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#MeasurementUncertainty
+omt:MeasurementUncertainty rdf:type owl:Class ;
+                           rdfs:subClassOf omt:MeasurementParameter ;
+                           omt:vimID "2. 26 " ;
+                           rdfs:label "Measurement Uncertainty"@en ,
+                                      "测量不确定度"@zh ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "non-negative parameter characterizing the dispersion of the quantity values being attributed to a measurand, based on the information used"@en ,
+                                                                            "简称不确定度(uncertainty),根据所用到的信息，表征赋予被测量量值分散性的非负参数。"@zh ;
+                           <http://www.w3.org/2004/02/skos/core#note> """1.测量不确定度包括由系统影响引起的分量，如与修正量和测量标准所赋量值有关的分量及定义的不确定度。有时对估计的系统影响未作修正，而是当作不确定度分量处理。
+2.此参数可以是诸如称为标准测量不确定度的标准偏差(或其特定倍数)，或是说明了包含概率的区间半宽度
+3.测量不确定度一般由若干分量组成。其中一些分量可根据一系列测量值的统计分布，按测量不确定度的A类评定进行评定，并可用标准差表征。而另一些分量则可根据基于经验或其 他信息所获得的概率密度函数，按测量不确定度的B类评定进行评定，也用标准偏差表征。
+4.通常，对于一组给定的信息,测量不确定度是相应于所赋予被测量的值的。该值的改变将导致相应的不确定度的改变。
+5.本定义是按2008版VIIM给出的。而在GUM中的定义是：表征合理地赋予被测量之值的分散性，与测量结果相联系的参数。"""@zh ,
+                                                                      """NOTE 1.Measurement uncertainty includes components arising from systematic effects, such as components associated with corrections and the assigned quantity values of measurement standards, as well as the definitional uncertainty. Sometimes estimated systematic effects are not corrected for but, instead, associated measurement uncertainty components are incorporated.
+NOTE 2.The parameter may be, for example, a standard deviation called standard measurement uncertainty(or a specified multiple of it), or the half-width of an interval, having a stated coverage probability. 
+NOTE 3.Measurement uncertainty comprises, in general, many components. Some of these may be evaluatedby Type A evaluation of measurement uncertainty from the statistical distribution of the quantity values from series of measurements and can be characterized by standard deviations. The other components, which may be evaluated by Type B evaluation of measurement uncertainty, can also be characterized by standard deviations, evaluated from probability density functions based on experience or other information. 
+NOTE 4.In general, for a given set of information, it is understood that the measurement uncertainty is associated with a stated quantity value attributed to the measurand. A modification of this value results in a modification of the associated uncertainty. """@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#MeasuringInstrument
+omt:MeasuringInstrument rdf:type owl:Class ;
+                        rdfs:subClassOf omt:MeasurementConcept ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty omt:hasIndication ;
+                                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass omt:QuantityValue
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty omt:hasInstrumentalUncertainty ;
+                                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass omt:QuantityValue
+                                        ] ;
+                        rdfs:label "Measuring Instrument"@en ,
+                                   "测量仪器"@zh ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "device used for making measurements, alone or in conjunction with one or more supplementary devices"@en ,
+                                                                         "单独或与一个或多个辅助设备组合，用于进行测量的装置"@zh ;
+                        <http://www.w3.org/2004/02/skos/core#note> """1.一台可单独使用的测量仪器是一个测量系统。
+2.测量仪器可以是指示式测量仪器，也可以是实物量具。"""@zh ,
+                                                                   """NOTE 1. A measuring instrument that can be used alone is a measuring system. 
+NOTE 2. A measuring instrument may be an indicating measuring instrument or a material measure."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#MeasuringSystem
+omt:MeasuringSystem rdf:type owl:Class ;
+                    rdfs:subClassOf omt:MeasurementConcept ;
+                    omt:vimID " 3.2 " ;
+                    rdfs:label "Measuring System"@en ,
+                               "测量系统"@zh ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "set of one or more measuring instruments and often other devices, including any reagent and supply, assembled and adapted to give information used to generate measured quantity values within specified intervals for quantities of specified kinds"@en ,
+                                                                     "一套组装的并适用于特定量在规定区间内给出测得值信息的一台或多台测量仪器, 通常还包括其他装置，诸如试剂和电源。"@zh ;
+                    <http://www.w3.org/2004/02/skos/core#note> "A measuring system may consist of only one measuring instrument."@en ,
+                                                               "一个测量系统可以仅包括一台测量仪器。"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#OperatingCondition
+omt:OperatingCondition rdf:type owl:Class ;
+                       rdfs:subClassOf omt:MeasurementConcept ;
+                       rdfs:label "Operating Condition"@en ,
+                                  "测量条件"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#OperatingLocation
+omt:OperatingLocation rdf:type owl:Class ;
+                      rdfs:subClassOf omt:OperatingCondition ;
+                      rdfs:label "Operating Location"@en ,
+                                 "测量地点"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#QuantityValue
+omt:QuantityValue rdf:type owl:Class ;
+                  rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                           owl:onProperty omt:hasPrefix ;
+                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                           owl:onClass <https://si-digital-framework.org/SI#SIPrefix>
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty omt:hasUnit ;
+                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                           owl:onClass omt:Unit
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty omt:hasValue ;
+                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                           owl:onDataRange xsd:double
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] .
+
+
+###  http://www.nmdc.com/ontology/OMT#RandomMeasurementError
+omt:RandomMeasurementError rdf:type owl:Class ;
+                           rdfs:subClassOf omt:MeasurementError ;
+                           omt:vimID "2.19" ;
+                           rdfs:label "Random Measurement Error"@en ,
+                                      "随机测量误差"@zh ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "component of measurement error that in replicate measurements varies in an unpredictable manner."@en ,
+                                                                            "简称随机误差（random error）在重复测量中按不可预见方式变化的测量误差的分量。"@zh ;
+                           <http://www.w3.org/2004/02/skos/core#note> """1.随机测量误差的参考量值是对同一被测量由无穷多次重复测量得到的平均值。
+2.一组重复测量的随机测量误差形成一种分布，该分布可用期望和方差描述，其期望通常可假设为零。
+3.随机误差等于测量误差减系统测量误差。"""@zh ,
+                                                                      """NOTE 1.A reference quantity value for a random measurement error is the average that would ensue from an infinite number of replicate measurements of the same measurand. 
+NOTE 2.Random measurement errors of a set of replicate measurements form a distribution that can be summarized by its expectation, which is generally assumed to be zero, and its variance. 
+NOTE 3.Random measurement error equals measurement error minus systematic measurement error."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#RelativeStandardUncertainty
+omt:RelativeStandardUncertainty rdf:type owl:Class ;
+                                rdfs:subClassOf omt:MeasurementUncertainty ;
+                                omt:vimID "2.32" ;
+                                rdfs:label "Relative Standard Uncertainty"@en ,
+                                           "相对标准不确定度"@zh ;
+                                <http://www.w3.org/2004/02/skos/core#definition> "standard measurement uncertainty divided by the absolute value of the measured quantity value"@en ,
+                                                                                 "称相对标准测量不确定度(relative standard measurement uncertainty) 标准不确定度除以测得值的绝对值"@zh ;
+                                <http://www.w3.org/2004/02/skos/core#note> "无"@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#Reproducibility
+omt:Reproducibility rdf:type owl:Class ;
+                    rdfs:subClassOf omt:MeasurementPrecision ;
+                    omt:vimID "2.25" ;
+                    rdfs:label "Reproducibility"@en ,
+                               "测量复现性"@zh ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "measurement precision under reproducibility  conditions of measurement"@en ,
+                                                                     "简称复现性(reproducibility)，在复现性测量条件下的测量精密度。"@zh ;
+                    <http://www.w3.org/2004/02/skos/core#note> "Relevant statistical terms are given in ISO 5725-1:1994 and ISO 5725-2:1994."@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#StandardUncertainty
+omt:StandardUncertainty rdf:type owl:Class ;
+                        rdfs:subClassOf omt:MeasurementUncertainty ;
+                        omt:vimID "2. 30 " ;
+                        rdfs:label "Standard Uncertainty"@en ,
+                                   "标准不确定度"@zh ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "measurement uncertainty expressed as a standard deviation"@en ,
+                                                                         "全称标准测量不确定度（standard measurement uncertainty ,standard uncertainty of measurement）已标准偏差表示的测量不确定度"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#SystematicMeasurementError
+omt:SystematicMeasurementError rdf:type owl:Class ;
+                               rdfs:subClassOf omt:MeasurementError ;
+                               omt:vimID "2.17" ;
+                               rdfs:label "Systematic Measurement Error"@en ,
+                                          "系统测量误差"@zh ;
+                               <http://www.w3.org/2004/02/skos/core#definition> "component of measurement error that in replicate measurements remains constant or varies in a predictable manner"@en ,
+                                                                                "简称系统误差(systematic error)在重复测量中保持不变或按可预见方式变化的测量误差的分量。"@zh ;
+                               <http://www.w3.org/2004/02/skos/core#note> """1.系统测量误差的参考量值是真值，或是测量不确定度可忽略不计的测量标准的测得值，或是约定量值。
+2.系统测量误差及其来源可以是已知或未知的。对于巳知的系统测量误差可采用修正补偿。
+3.系统测量误差等于测量误差减随机测量误差。"""@zh ,
+                                                                          """NOTE 1.A reference quantity value for a systematic measurement error is a true quantity value, or a measured quantity value of a measurement standard of negligible measurement uncertainty, or a conventional quantity value. 
+NOTE 2.Systematic measurement error, and its causes, can be known or unknown. A correction can be applied to compensate for a known systematic measurement error. 
+NOTE 3.Systematic measurement error equals measurement error minus random measurement error."""@en .
+
+
+###  http://www.nmdc.com/ontology/OMT#TemperatureCondition
+omt:TemperatureCondition rdf:type owl:Class ;
+                         rdfs:subClassOf omt:OperatingCondition ;
+                         rdfs:label "Temperature Condition"@en ,
+                                    "温度条件"@zh .
+
+
+###  http://www.nmdc.com/ontology/OMT#Unit
+omt:Unit rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+###  https://si-digital-framework.org/SI#QuantityKind
+<https://si-digital-framework.org/SI#QuantityKind> rdf:type owl:Class .
+
+
+###  https://si-digital-framework.org/SI#SIPrefix
+<https://si-digital-framework.org/SI#SIPrefix> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://si-digital-framework.org/SI/units/metre
+<http://si-digital-framework.org/SI/units/metre> rdf:type owl:NamedIndividual ,
+                                                          si:SIBaseUnit ;
+                                                 si:hasDefinition si:metre1889 ,
+                                                                  si:metre1927 ,
+                                                                  si:metre1960 ,
+                                                                  si:metre1983 ,
+                                                                  si:metre2018 ;
+                                                 si:hasSymbol "m"^^xsd:string ;
+                                                 si:hasUnitTypeAsString "SI base unit"@en ,
+                                                                        "Unité SI de base"@fr ;
+                                                 si:isUnitOfQtyKind <http://si-digital-framework.org/quantities/LENG> ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "metre"@en ,
+                                                                                                 "mètre"@fr .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#Cylinder
+:Cylinder rdf:type owl:NamedIndividual ,
+                   omt:MeasuredObject .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#Diameter
+:Diameter rdf:type owl:NamedIndividual ;
+          omt:cause :UComponent_1 ;
+          omt:hasDeviation :SDiameter ;
+          omt:hasMeasuredQuantityValue :MeasuredDiameter .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#ExpandedUncertainty
+:ExpandedUncertainty rdf:type owl:NamedIndividual ,
+                              omt:ExpandedUncertainty ,
+                              omt:QuantityValue ;
+                     omt:hasPrefix <https://si-digital-framework.org/SI/prefixes/micro> ;
+                     omt:hasUnit <https://si-digital-framework.org/SI/units/metre3> ;
+                     omt:hasCoverageFactor 2.31 ;
+                     omt:hasCoverageProbability 0.95 ;
+                     omt:hasValue "3.0"^^xsd:double .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#Height
+:Height rdf:type owl:NamedIndividual ;
+        omt:cause :UComponent_2 ;
+        omt:hasDeviation :SHeight ;
+        omt:hasMeasuredQuantityValue :MeasuredHeight .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#IndicationError
+:IndicationError rdf:type owl:NamedIndividual ,
+                          omt:MeasurementError ,
+                          omt:QuantityValue ;
+                 omt:cause :UComponent_3 ;
+                 omt:hasPrefix <https://si-digital-framework.org/SI/prefixes/milli> ;
+                 omt:hasUnit <http://si-digital-framework.org/SI/units/metre> ;
+                 omt:hasValue "0.01"^^xsd:double .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#IndirectMeasurement
+:IndirectMeasurement rdf:type owl:NamedIndividual ,
+                              omt:MeasurementMethod .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#InstrumentalUncertainty
+:InstrumentalUncertainty rdf:type owl:NamedIndividual ,
+                                  omt:MeasurementUncertainty ,
+                                  omt:QuantityValue ;
+                         omt:hasPrefix <https://si-digital-framework.org/SI/prefixes/milli> ;
+                         omt:hasUnit <http://si-digital-framework.org/SI/units/metre> ;
+                         omt:hasValue "0.0058"^^xsd:double .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#MCylinder
+:MCylinder rdf:type owl:NamedIndividual ,
+                    omt:MeasurementConcept ;
+           omt:hasMeasuredObject :Cylinder ;
+           omt:hasMeasurementDevice :Micrometer ;
+           omt:hasMeasurementModel :MeasurementModel ;
+           omt:hasMeasurementProcedure :Procedure ;
+           omt:hasMethod :IndirectMeasurement ;
+           omt:hasResult :Result_1 ,
+                         :Result_2 ;
+           omt:measures <https://si-digital-framework.org/quantities/VOLU> .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#MeasuredDiameter
+:MeasuredDiameter rdf:type owl:NamedIndividual ,
+                           omt:QuantityValue ;
+                  omt:hasPrefix <https://si-digital-framework.org/SI/prefixes/milli> ;
+                  omt:hasUnit <http://si-digital-framework.org/SI/units/metre> ;
+                  omt:hasValue "10.08"^^xsd:double .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#MeasuredHeight
+:MeasuredHeight rdf:type owl:NamedIndividual ,
+                         omt:QuantityValue ;
+                omt:hasPrefix <https://si-digital-framework.org/SI/prefixes/milli> ;
+                omt:hasUnit <http://si-digital-framework.org/SI/units/metre> ;
+                omt:hasValue "10.11"^^xsd:double .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#MeasuredVolume
+:MeasuredVolume rdf:type owl:NamedIndividual ,
+                         omt:QuantityValue ;
+                omt:hasPrefix <https://si-digital-framework.org/SI/prefixes/micro> ;
+                omt:hasUnit <https://si-digital-framework.org/SI/units/metre3> ;
+                omt:hasValue "806.8"^^xsd:double .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#MeasurementModel
+:MeasurementModel rdf:type owl:NamedIndividual ,
+                           omt:MeasurementModel ;
+                  omt:hasInput :Diameter ,
+                               :Height ;
+                  omt:hasOutput <https://si-digital-framework.org/quantities/VOLU> ;
+                  omt:hasMeasurementFunction "$$V = \\frac{\\pi D^2}{4} h$$"^^omt:LatexText .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#Micrometer
+:Micrometer rdf:type owl:NamedIndividual ,
+                     omt:MeasuringInstrument ;
+            omt:hasIndicationError :IndicationError ;
+            omt:hasInstrumentalUncertainty :InstrumentalUncertainty ;
+            omt:hasResolution :Resolution .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#Procedure
+:Procedure rdf:type owl:NamedIndividual ,
+                    omt:MeasurementProcedure .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#Resolution
+:Resolution rdf:type owl:NamedIndividual ,
+                     omt:QuantityValue ;
+            omt:hasPrefix <https://si-digital-framework.org/SI/prefixes/milli> ;
+            omt:hasUnit <http://si-digital-framework.org/SI/units/metre> ;
+            omt:hasValue "0.01"^^xsd:double .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#Result_1
+:Result_1 rdf:type owl:NamedIndividual ,
+                   omt:MeasurementResult ;
+          omt:hasCombinedStandardUncertainty :Uc ;
+          omt:hasMeasuredQuantityValue :MeasuredVolume .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#Result_2
+:Result_2 rdf:type owl:NamedIndividual ,
+                   omt:MeasurementResult ;
+          omt:hasExpandedUncertainty :ExpandedUncertainty ;
+          omt:hasMeasuredQuantityValue :MeasuredVolume .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#SDiameter
+:SDiameter rdf:type owl:NamedIndividual ,
+                    omt:QuantityValue ;
+           omt:hasPrefix <https://si-digital-framework.org/SI/prefixes/milli> ;
+           omt:hasUnit <http://si-digital-framework.org/SI/units/metre> ;
+           omt:hasValue "0.0048"^^xsd:double .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#SHeight
+:SHeight rdf:type owl:NamedIndividual ,
+                  omt:QuantityValue ;
+         omt:hasPrefix <https://si-digital-framework.org/SI/prefixes/milli> ;
+         omt:hasUnit <http://si-digital-framework.org/SI/units/metre> ;
+         omt:hasValue "0.0018"^^xsd:double .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#UComponent_1
+:UComponent_1 rdf:type owl:NamedIndividual ,
+                       omt:QuantityValue ;
+              omt:hasPrefix <https://si-digital-framework.org/SI/prefixes/micro> ;
+              omt:hasUnit <https://si-digital-framework.org/SI/units/metre3> ;
+              omt:stemFrom :Diameter ;
+              omt:hasValue "0.77"^^xsd:double .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#UComponent_2
+:UComponent_2 rdf:type owl:NamedIndividual ,
+                       omt:QuantityValue ;
+              omt:hasPrefix <https://si-digital-framework.org/SI/prefixes/micro> ;
+              omt:hasUnit <https://si-digital-framework.org/SI/units/metre3> ;
+              omt:stemFrom :Height ;
+              omt:hasValue "0.14"^^xsd:double .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#UComponent_3
+:UComponent_3 rdf:type owl:NamedIndividual ,
+                       omt:QuantityValue ;
+              omt:hasPrefix <https://si-digital-framework.org/SI/prefixes/micro> ;
+              omt:hasUnit <https://si-digital-framework.org/SI/units/metre3> ;
+              omt:stemFrom :IndicationError ;
+              omt:hasValue "1.04"^^xsd:double .
+
+
+###  http://www.nmdc.com/ontology/OMT/examples/cylinder#Uc
+:Uc rdf:type owl:NamedIndividual ,
+             omt:CombinedStandardUncertainty ,
+             omt:QuantityValue ;
+    omt:hasPrefix <https://si-digital-framework.org/SI/prefixes/micro> ;
+    omt:hasTypeAComponent :UComponent_1 ,
+                          :UComponent_2 ,
+                          :UComponent_3 ;
+    omt:hasUnit <https://si-digital-framework.org/SI/units/metre3> ;
+    omt:hasValue "1.3"^^xsd:double .
+
+
+###  https://si-digital-framework.org/SI/prefixes/micro
+<https://si-digital-framework.org/SI/prefixes/micro> rdf:type owl:NamedIndividual ,
+                                                              <https://si-digital-framework.org/SI#SIPrefix> ;
+                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "micro"@en ,
+                                                                                                     "micro"@fr ;
+                                                     <https://si-digital-framework.org/SI#hasDatatype> xsd:float ;
+                                                     <https://si-digital-framework.org/SI#hasDefiningResolution> <https://si-digital-framework.org/bodies/CGPM#CGPM11-Res12> ;
+                                                     <https://si-digital-framework.org/SI#hasScalingFactor> "1.0E-6"^^xsd:float ;
+                                                     <https://si-digital-framework.org/SI#hasSymbol> "µ"^^xsd:string .
+
+
+###  https://si-digital-framework.org/SI/prefixes/milli
+<https://si-digital-framework.org/SI/prefixes/milli> rdf:type owl:NamedIndividual ,
+                                                              <https://si-digital-framework.org/SI#SIPrefix> ;
+                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "milli"@en ,
+                                                                                                     "milli"@fr ;
+                                                     <https://si-digital-framework.org/SI#hasDatatype> xsd:decimal ;
+                                                     <https://si-digital-framework.org/SI#hasDefiningResolution> <https://si-digital-framework.org/bodies/CGPM#CGPM11-Res12> ;
+                                                     <https://si-digital-framework.org/SI#hasScalingFactor> 0.001 ;
+                                                     <https://si-digital-framework.org/SI#hasSymbol> "m"^^xsd:string .
+
+
+###  https://si-digital-framework.org/SI/units/metre3
+<https://si-digital-framework.org/SI/units/metre3> rdf:type owl:NamedIndividual ,
+                                                            omt:Unit .
+
+
+###  https://si-digital-framework.org/quantities/LENG
+<https://si-digital-framework.org/quantities/LENG> rdf:type owl:NamedIndividual ,
+                                                            <https://si-digital-framework.org/SI#QuantityKind> ;
+                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "LENG"^^xsd:string ;
+                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "length"@en ,
+                                                                                                   "longueur"@fr ;
+                                                   <https://si-digital-framework.org/SI#hasUnit> <https://si-digital-framework.org/SI/units/metre> .
+
+
+###  https://si-digital-framework.org/quantities/VOLU
+<https://si-digital-framework.org/quantities/VOLU> rdf:type owl:NamedIndividual ,
+                                                            <https://si-digital-framework.org/SI#QuantityKind> ;
+                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "VOLU"^^xsd:string ;
+                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "volume"@en ,
+                                                                                                   "volume"@fr ;
+                                                   <https://si-digital-framework.org/SI#hasUnit> [ ] ,
+[ ] .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( omt:DisplayingMeasuringInstrument
+                omt:IndicatingMeasuringInstrument
+                omt:MaterialMeasure
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
