@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://www.nmdc.com/ontology/OMT#"
      xml:base="http://www.nmdc.com/ontology/OMT"
      xmlns:SI="http://si-digital-framework.org/SI#"
+     xmlns:OMT="http://www.nmdc.com/ontology/OMT#"
      xmlns:SI1="https://si-digital-framework.org/SI#"
      xmlns:omt="http://www.nmdc.com/ontology/OMT"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -14,6 +15,8 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://www.nmdc.com/ontology/OMT">
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:comment xml:lang="en">Ontology for Measurement Terminology (OMT) is a domain ontology, using a foundation of metrological terms from standards like International Vocabulary of Me-trology (VIM), Guide to the Expression of Uncertainty in Measurement (GUM), and JJF 1001-2011. It also incorporates insights from models such as the SI Reference Point, the Simple Knowledge Or-ganization System (SKOS), and the DCC Schema.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://www.nmdc.com/ontology/OMT</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">OMT: Ontology for Measurement Terminology</rdfs:label>
     </owl:Ontology>
     
