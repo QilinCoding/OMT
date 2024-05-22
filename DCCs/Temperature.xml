@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dcc:digitalCalibrationCertificate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.nim.ac.cn/dcc https://www.nim.ac.cn/dcc/v3.2.1/dcc.xsd" xmlns:dcc="https://www.nim.ac.cn/dcc" xmlns:si="https://www.nim.ac.cn/si" schemaVersion="3.2.1">
+	<dcc:administrativeData>
+      	<dcc:dccSoftware>
+			<dcc:software>
+				<dcc:name>
+					<dcc:content>PyCharm</dcc:content>
+				</dcc:name>
+				<dcc:release><dcc:content lang="zh">Professional 2019.1</dcc:content></dcc:release>
+			</dcc:software>
+		</dcc:dccSoftware>
+		
+		<dcc:coreData>
+			<dcc:countryCodeISO3166_1>CN</dcc:countryCodeISO3166_1>
+			<dcc:usedLangCodeISO639_1>zh</dcc:usedLangCodeISO639_1>
+			<dcc:usedLangCodeISO639_1>en</dcc:usedLangCodeISO639_1>
+			<dcc:mandatoryLangCodeISO639_1>zh</dcc:mandatoryLangCodeISO639_1>
+			<dcc:uniqueIdentifier>RGfs2019-00037</dcc:uniqueIdentifier>
+			<dcc:receiptDate>2019-10-14</dcc:receiptDate>
+			<dcc:beginPerformanceDate>2019-10-25</dcc:beginPerformanceDate>
+			<dcc:endPerformanceDate>2019-10-25</dcc:endPerformanceDate>
+			<dcc:performanceLocation>laboratory</dcc:performanceLocation>
+			<dcc:issueDate>2019-11-05</dcc:issueDate>
+		</dcc:coreData>
+		
+		<dcc:items>
+			<dcc:item>
+				<dcc:name>
+					<dcc:content lang="zh">精密辐射温度计</dcc:content>
+					<dcc:content lang="en">precision radiation thermometer</dcc:content>
+				</dcc:name>
+		
+				<dcc:description>
+					<dcc:content lang="zh">温度校准</dcc:content>
+					<dcc:content lang="en">thermometer calibration</dcc:content>
+				</dcc:description>
+				
+				<dcc:manufacturer>
+					<dcc:name>
+						<dcc:content lang="en">HEITRONICS</dcc:content>
+					</dcc:name>
+				</dcc:manufacturer>
+			
+				<dcc:model><dcc:content lang="zh">TRT IV.82</dcc:content></dcc:model>
+				<dcc:identifications>
+					<dcc:identification>
+						<dcc:issuer>manufacturer</dcc:issuer>
+						<dcc:value><dcc:content lang="zh">4012</dcc:content></dcc:value>
+						<dcc:name>
+							<dcc:content lang="zh">出厂编号</dcc:content>
+							<dcc:content lang="en">Serial number</dcc:content>
+						</dcc:name>
+					</dcc:identification>
+				</dcc:identifications>
+			</dcc:item>
+		</dcc:items>
+		
+		<dcc:calibrationLaboratory>
+			<dcc:contact>
+				<dcc:name>
+					<dcc:content lang="zh">中国计量科学研究院</dcc:content>
+					<dcc:content lang="en">National Institute of Metrology, China</dcc:content>
+				</dcc:name>
+				<dcc:eMail>kehufuwu@nim.ac.cn</dcc:eMail>
+				<dcc:phone>010-64525569/74</dcc:phone>
+				<dcc:fax>010-64271948</dcc:fax>
+				
+				<dcc:location>
+					<dcc:street><dcc:content lang="zh">北京北三环东路18号</dcc:content></dcc:street>
+					<dcc:postCode><dcc:content lang="zh">100029</dcc:content></dcc:postCode>
+					<dcc:city><dcc:content lang="zh">北京</dcc:content><dcc:content lang="zh" /></dcc:city>
+					<dcc:countryCode>CN</dcc:countryCode>
+				</dcc:location>
+				
+			</dcc:contact>
+		</dcc:calibrationLaboratory>
+
+		<dcc:respPersons>
+		
+			<dcc:respPerson>
+				<dcc:person>
+					<dcc:name>
+						<dcc:content lang="zh">郝小鹏</dcc:content>
+					</dcc:name>
+				</dcc:person>
+				<dcc:description>
+					<dcc:content lang="zh">批准人</dcc:content>
+					<dcc:content lang="en">approved by</dcc:content>
+				</dcc:description>
+			
+			</dcc:respPerson>
+			
+			<dcc:respPerson>
+				<dcc:person>
+					<dcc:name>
+						<dcc:content lang="zh">杨雪</dcc:content>
+					</dcc:name>
+				</dcc:person>
+				<dcc:description>
+					<dcc:content lang="zh">校准员</dcc:content>
+					<dcc:content lang="en">calibrated by</dcc:content>
+				</dcc:description>
+			
+				
+			</dcc:respPerson>
+			
+			<dcc:respPerson>
+				<dcc:person>
+					<dcc:name>
+						<dcc:content lang="zh">王景辉</dcc:content>
+						<dcc:content lang="en">Wang Jinghui</dcc:content>
+					</dcc:name>
+				</dcc:person>
+				<dcc:description>
+					<dcc:content lang="zh">核验员</dcc:content>
+					<dcc:content lang="en">checked by</dcc:content>
+				</dcc:description>
+			
+			</dcc:respPerson>
+		</dcc:respPersons>
+		
+		<dcc:customer>
+			<dcc:name>
+				<dcc:content lang="zh">河南省计量科学研究院</dcc:content>
+			</dcc:name>
+			<dcc:eMail>/</dcc:eMail>
+			<dcc:phone>18939252323</dcc:phone>
+			<dcc:fax>/</dcc:fax>
+			<dcc:location>
+				<dcc:street><dcc:content lang="zh" /></dcc:street>
+				<dcc:city><dcc:content lang="zh"></dcc:content></dcc:city>
+				<dcc:countryCode>CN</dcc:countryCode>
+				
+			</dcc:location>
+		</dcc:customer>
+		
+		
+		<dcc:statements>
+			<dcc:statement>
+				<dcc:norm><dcc:content lang="zh">ISO/IEC17025</dcc:content></dcc:norm>
+			</dcc:statement>
+			
+			<dcc:statement>
+				<dcc:norm><dcc:content lang="zh">JJF1059</dcc:content></dcc:norm>
+			</dcc:statement>
+			
+			<dcc:statement>
+				<dcc:reference><dcc:content lang="zh">
+				依据 NIM-ZY-RG-FS-021 辐射温度计校准实施细则;
+				参照 JJG 856-2015 工作用辐射温度计检定规程.
+				</dcc:content></dcc:reference>
+			</dcc:statement>
+			
+			
+			<dcc:statement>
+				<dcc:declaration>
+					<dcc:content lang="zh">中国计量科学研究院（NIM）是国家最高的计量科学研究中心和国家级法定计量技术机构。1999年授权签署了国际计量委员会（CIPM）《国家计量基(标)准和国家计量院签发的校准与测量证书互认协议》（CIPM MRA）。
+					质量管理体系符合ISO/IEC17025标准，通过中国合格评定国家认可委员会（CNAS）和亚太计量规划组织（APMP）联合评审的校准和测量能力（CMCs）在国际计量局（BIPM）关键比对数据库中公布。
+					2011年，NIM和CNAS就认可领域的技术评价活动签署了谅解备忘录，承认NIM的计量支撑作用和出具的校准/检测结果的溯源效力。
+					校准结果不确定度的评估和表述均符合JJF1059系列标准的要求。
+					</dcc:content>
+				</dcc:declaration>			
+			</dcc:statement>
+			
+			<dcc:statement>
+				<dcc:declaration>
+					<dcc:content lang="zh">
+					1. 我院仅对加盖“中国计量科学研究院校准专用章”的完整证书负责。
+					2. 本证书的校准结果仅对本次所校准的计量器具有效。
+					</dcc:content>
+				</dcc:declaration>
+			</dcc:statement>
+			
+		</dcc:statements>
+	</dcc:administrativeData>
+	
+	<dcc:measurementResults>
+		<dcc:measurementResult>
+			<dcc:name>
+				<dcc:content lang="zh"></dcc:content>
+			</dcc:name>
+			<dcc:description>
+				<dcc:content lang="zh"></dcc:content>
+			</dcc:description>
+			<dcc:measuringEquipments>
+				<dcc:measuringEquipment>
+					<dcc:name>
+						<dcc:content lang="zh">黑体辐射源校准装置</dcc:content>
+					</dcc:name>
+					<dcc:description>
+						<dcc:content lang="zh">校准使用的计量基（标）准装置（含标准物质）/主要仪器</dcc:content>
+					</dcc:description>
+					
+					<dcc:identifications>
+						<dcc:identification>
+							<dcc:issuer>other</dcc:issuer>
+							<dcc:value><dcc:content lang="zh">（-50～1000）°C</dcc:content></dcc:value>
+							<dcc:name>
+								<dcc:content lang="zh">测量范围</dcc:content>
+								<dcc:content lang="en">measure range</dcc:content>
+							</dcc:name>
+						</dcc:identification>
+						<dcc:identification>
+							<dcc:issuer>other</dcc:issuer>
+							<dcc:value><dcc:content lang="zh">U=（0.05～0.61）°C （k=2）</dcc:content></dcc:value>
+							<dcc:name>
+								<dcc:content lang="zh">不确定度/准确度等级</dcc:content>
+								<dcc:content lang="en">uncertainty/accuracy</dcc:content>
+							</dcc:name>
+						</dcc:identification>
+						<dcc:identification>
+							<dcc:issuer>other</dcc:issuer>
+							<dcc:value><dcc:content lang="zh">[2012]国量标计证字第248号</dcc:content></dcc:value>
+							<dcc:name>
+								<dcc:content lang="zh">证书编号</dcc:content>
+								<dcc:content lang="en">certificate No.</dcc:content>
+							</dcc:name>
+						</dcc:identification>
+						<dcc:identification>
+							<dcc:issuer>other</dcc:issuer>
+							<dcc:value><dcc:content lang="zh">2022-08-30</dcc:content></dcc:value>
+							<dcc:name>
+								<dcc:content lang="zh">证书有效期至</dcc:content>
+								<dcc:content lang="en">due date</dcc:content>
+							</dcc:name>
+						</dcc:identification>
+					</dcc:identifications>
+					
+				</dcc:measuringEquipment>
+			</dcc:measuringEquipments>
+		
+			
+			<dcc:influenceConditions>
+				<dcc:influenceCondition>
+					<dcc:name>			
+						<dcc:content lang="zh">环境温度</dcc:content>
+						<dcc:content lang="en">ambient temperature</dcc:content>
+					</dcc:name>
+					<dcc:data>
+						<dcc:quantity>
+							<dcc:name>
+								<dcc:content lang="zh">温度下限</dcc:content>
+								<dcc:content lang="en">lower temperature value</dcc:content>
+							</dcc:name>
+							<si:real>
+								<si:value>293.3</si:value>
+								<si:unit>\kelvin</si:unit>
+							</si:real>
+						</dcc:quantity>
+						<dcc:quantity>
+							<dcc:name>
+								<dcc:content lang="zh">温度上限</dcc:content>
+								<dcc:content lang="en">upper temperature value</dcc:content>
+							</dcc:name>
+							<si:real>
+								<si:value>296.4</si:value>
+								<si:unit>\kelvin</si:unit>
+							</si:real>
+						</dcc:quantity>
+					</dcc:data>
+				</dcc:influenceCondition>
+				<dcc:influenceCondition>
+					<dcc:name>			
+						<dcc:content lang="zh">相对湿度</dcc:content>
+						<dcc:content lang="en">relative humidity</dcc:content>
+					</dcc:name>
+					<dcc:data>
+						<dcc:quantity>
+							<dcc:name>
+								<dcc:content lang="zh">相对湿度下限</dcc:content>
+								<dcc:content lang="en">lower relative humidity value</dcc:content>
+							</dcc:name>
+							<si:real>
+								<si:value>29.7</si:value>
+								<si:unit>\kilogram\tothe{1}\metre\tothe{-3}\kilogram\tothe{-1}\metre\tothe{3}</si:unit>
+							</si:real>
+						</dcc:quantity>
+						<dcc:quantity>
+							<dcc:name>
+								<dcc:content lang="zh">相对湿度上限</dcc:content>
+								<dcc:content lang="en">upper relative humidity value</dcc:content>
+							</dcc:name>
+							<si:real>
+								<si:value>46.3</si:value>
+								<si:unit>\kilogram\tothe{1}\metre\tothe{-3}\kilogram\tothe{-1}\metre\tothe{3}</si:unit>
+							</si:real>
+						</dcc:quantity>
+					</dcc:data>
+				</dcc:influenceCondition>
+				<dcc:influenceCondition>
+					<dcc:name>			
+						<dcc:content lang="zh">校准地点</dcc:content>
+						<dcc:content lang="en">calibration location</dcc:content>
+					</dcc:name>
+					<dcc:data>
+						<dcc:text>
+							<dcc:content lang="zh">本院和平里院区 5号楼3022房间/3036房间</dcc:content>
+							<dcc:content lang="en">NIM(No.18 Bei San Huan Dong Lu,Beijing,P.R.China)05-3022/3036</dcc:content>
+						</dcc:text>
+					</dcc:data>
+				</dcc:influenceCondition>
+			</dcc:influenceConditions>
+			
+		
+			
+			<dcc:results>
+				<dcc:result>
+					<dcc:name>
+						<dcc:content lang="zh">校准结果</dcc:content>
+						<dcc:content lang="en">calibration results</dcc:content>
+					</dcc:name>
+					<dcc:data>
+						<dcc:text>
+							<dcc:content lang="zh">注：	1.被校温度计工作波长是（8~14）μm，“发射率设置”为1.000。
+														2.校准条件：距离Φ30 mm光阑0.39 m。
+													    3.扩展不确定度不包含被校仪器长期稳定性影响。
+							</dcc:content>
+							<dcc:content lang="en">
+								Note: 1. The working wavelength of the calibrated thermometer is (8 ~ 14) μ m, and the emissivity setting is 1.000.
+								      2. Calibration condition: 0.39 m from the aperture of Φ 30 mm.
+									  3. The extended uncertainty does not include the influence of long-term stability of the calibrated instrument.
+							</dcc:content>
+						</dcc:text>
+						
+						<dcc:list>
+							<dcc:name>
+								<dcc:content lang="zh">表一</dcc:content>
+								<dcc:content lang="en">table 1</dcc:content>
+							</dcc:name>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标准温度</dcc:content>
+										<dcc:content lang="en">Standard temperature</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>-50.0 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">温度计示值</dcc:content>
+										<dcc:content lang="en">Thermometer indication</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>-48.7 °C</si:label>
+										<si:value>-48.7</si:value>
+										<si:unit>\degreecelsius</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.7</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							    <dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">示值误差</dcc:content>
+										<dcc:content lang="en">Indication error</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>1.3 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标准温度</dcc:content>
+										<dcc:content lang="en">Standard temperature</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>-30.0 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">温度计示值</dcc:content>
+										<dcc:content lang="en">Thermometer indication</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>-29.4 °C</si:label>
+										<si:value>-29.4</si:value>
+										<si:unit>\degreecelsius</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.6</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							    <dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">示值误差</dcc:content>
+										<dcc:content lang="en">Indication error</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>0.6 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标准温度</dcc:content>
+										<dcc:content lang="en">Standard temperature</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>0.0 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">温度计示值</dcc:content>
+										<dcc:content lang="en">Thermometer indication</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>0.3 °C</si:label>
+										<si:value>0.3</si:value>
+										<si:unit>\degreecelsius</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							    <dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">示值误差</dcc:content>
+										<dcc:content lang="en">Indication error</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>0.3 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标准温度</dcc:content>
+										<dcc:content lang="en">Standard temperature</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>50.0 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">温度计示值</dcc:content>
+										<dcc:content lang="en">Thermometer indication</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>49.8 °C</si:label>
+										<si:value>49.8</si:value>
+										<si:unit>\degreecelsius</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							    <dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">示值误差</dcc:content>
+										<dcc:content lang="en">Indication error</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>-0.2 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标准温度</dcc:content>
+										<dcc:content lang="en">Standard temperature</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>100.0 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">温度计示值</dcc:content>
+										<dcc:content lang="en">Thermometer indication</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>99.5 °C</si:label>
+										<si:value>99.5</si:value>
+										<si:unit>\degreecelsius</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							    <dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">示值误差</dcc:content>
+										<dcc:content lang="en">Indication error</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>-0.5 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+							</dcc:list>
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标准温度</dcc:content>
+										<dcc:content lang="en">Standard temperature</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>200.0 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">温度计示值</dcc:content>
+										<dcc:content lang="en">Thermometer indication</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>199.0 °C</si:label>
+										<si:value>199.0</si:value>
+										<si:unit>\degreecelsius</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							    <dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">示值误差</dcc:content>
+										<dcc:content lang="en">Indication error</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>-1.0 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标准温度</dcc:content>
+										<dcc:content lang="en">Standard temperature</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>300.0 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">温度计示值</dcc:content>
+										<dcc:content lang="en">Thermometer indication</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>298.4 °C</si:label>
+										<si:value>298.4</si:value>
+										<si:unit>\degreecelsius</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.7</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							    <dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">示值误差</dcc:content>
+										<dcc:content lang="en">Indication error</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>-1.6 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标准温度</dcc:content>
+										<dcc:content lang="en">Standard temperature</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>400.0 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">温度计示值</dcc:content>
+										<dcc:content lang="en">Thermometer indication</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>398.0 °C</si:label>
+										<si:value>398.0</si:value>
+										<si:unit>\degreecelsius</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.8</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							    <dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">示值误差</dcc:content>
+										<dcc:content lang="en">Indication error</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>-2.0 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标准温度</dcc:content>
+										<dcc:content lang="en">Standard temperature</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>500.0 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">温度计示值</dcc:content>
+										<dcc:content lang="en">Thermometer indication</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>497.5 °C</si:label>
+										<si:value>497.5</si:value>
+										<si:unit>\degreecelsius</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.9</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							    <dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">示值误差</dcc:content>
+										<dcc:content lang="en">Indication error</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>-2.5 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+							</dcc:list>
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标准温度</dcc:content>
+										<dcc:content lang="en">Standard temperature</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>600.0 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">温度计示值</dcc:content>
+										<dcc:content lang="en">Thermometer indication</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>597.3 °C</si:label>
+										<si:value>597.3</si:value>
+										<si:unit>\degreecelsius</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>1.1</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							    <dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">示值误差</dcc:content>
+										<dcc:content lang="en">Indication error</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>-2.7 °C</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+							</dcc:list>
+						</dcc:list>
+					</dcc:data>
+				</dcc:result>
+			</dcc:results>
+		</dcc:measurementResult>
+	</dcc:measurementResults>
+</dcc:digitalCalibrationCertificate>

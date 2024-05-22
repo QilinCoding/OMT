@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<dcc:digitalCalibrationCertificate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.nim.ac.cn/dcc https://www.nim.ac.cn/dcc/v3.2.1/dcc.xsd" xmlns:dcc="https://www.nim.ac.cn/dcc" xmlns:si="https://www.nim.ac.cn/si" schemaVersion="3.2.1">
+	<dcc:administrativeData>
+      	<dcc:dccSoftware>
+			<dcc:software>
+				<dcc:name>
+					<dcc:content>PyCharm</dcc:content>
+				</dcc:name>
+				<dcc:release><dcc:content lang="zh">Professional 2019.1</dcc:content></dcc:release>
+			</dcc:software>
+		</dcc:dccSoftware>
+		
+		<dcc:coreData>
+			<dcc:countryCodeISO3166_1>CN</dcc:countryCodeISO3166_1>
+			<dcc:usedLangCodeISO639_1>zh</dcc:usedLangCodeISO639_1>
+			<dcc:usedLangCodeISO639_1>en</dcc:usedLangCodeISO639_1>
+			<dcc:mandatoryLangCodeISO639_1>zh</dcc:mandatoryLangCodeISO639_1>
+			<dcc:uniqueIdentifier>LSmm2020-02045</dcc:uniqueIdentifier>
+			<dcc:receiptDate>2020-05-11</dcc:receiptDate>
+			<dcc:beginPerformanceDate>2020-06-05</dcc:beginPerformanceDate>
+			<dcc:endPerformanceDate>2020-06-05</dcc:endPerformanceDate>
+			<dcc:performanceLocation>laboratory</dcc:performanceLocation>
+			<dcc:issueDate>2020-06-08</dcc:issueDate>
+		</dcc:coreData>
+		
+		<dcc:items>
+			<dcc:item>
+				<dcc:name>
+					<dcc:content lang="zh">砝码</dcc:content>
+				</dcc:name>
+				
+				<dcc:description>
+					<dcc:content lang="zh">砝码校准</dcc:content>
+				</dcc:description>
+					
+				<dcc:manufacturer>
+					<dcc:name>
+						<dcc:content lang="zh">蓬莱市水玲砝码厂</dcc:content>
+					</dcc:name>
+				</dcc:manufacturer>
+			
+				<dcc:model><dcc:content lang="zh">500 g～1 g</dcc:content></dcc:model>
+			
+				<dcc:identifications>
+					<dcc:identification>
+						<dcc:issuer>manufacturer</dcc:issuer>
+						<dcc:value><dcc:content lang="zh">052</dcc:content></dcc:value>
+						<dcc:name>
+							<dcc:content lang="zh">出厂编号</dcc:content>
+							<dcc:content lang="en">Serial number</dcc:content>
+						</dcc:name>
+					</dcc:identification>
+				</dcc:identifications>
+			</dcc:item>
+		</dcc:items>
+		
+		<dcc:calibrationLaboratory>
+			<dcc:contact>
+				<dcc:name>
+					<dcc:content lang="zh">中国计量科学研究院</dcc:content>
+					<dcc:content lang="en">National Institute of Metrology, China</dcc:content>
+				</dcc:name>
+				<dcc:eMail>kehufuwu@nim.ac.cn</dcc:eMail>
+				<dcc:phone>010-64525569/74</dcc:phone>
+				<dcc:fax>010-64271948</dcc:fax>
+				
+				<dcc:location>
+					<dcc:street><dcc:content lang="zh">北京北三环东路18号</dcc:content></dcc:street>
+					<dcc:postCode><dcc:content lang="zh">100029</dcc:content></dcc:postCode>
+					<dcc:city><dcc:content lang="zh">北京</dcc:content><dcc:content lang="zh" /></dcc:city>
+					<dcc:countryCode>CN</dcc:countryCode>
+				</dcc:location>
+				
+			</dcc:contact>
+		</dcc:calibrationLaboratory>
+
+		<dcc:respPersons>
+		
+			<dcc:respPerson>
+				<dcc:person>
+					<dcc:name>
+						<dcc:content lang="zh">王建</dcc:content>
+					</dcc:name>
+				</dcc:person>
+				<dcc:description>
+					<dcc:content lang="zh">批准人</dcc:content>
+					<dcc:content lang="en">approved by</dcc:content>
+				</dcc:description>
+			
+			</dcc:respPerson>
+			
+			<dcc:respPerson>
+				<dcc:person>
+					<dcc:name>
+						<dcc:content lang="zh">胡江红</dcc:content>
+					</dcc:name>
+				</dcc:person>
+				<dcc:description>
+					<dcc:content lang="zh">校准员</dcc:content>
+					<dcc:content lang="en">calibrated by</dcc:content>
+				</dcc:description>
+			
+				
+			</dcc:respPerson>
+			
+			<dcc:respPerson>
+				<dcc:person>
+					<dcc:name>
+						<dcc:content lang="zh">钟瑞麟</dcc:content>
+					</dcc:name>
+				</dcc:person>
+				<dcc:description>
+					<dcc:content lang="zh">核验员</dcc:content>
+					<dcc:content lang="en">checked by</dcc:content>
+				</dcc:description>
+			
+			</dcc:respPerson>
+		</dcc:respPersons>
+		
+		<dcc:customer>
+			<dcc:name>
+				<dcc:content lang="zh">承德唯尔计量检测有限公司</dcc:content>
+			</dcc:name>
+			<dcc:eMail>/</dcc:eMail>
+			<dcc:phone>/</dcc:phone>
+			<dcc:fax>/</dcc:fax>
+			<dcc:location>
+				<dcc:street><dcc:content lang="zh">河北省承德市高新区科技大厦主楼9楼0914</dcc:content></dcc:street>
+				<dcc:postCode><dcc:content lang="zh"></dcc:content></dcc:postCode>
+				<dcc:city><dcc:content lang="zh">承德</dcc:content></dcc:city>
+				<dcc:countryCode>CN</dcc:countryCode>
+			</dcc:location>
+		</dcc:customer>
+		
+		
+		<dcc:statements>
+			<dcc:statement>
+				<dcc:norm><dcc:content lang="zh">ISO/IEC17025</dcc:content></dcc:norm>
+			</dcc:statement>
+			
+			<dcc:statement>
+				<dcc:norm><dcc:content lang="zh">JJF1059</dcc:content></dcc:norm>
+			</dcc:statement>
+			
+			<dcc:statement>
+				<dcc:reference><dcc:content lang="zh">参照 JJG 99-2006 《砝码》检定规程</dcc:content></dcc:reference>
+			</dcc:statement>
+			
+			<dcc:statement>
+				<dcc:declaration>
+					<dcc:content lang="zh">中国计量科学研究院（NIM）是国家最高的计量科学研究中心和国家级法定计量技术机构。1999年授权签署了国际计量委员会（CIPM）《国家计量基(标)准和国家计量院签发的校准与测量证书互认协议》（CIPM MRA）。
+					质量管理体系符合ISO/IEC17025标准，通过中国合格评定国家认可委员会（CNAS）和亚太计量规划组织（APMP）联合评审的校准和测量能力（CMCs）在国际计量局（BIPM）关键比对数据库中公布。
+					2011年，NIM和CNAS就认可领域的技术评价活动签署了谅解备忘录，承认NIM的计量支撑作用和出具的校准/检测结果的溯源效力。
+					校准结果不确定度的评估和表述均符合JJF1059系列标准的要求。
+					</dcc:content>
+				</dcc:declaration>			
+			</dcc:statement>
+			
+			<dcc:statement>
+				<dcc:declaration>
+					<dcc:content lang="zh">
+					1. 我院仅对加盖“中国计量科学研究院校准专用章”的完整证书负责。
+					2. 本证书的校准结果仅对本次所校准的计量器具有效。
+					</dcc:content>
+				</dcc:declaration>
+			</dcc:statement>
+			
+		</dcc:statements>
+	</dcc:administrativeData>
+	
+	<dcc:measurementResults>
+		<dcc:measurementResult>
+			<dcc:name>
+				<dcc:content lang="zh"></dcc:content>
+			</dcc:name>
+			<dcc:description>
+				<dcc:content lang="zh"></dcc:content>
+			</dcc:description>
+			<dcc:measuringEquipments>
+				<dcc:measuringEquipment>
+					<dcc:name>
+						<dcc:content lang="zh">E2等级砝码组标准装置</dcc:content>
+					</dcc:name>
+					<dcc:description>
+						<dcc:content lang="zh">校准使用的计量基（标）准装置（含标准物质）/主要仪器</dcc:content>
+					</dcc:description>
+					
+					<dcc:identifications>
+						<dcc:identification>
+							<dcc:issuer>other</dcc:issuer>
+							<dcc:value><dcc:content lang="zh">1 mg～180 kg</dcc:content></dcc:value>
+							<dcc:name>
+								<dcc:content lang="zh">测量范围</dcc:content>
+								<dcc:content lang="en">measure range</dcc:content>
+							</dcc:name>
+						</dcc:identification>
+						<dcc:identification>
+							<dcc:issuer>other</dcc:issuer>
+							<dcc:value><dcc:content lang="zh">E2等级</dcc:content></dcc:value>
+							<dcc:name>
+								<dcc:content lang="zh">不确定度/准确度等级</dcc:content>
+								<dcc:content lang="en">uncertainty/accuracy</dcc:content>
+							</dcc:name>
+						</dcc:identification>
+						<dcc:identification>
+							<dcc:issuer>other</dcc:issuer>
+							<dcc:value><dcc:content lang="zh">[1988] 国量标计证字第116号</dcc:content></dcc:value>
+							<dcc:name>
+								<dcc:content lang="zh">证书编号</dcc:content>
+								<dcc:content lang="en">certificate No.</dcc:content>
+							</dcc:name>
+						</dcc:identification>
+						<dcc:identification>
+							<dcc:issuer>other</dcc:issuer>
+							<dcc:value><dcc:content lang="zh">2021-03-23</dcc:content></dcc:value>
+							<dcc:name>
+								<dcc:content lang="zh">证书有效期至</dcc:content>
+								<dcc:content lang="en">due date</dcc:content>
+							</dcc:name>
+						</dcc:identification>
+					</dcc:identifications>
+					
+				</dcc:measuringEquipment>
+			</dcc:measuringEquipments>
+		
+			
+			<dcc:influenceConditions>
+				<dcc:influenceCondition>
+					<dcc:name>			
+						<dcc:content lang="zh">环境温度</dcc:content>
+						<dcc:content lang="en">ambient temperature</dcc:content>
+					</dcc:name>
+					<dcc:data>
+						<dcc:quantity>
+							<dcc:name>
+								<dcc:content lang="zh">温度下限</dcc:content>
+								<dcc:content lang="en">lower temperature value</dcc:content>
+							</dcc:name>
+							<si:real>
+								<si:value>292.5</si:value>
+								<si:unit>\kelvin</si:unit>
+							</si:real>
+						</dcc:quantity>
+						<dcc:quantity>
+							<dcc:name>
+								<dcc:content lang="zh">温度上限</dcc:content>
+								<dcc:content lang="en">upper temperature value</dcc:content>
+							</dcc:name>
+							<si:real>
+								<si:value>293.5</si:value>
+								<si:unit>\kelvin</si:unit>
+							</si:real>
+						</dcc:quantity>
+					</dcc:data>
+				</dcc:influenceCondition>
+				<dcc:influenceCondition>
+					<dcc:name>			
+						<dcc:content lang="zh">相对湿度</dcc:content>
+						<dcc:content lang="en">relative humidity</dcc:content>
+					</dcc:name>
+					<dcc:data>
+						<dcc:quantity>
+							<dcc:name>
+								<dcc:content lang="zh">相对湿度下限</dcc:content>
+								<dcc:content lang="en">lower relative humidity value</dcc:content>
+							</dcc:name>
+							<si:real>
+								<si:value>46.3</si:value>
+								<si:unit>\kilogram\tothe{1}\metre\tothe{-3}\kilogram\tothe{-1}\metre\tothe{3}</si:unit>
+							</si:real>
+						</dcc:quantity>
+						<dcc:quantity>
+							<dcc:name>
+								<dcc:content lang="zh">相对湿度上限</dcc:content>
+								<dcc:content lang="en">upper relative humidity value</dcc:content>
+							</dcc:name>
+							<si:real>
+								<si:value>47.3</si:value>
+								<si:unit>\kilogram\tothe{1}\metre\tothe{-3}\kilogram\tothe{-1}\metre\tothe{3}</si:unit>
+							</si:real>
+						</dcc:quantity>
+					</dcc:data>
+				</dcc:influenceCondition>
+				<dcc:influenceCondition>
+					<dcc:name>			
+						<dcc:content lang="zh">校准地点</dcc:content>
+						<dcc:content lang="en">calibration location</dcc:content>
+					</dcc:name>
+					<dcc:data>
+						<dcc:text>
+							<dcc:content lang="zh">和-05-1017</dcc:content>
+							<dcc:content lang="en">NIM(No.18 Bei San Huan Dong Lu,Beijing,P.R.China)05-1017</dcc:content>
+						</dcc:text>
+					</dcc:data>
+				</dcc:influenceCondition>
+			</dcc:influenceConditions>
+			
+		
+			
+			<dcc:results>
+				<dcc:result>
+					<dcc:name>
+						<dcc:content lang="zh">校准结果</dcc:content>
+						<dcc:content lang="en">calibration results</dcc:content>
+					</dcc:name>
+					<dcc:data>
+						<dcc:text>
+							<dcc:content lang="zh">说明：1、下次校准时请附带此证书复印件；2、扩展不确定度的覆盖因子k=2。</dcc:content>
+							<dcc:content lang="en">
+								Note: 1. Please attach the copy of this certificate when the next calibration; 2. The coverage factor of expanded uncertainty k = 2.
+							</dcc:content>
+						</dcc:text>
+						
+						<dcc:list>
+							<dcc:name>
+								<dcc:content lang="zh">表一</dcc:content>
+								<dcc:content lang="en">table 1</dcc:content>
+							</dcc:name>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标称质量</dcc:content>
+										<dcc:content lang="en">nominal mass</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>500 g</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">折算质量 实际质量值</dcc:content>
+										<dcc:content lang="en">converted mass/actual mass value</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>500.0004 g</si:label>
+										<si:value>500.0004E-3</si:value>
+										<si:unit>\kilogram</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.0008E-3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标称质量</dcc:content>
+										<dcc:content lang="en">nominal mass</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>200 g</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">折算质量 实际质量值</dcc:content>
+										<dcc:content lang="en">converted mass/actual mass value</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>200.0003 g</si:label>
+										<si:value>200.0003E-3</si:value>
+										<si:unit>\kilogram</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.0003E-3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标称质量</dcc:content>
+										<dcc:content lang="en">nominal mass</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>200 g</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">折算质量 实际质量值</dcc:content>
+										<dcc:content lang="en">converted mass/actual mass value</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>200.0004 g</si:label>
+										<si:value>200.0004E-3</si:value>
+										<si:unit>\kilogram</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.0003E-3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标称质量</dcc:content>
+										<dcc:content lang="en">nominal mass</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>100 g</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">折算质量 实际质量值</dcc:content>
+										<dcc:content lang="en">converted mass/actual mass value</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>100.00018 g</si:label>
+										<si:value>200.00018E-3</si:value>
+										<si:unit>\kilogram</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.00016E-3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标称质量</dcc:content>
+										<dcc:content lang="en">nominal mass</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>50 g</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">折算质量 实际质量值</dcc:content>
+										<dcc:content lang="en">converted mass/actual mass value</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>50.00024 g</si:label>
+										<si:value>50.00024E-3</si:value>
+										<si:unit>\kilogram</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.0001E-3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标称质量</dcc:content>
+										<dcc:content lang="en">nominal mass</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>20 g</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">折算质量 实际质量值</dcc:content>
+										<dcc:content lang="en">converted mass/actual mass value</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>20.00008 g</si:label>
+										<si:value>20.00008E-3</si:value>
+										<si:unit>\kilogram</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.00008E-3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标称质量</dcc:content>
+										<dcc:content lang="en">nominal mass</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>20 g</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">折算质量 实际质量值</dcc:content>
+										<dcc:content lang="en">converted mass/actual mass value</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>20.00012 g</si:label>
+										<si:value>20.00012E-3</si:value>
+										<si:unit>\kilogram</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.00008E-3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标称质量</dcc:content>
+										<dcc:content lang="en">nominal mass</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>10 g</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">折算质量 实际质量值</dcc:content>
+										<dcc:content lang="en">converted mass/actual mass value</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>10.00007 g</si:label>
+										<si:value>10.00007E-3</si:value>
+										<si:unit>\kilogram</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.00006E-3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标称质量</dcc:content>
+										<dcc:content lang="en">nominal mass</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>5 g</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">折算质量 实际质量值</dcc:content>
+										<dcc:content lang="en">converted mass/actual mass value</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>5.00004 g</si:label>
+										<si:value>5.00004E-3</si:value>
+										<si:unit>\kilogram</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.00005E-3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标称质量</dcc:content>
+										<dcc:content lang="en">nominal mass</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>2 g</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">折算质量 实际质量值</dcc:content>
+										<dcc:content lang="en">converted mass/actual mass value</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>2.00002 g</si:label>
+										<si:value>2.00002E-3</si:value>
+										<si:unit>\kilogram</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.00004E-3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标称质量</dcc:content>
+										<dcc:content lang="en">nominal mass</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>2 g</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">折算质量 实际质量值</dcc:content>
+										<dcc:content lang="en">converted mass/actual mass value</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>2.00004 g</si:label>
+										<si:value>2.00004E-3</si:value>
+										<si:unit>\kilogram</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.00004E-3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							</dcc:list>
+							
+							<dcc:list>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">标称质量</dcc:content>
+										<dcc:content lang="en">nominal mass</dcc:content>
+									</dcc:name>
+									<dcc:noQuantity>
+										<dcc:content>1 g</dcc:content>
+									</dcc:noQuantity>
+								</dcc:quantity>
+								<dcc:quantity>
+									<dcc:name>
+										<dcc:content lang="zh">折算质量 实际质量值</dcc:content>
+										<dcc:content lang="en">converted mass/actual mass value</dcc:content>
+									</dcc:name>
+									<si:real>
+										<si:label>1.00004 g</si:label>
+										<si:value>1.00004E-3</si:value>
+										<si:unit>\kilogram</si:unit>
+										<si:expandedUnc>
+											<si:uncertainty>0.00003E-3</si:uncertainty>
+											<si:coverageFactor>2</si:coverageFactor>
+											<si:coverageProbability>0.95</si:coverageProbability>
+										</si:expandedUnc>
+									</si:real>
+								</dcc:quantity>
+							</dcc:list>
+						</dcc:list>
+					</dcc:data>
+				</dcc:result>
+			</dcc:results>
+		</dcc:measurementResult>
+	</dcc:measurementResults>
+</dcc:digitalCalibrationCertificate>

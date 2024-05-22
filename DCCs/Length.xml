@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<dcc:digitalCalibrationCertificate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.nim.ac.cn/dcc https://www.nim.ac.cn/dcc/v3.2.1/dcc.xsd" xmlns:dcc="https://www.nim.ac.cn/dcc" xmlns:si="https://www.nim.ac.cn/si" schemaVersion="3.2.1">
+		<dcc:administrativeData>
+			<dcc:dccSoftware>
+				<dcc:software>
+					<dcc:name>
+						<dcc:content>PyCharm</dcc:content>
+					</dcc:name>
+					<dcc:release><dcc:content lang="zh">Professional 2021.1</dcc:content></dcc:release>
+				</dcc:software>
+			</dcc:dccSoftware>
+			<dcc:coreData>
+				<dcc:countryCodeISO3166_1>CN</dcc:countryCodeISO3166_1>
+				<dcc:usedLangCodeISO639_1>zh</dcc:usedLangCodeISO639_1>
+				<dcc:usedLangCodeISO639_1>en</dcc:usedLangCodeISO639_1>
+				<dcc:mandatoryLangCodeISO639_1>zh</dcc:mandatoryLangCodeISO639_1>
+				<dcc:uniqueIdentifier>CDlx2019-00350</dcc:uniqueIdentifier>
+				<dcc:receiptDate>2019-10-28</dcc:receiptDate>
+				<dcc:beginPerformanceDate>2019-10-31</dcc:beginPerformanceDate>
+				<dcc:endPerformanceDate>2019-10-31</dcc:endPerformanceDate>
+				<dcc:performanceLocation>laboratory</dcc:performanceLocation>
+				<dcc:issueDate>2020-03-26</dcc:issueDate>
+			</dcc:coreData>
+			<dcc:items>
+				<dcc:item>
+					<dcc:name>
+						<dcc:content lang="zh">玻璃尺</dcc:content>
+					</dcc:name>
+					<dcc:description>
+						<dcc:content lang="zh" />
+					</dcc:description>
+					<dcc:manufacturer>
+						<dcc:name>
+							<dcc:content lang="zh">/</dcc:content>
+						</dcc:name>
+					</dcc:manufacturer>
+					<dcc:model><dcc:content lang="zh">200mm</dcc:content></dcc:model>
+					<dcc:identifications>
+						<dcc:identification>
+							<dcc:issuer>manufacturer</dcc:issuer>
+							<dcc:value><dcc:content lang="zh">7986</dcc:content></dcc:value>
+							<dcc:name>
+								<dcc:content lang="zh">出厂编号</dcc:content>
+								<dcc:content lang="en">Serial number</dcc:content>
+							</dcc:name>
+						</dcc:identification>
+					</dcc:identifications>
+				</dcc:item>
+			</dcc:items>
+			<dcc:calibrationLaboratory>
+				<dcc:contact>
+					<dcc:name>
+						<dcc:content lang="zh">中国计量科学研究院</dcc:content>
+					</dcc:name>
+					<dcc:eMail>kehufuwu@nim.ac.cn</dcc:eMail>
+					<dcc:phone>010-64525569/74</dcc:phone>
+					<dcc:fax>010-64271948</dcc:fax>
+					<dcc:location>
+						<dcc:street><dcc:content lang="zh">北京北三环东路18号</dcc:content></dcc:street>
+						<dcc:postCode><dcc:content lang="zh">100029</dcc:content></dcc:postCode>
+						<dcc:city><dcc:content lang="zh">北京</dcc:content><dcc:content lang="zh" /></dcc:city>
+						<dcc:countryCode>CN</dcc:countryCode>
+					</dcc:location>
+				</dcc:contact>
+			</dcc:calibrationLaboratory>
+			<dcc:respPersons>
+				<dcc:respPerson>
+					<dcc:person>
+						<dcc:name>
+							<dcc:content lang="zh">刘香斌</dcc:content>
+						</dcc:name>
+					</dcc:person>
+					<dcc:description>
+						<dcc:content lang="zh">批准人</dcc:content>
+						<dcc:content lang="en">approved by</dcc:content>
+					</dcc:description>
+				</dcc:respPerson>
+				<dcc:respPerson>
+					<dcc:person>
+						<dcc:name>
+							<dcc:content lang="zh">高宏堂</dcc:content>
+						</dcc:name>
+					</dcc:person>
+					<dcc:description>
+						<dcc:content lang="zh">校准员</dcc:content>
+						<dcc:content lang="en">calibrated by</dcc:content>
+					</dcc:description>
+				</dcc:respPerson>
+				<dcc:respPerson>
+					<dcc:person>
+						<dcc:name>
+							<dcc:content lang="zh">沈雪萍</dcc:content>
+						</dcc:name>
+					</dcc:person>
+					<dcc:description>
+						<dcc:content lang="zh">核验员</dcc:content>
+						<dcc:content lang="en">checked by</dcc:content>
+					</dcc:description>
+				</dcc:respPerson>
+			</dcc:respPersons>
+			<dcc:customer>
+				<dcc:name>
+					<dcc:content lang="zh">南京三乐集团有限公司</dcc:content>
+				</dcc:name>
+				<dcc:eMail>/</dcc:eMail>
+				<dcc:phone>18014823096</dcc:phone>
+				<dcc:fax>/</dcc:fax>
+				<dcc:location>
+					<dcc:street><dcc:content lang="zh" /></dcc:street>
+					<dcc:postCode><dcc:content lang="zh" /></dcc:postCode>
+					<dcc:city><dcc:content lang="zh" /></dcc:city>
+					<dcc:countryCode>CN</dcc:countryCode>
+				</dcc:location>
+			</dcc:customer>
+			<dcc:statements>
+				<dcc:statement>
+					<dcc:norm><dcc:content lang="zh">ISO/IEC17025</dcc:content></dcc:norm>
+				</dcc:statement>
+				<dcc:statement>
+					<dcc:norm><dcc:content lang="zh">JJF1059</dcc:content></dcc:norm>
+				</dcc:statement>
+				<dcc:statement>
+					<dcc:reference><dcc:content lang="zh">JJG73-2005 高等别线纹尺检定规程;</dcc:content></dcc:reference>
+				</dcc:statement>
+				<dcc:statement>
+					<dcc:declaration>
+						<dcc:content lang="zh">中国计量科学研究院（NIM）是国家最高的计量科学研究中心和国家级法定计量技术机构 。1999 年授权签署了国际计量委员会（CIPM）《国家计量基 标 准和国家计量院签发的校准与测量证书互认协议》（CIPM MRA）。质量管理体系符合 ISO/IEC17025 标准 ，通过 中国合格评定国家认可委员会（CNAS ）和亚太计量规划组织（APMP）联合评审的校准和测量能力（CMCs）在国际计量局（BIPM）关键比对数据库中公布。2011年， NIM 和 CNAS 就认可领域的技术评价活动签署了谅解备忘录，承认 NIM 的计量支撑作用和出具的校准/检测结果的溯源效力。校准结果不确定度的评估和表述均符合 JJF1059 系列标准的要求。</dcc:content>
+					</dcc:declaration>
+				</dcc:statement>
+				<dcc:statement>
+					<dcc:declaration>
+						<dcc:content lang="zh">1. 我院仅对加盖“中国计量科学研究院校准专用章”的完整证书负责。2. 本证书的校准结果仅对本次所校准的计量器具有效。</dcc:content>
+					</dcc:declaration>
+				</dcc:statement>
+			</dcc:statements>
+		</dcc:administrativeData>
+		<dcc:measurementResults>
+			<dcc:measurementResult>
+				<dcc:name>
+					<dcc:content lang="zh"></dcc:content>
+				</dcc:name>
+				<dcc:description>
+					<dcc:content lang="zh"></dcc:content>
+				</dcc:description>
+				<dcc:measuringEquipments>
+					<dcc:measuringEquipment>
+						<dcc:name>
+							<dcc:content lang="zh">激光干涉比长仪工作基准装置</dcc:content>
+						</dcc:name>
+						<dcc:description>
+							<dcc:content lang="zh">校准使用的计量基（标）准装置（含标准物质）/主要仪器</dcc:content>
+						</dcc:description>
+						<dcc:identifications>
+							<dcc:identification>
+								<dcc:issuer>other</dcc:issuer>
+								<dcc:value><dcc:content lang="zh">(0~1200)mm</dcc:content></dcc:value>
+								<dcc:name>
+									<dcc:content lang="zh">测量范围</dcc:content>
+									<dcc:content lang="en">measure range</dcc:content>
+								</dcc:name>
+							</dcc:identification>
+							<dcc:identification>
+								<dcc:issuer>other</dcc:issuer>
+								<dcc:value><dcc:content lang="zh">U95=(0.02+0.04L)mm, L-(0～1)m</dcc:content></dcc:value>
+								<dcc:name>
+									<dcc:content lang="zh">不确定度/准确度等级</dcc:content>
+									<dcc:content lang="en">uncertainty/accuracy</dcc:content>
+								</dcc:name>
+							</dcc:identification>
+							<dcc:identification>
+								<dcc:issuer>other</dcc:issuer>
+								<dcc:value><dcc:content lang="zh">[2012]国量标计证字第249号</dcc:content></dcc:value>
+								<dcc:name>
+									<dcc:content lang="zh">证书编号</dcc:content>
+									<dcc:content lang="en">certificate No.</dcc:content>
+								</dcc:name>
+							</dcc:identification>
+							<dcc:identification>
+								<dcc:issuer>other</dcc:issuer>
+								<dcc:value><dcc:content lang="zh">2020-09-26</dcc:content></dcc:value>
+								<dcc:name>
+									<dcc:content lang="zh">证书有效期至</dcc:content>
+									<dcc:content lang="en">due date</dcc:content>
+								</dcc:name>
+							</dcc:identification>
+						</dcc:identifications>
+					</dcc:measuringEquipment>
+				</dcc:measuringEquipments>
+				<dcc:influenceConditions>
+					<dcc:influenceCondition>
+						<dcc:name>
+							<dcc:content lang="zh">环境温度</dcc:content>
+							<dcc:content lang="en">ambient temperature</dcc:content>
+						</dcc:name>
+						<dcc:data>
+							<dcc:quantity>
+								<dcc:name>
+									<dcc:content lang="zh">温度下限</dcc:content>
+									<dcc:content lang="en">lower temperature value</dcc:content>
+								</dcc:name>
+								<si:real>
+									<si:value>292.5</si:value>
+									<si:unit>\kelvin</si:unit>
+								</si:real>
+							</dcc:quantity>
+							<dcc:quantity>
+								<dcc:name>
+									<dcc:content lang="zh">温度上限</dcc:content>
+									<dcc:content lang="en">upper temperature value</dcc:content>
+								</dcc:name>
+								<si:real>
+									<si:value>293.5</si:value>
+									<si:unit>\kelvin</si:unit>
+								</si:real>
+							</dcc:quantity>
+						</dcc:data>
+					</dcc:influenceCondition>
+					<dcc:influenceCondition>
+						<dcc:name>
+							<dcc:content lang="zh">相对湿度</dcc:content>
+							<dcc:content lang="en">relative humidity</dcc:content>
+						</dcc:name>
+						<dcc:data>
+							<dcc:quantity>
+								<dcc:name>
+									<dcc:content lang="zh">相对湿度下限</dcc:content>
+									<dcc:content lang="en">lower relative humidity value</dcc:content>
+								</dcc:name>
+								<si:real>
+									<si:value>25</si:value>
+									<si:unit>\kilogram\tothe{1}\metre\tothe{-3}\kilogram\tothe{-1}\metre\tothe{3}</si:unit>
+								</si:real>
+							</dcc:quantity>
+							<dcc:quantity>
+								<dcc:name>
+									<dcc:content lang="zh">相对湿度上限</dcc:content>
+									<dcc:content lang="en">upper relative humidity value</dcc:content>
+								</dcc:name>
+								<si:real>
+									<si:value>75</si:value>
+									<si:unit>\kilogram\tothe{1}\metre\tothe{-3}\kilogram\tothe{-1}\metre\tothe{3}</si:unit>
+								</si:real>
+							</dcc:quantity>
+						</dcc:data>
+					</dcc:influenceCondition>
+					<dcc:influenceCondition>
+						<dcc:name>
+							<dcc:content lang="zh">校准地点</dcc:content>
+							<dcc:content lang="en">calibration location</dcc:content>
+						</dcc:name>
+						<dcc:data>
+							<dcc:text>
+								<dcc:content lang="zh">昌平20号楼1015室</dcc:content>
+							</dcc:text>
+						</dcc:data>
+					</dcc:influenceCondition>
+				</dcc:influenceConditions>
+				<dcc:results>
+					<dcc:result>
+						<dcc:name>
+							<dcc:content lang="zh">校准结果</dcc:content>
+						</dcc:name>
+						<dcc:data>
+							<dcc:list>
+								<dcc:name>
+									<dcc:content lang="zh" />
+								</dcc:name>
+								<dcc:list>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>0~25.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.07</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>0~90.75</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.17</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>0~100.60</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.11</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+								</dcc:list>
+								<dcc:list>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>50.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.16</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>91.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.31</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>100.72</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.39</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+								</dcc:list>
+								<dcc:list>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>55.25</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>0.05</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>92.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.29</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>101.08</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.02</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+								</dcc:list>
+								<dcc:list>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>60.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>93.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.11</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>101.20</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>0.05</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+								</dcc:list>
+								<dcc:list>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>60.50</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>0.03</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>94.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.01</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>101.80</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.10</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+								</dcc:list>
+								<dcc:list>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>65.75</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.12</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>95.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.05</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>102.40</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.13</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+								</dcc:list>
+								<dcc:list>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>70.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.20</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>96.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>0.06</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>103.60</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.01</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+								</dcc:list>
+								<dcc:list>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>75.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.19</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>97.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.08</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>105.40</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>0.08</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+								</dcc:list>
+								<dcc:list>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>80.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.14</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>98.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.11</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>125.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>0.01</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+								</dcc:list>
+								<dcc:list>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>80.25</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.13</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>99.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.18</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>150.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>0.18</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+								</dcc:list>
+								<dcc:list>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>85.50</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>0.03</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>100.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.22</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>175.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.09</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+								</dcc:list>
+								<dcc:list>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>90.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.24</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>100.30</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>-0.12</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">标称值(mm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>200.00</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+									<dcc:quantity>
+										<dcc:name>
+											<dcc:content lang="zh">偏差值(μm)</dcc:content>
+										</dcc:name>
+										<dcc:noQuantity>
+											<dcc:content>0.05</dcc:content>
+										</dcc:noQuantity>
+									</dcc:quantity>
+								</dcc:list>
+							</dcc:list>
+							<dcc:text>
+								<dcc:content lang="zh">说明：1. 校准时采用反射照明，刻线面在上朝着物镜；2. 刻线中心瞄准测量；3. 使用材料线膨胀系数为10.0×10-6/°C；4. 校准结果不确定度为U =（0.20+1.5L）μm (k=3)，L-m；5. 下次送检带此证书复印件。</dcc:content>
+							</dcc:text>
+						</dcc:data>
+					</dcc:result>
+				</dcc:results>
+			</dcc:measurementResult>
+		</dcc:measurementResults>
+	</dcc:digitalCalibrationCertificate>
